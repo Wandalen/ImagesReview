@@ -16,13 +16,10 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 
 | **Name** | **Formats** | **Read** | **Write** | **Source Code** | **Modular** | **Implementation** | **Prog.**  **Language** | **Browser&#39;s support** | **Node.js support** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**sharp**](https://sharp.pixelplumbing.com/)
-
- | jpeg, png, webp, gif, svg | + | + | open | yes | native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + |
+| [**sharp**](https://sharp.pixelplumbing.com/)| jpeg, png, webp, gif, svg | + | + | open | yes | native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + |
 | [**CamanJS**](https://github.com/meltingice/CamanJS/) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpeg, png, webp, gif (raster images) | + | + | open | yes | Pure, CUI adapter | JavaScript | + | + |
-| [**imgsquash**](https://github.com/eashish93/imgsquash) | jpeg, png | + | + | open | integrated GUI | Pure | Node.js, JavaScript | + | +
- |
+| [**imgsquash**](https://github.com/eashish93/imgsquash) | jpeg, png | + | + | open | integrated GUI | Pure | Node.js, JavaScript | + | +|
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | png, jpeg, gif, BLOB | + | + | open | yes | Pure | JavaScript(TypeScript) | + | + |
 | [**imagemin**](https://github.com/imagemin/imagemin) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
 | [**image-js**](https://github.com/image-js/image-js) | png, jpeg | + | + | open | yes | Pure | Node.js, JavaScript | + | + |
@@ -35,17 +32,11 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 
 | **Name** | **Formats** | **Read** | **Write** | **Source Code** | **Modular** | **Implementation** | **Prog.**  **Language** | **Browser&#39;s support** | **Node.js support** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp)
-
- | jpeg, png, webp, gif, svg | + | + | open | yes | native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + |
+| [**sharp**](https://github.com/lovell/sharp)| jpeg, png, webp, gif, svg | + | + | open | yes | native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + |
 | [**CamanJS**](https://github.com/meltingice/CamanJS/) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
-| [**Jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp)
- | [bmp](https://github.com/oliver-moran/jimp/blob/master/packages/type-bmp),[gif](https://github.com/oliver-moran/jimp/blob/master/packages/type-gif),[jpeg](https://github.com/oliver-moran/jimp/blob/master/packages/type-jpeg),[png](https://github.com/oliver-moran/jimp/blob/master/packages/type-png),[tiff](https://github.com/oliver-moran/jimp/blob/master/packages/type-tiff)
- | + | + | open | yes | Pure | Node.js | + | + |
+| [**Jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp)|bmp,gif,jpeg,png,tiff| + | + | open | yes | Pure | Node.js | + | + |
 | [**pngjs-image**](https://github.com/YahooArchive/pngjs-image) | png | + | + | open | yes | Pure | JavaScript | - | + |
-| [**Smartcrop**](https://github.com/jwagner/smartcrop.js) | jpeg, png | + | + | open | integrated GUI | Pure, CUI adapter | JavaScript | + | +
-
- |
+| [**Smartcrop**](https://github.com/jwagner/smartcrop.js) | jpeg, png | + | + | open | integrated GUI | Pure, CUI adapter | JavaScript | + | +|
 | [**UPNG.js**](https://github.com/photopea/UPNG.js) | png | + | - | open | yes | Pure | JavaScript | + | + |
 | [**tui.image-editor**](https://github.com/nhn/tui.image-editor) | jpg, png, | + | + | open | yes | Pure | JavaScript | + | + |
 | [**tui.image-editor GUI**](https://github.com/nhn/toast-ui.react-image-editor) | jpg, png, | + | + | open | integrated GUI | Pure | JavaScript | + | + |
@@ -56,12 +47,9 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 | [**merge-images**](https://github.com/lukechilds/merge-images) | png | + | + | open | yes | Pure | JavaScript | + | + |
 | [**Pica**](https://github.com/nodeca/pica) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
 | [**MarvinJ**](https://github.com/gabrielarchanjo/marvinj) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
-| [**glfx.js**](https://github.com/evanw/glfx.js)
- | jpeg, png | + | + | open | yes | Pure | JavaScript | modern | - |
-| [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2)
- | jpeg, png | + | + | open | yes | Pure | JavaScript | + | - |
-| [**img2css**](https://github.com/javierbyte/img2css)
- | jpeg, png | + | - | open | integrated GUI | Pure | JavaScript | + | - |
+| [**glfx.js**](https://github.com/evanw/glfx.js)| jpeg, png | + | + | open | yes | Pure | JavaScript | modern | - |
+| [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2)| jpeg, png | + | + | open | yes | Pure | JavaScript | + | - |
+| [**img2css**](https://github.com/javierbyte/img2css)| jpeg, png | + | - | open | integrated GUI | Pure | JavaScript | + | - |
 | [**web-dsp**](https://github.com/shamadee/web-dsp) | pixelData | + | - | open | yes | Native-binding | c++ | + | - |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpeg, png, gif | + | + | open | yes | Native binding | c | - | + |
 
