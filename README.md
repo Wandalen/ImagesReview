@@ -1,5 +1,5 @@
-# OverviewImage
-Curated review of awesome Javascript projects to read / write / convert / compress / process images of different formats.
+# OverviewImage 
+Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.
 
 ### Modules to read/write/convert/compress images
 
