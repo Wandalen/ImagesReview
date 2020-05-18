@@ -3,9 +3,9 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 
 ### Modules to read/write/convert/compress images
 
-| **N** | **Format** | **R** | **W** | **S.Code** | **Mod** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
+| **N** | **Format** | **R** | **W** | **Code** | **Mod** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp)| jpeg, png, webp, gif, svg | + | + | open | yes | native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + |1425|
+| [**sharp**](https://github.com/lovell/sharp)| jpeg, png, webp, gif, svg | + | + | open | yes | native binding | JavaScript | - | + |1425|
 | [**gm**](https://github.com/aheckmann/gm) | GIF, JPEG, PNG, PDF, and WebP. | + | + | closed | yes | CUI adapter | c | - | + | 1122 |
 | [**imagemin**](https://github.com/imagemin/imagemin) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + | 682 |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpeg, png, gif | + | + | open | yes | Native binding | c | - | + | 79 |
@@ -14,15 +14,15 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 | [**image-js**](https://github.com/image-js/image-js) | png, jpeg | + | + | open | yes | Pure | Node.js, JavaScript | + | + |19 |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpeg, png, webp, gif (raster images) | + | + | open | yes | Pure | JavaScript | + | + | 5 |
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | png, jpeg, gif, BLOB | + | + | open | yes | Pure | JavaScript(TypeScript) | + | + | 2 |
-| [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib#README) | jpeg, png | + | + | open | yes | Native binding | c++ | - | + | 0 |
+| [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib#README) | jpeg, png | + | + | open | yes | Native binding | С++ | - | + | 0 |
 | [**imgsquash**](https://github.com/eashish93/imgsquash) | jpeg, png | + | + | open | Integrated GUI | Pure | Node.js, JavaScript | + | + | - |
 
 
 ### Modules to process images
 
-| **N** | **Format** | **R** | **W** | **S.Code** | **Mod** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
+| **N** | **Format** | **R** | **W** | **Code** | **Mod** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp)| jpeg, png, webp, gif, svg | + | + | open | yes | Native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + | 1425|
+| [**sharp**](https://github.com/lovell/sharp)| jpeg, png, webp, gif, svg | + | + | open | yes | Native binding | JavaScript | - | + | 1425|
 | [**Jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp)| bmp, gif, jpeg, png, tiff| + | + | open | yes | Pure | Node.js | + | + | 1075|
 | [**Cropper**](https://github.com/fengyuanchen/cropperjs) | jpeg, png | + | + | open | Integrated GUI | Pure | JavaScript | + | - | 276 |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpeg, png, gif | + | + | open | yes | Native binding | c | - | + | 79 |
@@ -51,12 +51,12 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 * *Format* - Formats of the images this module supports
 * *R* - Does this module support read operations 
 * *W* - Does this module support write operations
-* *S.Code* - Is the module's source code open or closed
+* *Code* - Is the module's source code open or closed
 * *Mod* - Is it modular or integrated GUI 
 * *I* - Interface, can be either Pure or Native Binding or CUI adapter 
 * *PL* - Programming language in which module is written
-* *B.s* - Does this module have browser support
-* *N.s* - Does this module have Node.js support
+* *B.s* - Does the module support the browser 
+* *N.s* - Does the module support Node.js
 * *Deps* - The amount of dependents of this module
 
 
