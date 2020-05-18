@@ -3,17 +3,17 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 
 ### Modules to read/write/convert/compress images
 
-| **Name** | **Formats** | **Read** | **Write** | **Source Code** | **Modular** | **Implementation** | **Prog.**  **Language** | **Browser&#39;s support** | **Node.js support** |
+| **Name** | **Formats** | **Read** | **Write** | **Source Code** | **Modular** | **Interface** | **Prog.**  **Language** | **Browsers support** | **Node.js support** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**sharp**](https://sharp.pixelplumbing.com/)| jpeg, png, webp, gif, svg | + | + | open | yes | native binding[libvips(https://github.com/libvips/libvips) + Node.js | - | + |
-|[**CamanJS**](https://github.com/meltingice/CamanJS/) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
-| [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpeg, png, webp, gif (raster images) | + | + | open | yes | Pure, CUI adapter | JavaScript | + | + |
-| [**imgsquash**](https://github.com/eashish93/imgsquash) | jpeg, png | + | + | open | integrated GUI | Pure | Node.js, JavaScript | + | +|
+| [**sharp**](https://sharp.pixelplumbing.com/)| jpeg, png, webp, gif, svg | + | + | open | yes | native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + |
+| [**CamanJS**](https://github.com/meltingice/CamanJS/) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
+| [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpeg, png, webp, gif (raster images) | + | + | open | yes | Pure | JavaScript | + | + |
+| [**imgsquash**](https://github.com/eashish93/imgsquash) | jpeg, png | + | + | open | integrated GUI | Pure | Node.js, JavaScript | + | + |
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | png, jpeg, gif, BLOB | + | + | open | yes | Pure | JavaScript(TypeScript) | + | + |
 | [**imagemin**](https://github.com/imagemin/imagemin) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
 | [**image-js**](https://github.com/image-js/image-js) | png, jpeg | + | + | open | yes | Pure | Node.js, JavaScript | + | + |
 | [**Compressor**](https://github.com/fengyuanchen/compressorjs) | jpeg, png or BLOB | + | + | open | yes | Pure | JavaScript | + | - |
-| [**gm**](https://github.com/aheckmann/gm) | GIF, JPEG, PNG, PDF, and WebP. | + | + | closed | yes | Native binding | c | - | + |
+| [**gm**](https://github.com/aheckmann/gm) | GIF, JPEG, PNG, PDF, and WebP. | + | + | closed | yes | CUI adapter | c | - | + |
 | [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib#README) | jpeg, png | + | + | open | yes | Native binding | c++ | - | + |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpeg, png, gif | + | + | open | yes | Native binding | c | - | + |
 
@@ -21,11 +21,11 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 
 | **Name** | **Formats** | **Read** | **Write** | **Source Code** | **Modular** | **Implementation** | **Prog.**  **Language** | **Browser&#39;s support** | **Node.js support** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp)| jpeg, png, webp, gif, svg | + | + | open | yes | native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + |
+| [**sharp**](https://github.com/lovell/sharp)| jpeg, png, webp, gif, svg | + | + | open | yes | Native binding | [libvips](https://github.com/libvips/libvips) + Node.js | - | + |
 | [**CamanJS**](https://github.com/meltingice/CamanJS/) | jpeg, png | + | + | open | yes | Pure | JavaScript | + | + |
-| [**Jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp)|bmp,gif,jpeg,png,tiff| + | + | open | yes | Pure | Node.js | + | + |
-| [**pngjs-image**](https://github.com/YahooArchive/pngjs-image) | png | + | + | open | yes | Pure | JavaScript | - | + |
-| [**Smartcrop**](https://github.com/jwagner/smartcrop.js) | jpeg, png | + | + | open | integrated GUI | Pure, CUI adapter | JavaScript | + | +|
+| [**Jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp)| bmp,gif,jpeg,png,tiff| + | + | open | yes | Pure | Node.js | + | + |
+| [**pngjs-image**](https://github.com/YahooArchive/pngjs-image) | png | + | + | open | yes | Pure | JavaScript |-| + |
+| [**Smartcrop**](https://github.com/jwagner/smartcrop.js) | jpeg, png | + | + | open | integrated GUI | Pure | JavaScript | + | +|
 | [**UPNG.js**](https://github.com/photopea/UPNG.js) | png | + | - | open | yes | Pure | JavaScript | + | + |
 | [**tui.image-editor**](https://github.com/nhn/tui.image-editor) | jpg, png, | + | + | open | yes | Pure | JavaScript | + | + |
 | [**tui.image-editor GUI**](https://github.com/nhn/toast-ui.react-image-editor) | jpg, png, | + | + | open | integrated GUI | Pure | JavaScript | + | + |
@@ -42,7 +42,7 @@ Curated review of awesome Javascript projects to read / write / convert / compre
 | [**web-dsp**](https://github.com/shamadee/web-dsp) | pixelData | + | - | open | yes | Native-binding | c++ | + | - |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpeg, png, gif | + | + | open | yes | Native binding | c | - | + |
 
-### Resources:
+**Resources:**
 
 1. [Overview of 411 image-processing projects (all programming languages)](https://awesomeopensource.com/projects/image-processing)
 2. [10 JavaScript Image Manipulation Libraries for 2020](https://blog.bitsrc.io/image-manipulation-libraries-for-javascript-187fde1ad5af)
