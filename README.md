@@ -6,17 +6,17 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 | **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | 
-| [**imagemin**](https://github.com/imagemin/imagemin) |jpg, png, webp, gif, svg  | jpg, png, webp, gif, svg  | open | yes | Pure | JavaScript | + | + | 682 |
 | [**sharp**](https://github.com/lovell/sharp)| jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1425 | 
-| [**gm**](https://github.com/aheckmann/gm) | gif, jpg, png, pdf, webp | gif, jpg, png, pdf, webp | closed | yes | CUI adapter | C | - | + | 1122 | 
-| [**Compressor**](https://github.com/fengyuanchen/compressorjs) | jpg, png  | jpg, png | open | yes | Pure | JavaScript | + | - | 21 | 
-| [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpg, png, webp, gif, bmp | svg | open | yes | Pure | JavaScript | + | + | 5 |
+| [**imagemin**](https://github.com/imagemin/imagemin) |jpg, png, webp, gif, svg  | jpg, png, webp, gif, svg  | open | yes | Pure | JavaScript | + | + | 682 |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | 
-| [**image-conversion**](https://github.com/WangYuLue/image-conversion) | png, jpg, gif | png, jpg, gif | open | yes | Pure | TypeScript | + | + | 2 | 
 | [**image-js**](https://github.com/image-js/image-js) | png, jpg, tiff | png, jpg, tiff | open | yes | Pure | JavaScript | + | + |19 |
-| [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib#README) | jpg, png | jpg, png | open | yes | Native binding | С++ | - | + | 0 |
+| [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpg, png, webp, gif, bmp | svg | open | yes | Pure | JavaScript | + | + | 5 |
+| [**image-conversion**](https://github.com/WangYuLue/image-conversion) | png, jpg, gif | png, jpg, gif | open | yes | Pure | TypeScript | + | + | 2 | 
+| [**Compressor**](https://github.com/fengyuanchen/compressorjs) | jpg, png  | jpg, png | open | yes | Pure | JavaScript | + | - | 21 | 
 | [**CamanJS**](https://github.com/meltingice/CamanJS/) | jpg, png | jpg, png | open | yes | Pure | JavaScript | + | + | 5 | 
+| [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib#README) | jpg, png | jpg, png | open | yes | Native binding | С++ | - | + | 0 |
 | [**imgsquash**](https://github.com/eashish93/imgsquash) | jpg, png | jpg, png | open | Integrated GUI | Pure | JavaScript | + | + | - |
+| [**gm**](https://github.com/aheckmann/gm) | gif, jpg, png, pdf, webp | gif, jpg, png, pdf, webp | closed | yes | CUI adapter | C | - | + | 1122 | 
 
 ### Modules to process images
 
@@ -54,6 +54,12 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 * *B.s* - Does the module support the browser 
 * *N.s* - Does the module support Node.js
 * *Deps* - The amount of dependents of this module
+
+
+**Sorting Algorithm** (descending order of significance)
+* Sort by Code (Open > Closed)
+  * Sort by the sum of reading and writing formats
+    * Sort by the amount of dependents
 
 ### Resources:
 
