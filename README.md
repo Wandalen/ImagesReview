@@ -45,9 +45,8 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 **Columns' definitions**
 * *N* - Name of the module.
-* *Format* - Formats of the images this module supports
-* *R* - Does this module support read operations 
-* *W* - Does this module support write operations
+* *R* - Reading formats 
+* *W* - Writing formats
 * *Code* - Is the module's source code open or closed
 * *Modular* - Is it modular or integrated GUI 
 * *I* - Interface, can be either Pure or Native Binding or CUI adapter 
