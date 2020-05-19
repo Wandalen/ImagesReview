@@ -7,7 +7,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | 
 | [**imagemin**](https://github.com/imagemin/imagemin) |jpg, png, webp, gif, svg  | jpg, png, webp, gif, svg  | open | yes | Pure | JavaScript | + | + | 682 |
-| [**sharp**](https://github.com/lovell/sharp)| jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | native binding | JavaScript | - | + | 1425 | 
+| [**sharp**](https://github.com/lovell/sharp)| jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1425 | 
 | [**gm**](https://github.com/aheckmann/gm) | gif, jpg, png, pdf, webp | gif, jpg, png, pdf, webp | closed | yes | CUI adapter | C | - | + | 1122 | 
 | [**Compressor**](https://github.com/fengyuanchen/compressorjs) | jpg, png  | jpg, png | open | yes | Pure | JavaScript | + | - | 21 | 
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpg, png, webp, gif, bmp | svg | open | yes | Pure | JavaScript | + | + | 5 |
