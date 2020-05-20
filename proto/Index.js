@@ -7,6 +7,7 @@ function readYML(yml) {
     filePath: yml,
     encoding: "yaml",
   });
+
   return data;
 }
 
@@ -20,11 +21,11 @@ function writeMd(md, data) {
 const {'Modules to read/write/convert/compress images': rwTableObj} = readYML(`${__dirname}/../data/readWriteConvertCompressImg.yml`);
 const {'Modules to process images' : processTableObj} = readYML(`${__dirname}/../data/processImg.yml`);
 const {'Awesome image!': header, "Columns' definitions": columnsDef, 'Sorting Algorithm (descending order significance)': algo} = readYML(`${__dirname}/../data/mainInfo.yml`);
-
-const resourcesObj = readYML(`${__dirname}/../data/resources.yml`);
+const {Resources: resources} = readYML(`${__dirname}/../data/resources.yml`);
 
 // console.log(rwTable['Modules to read/write/convert/compress images']);
-// console.log(header);
+// console.log(processTableObj);
+console.log(resources);
 // console.log('---')
 // console.log(columnsDef);
 // console.log('---')
@@ -39,18 +40,22 @@ function tableObjToMd(table, obj) {
     obj.forEach(el => {
       temp += `| [**${el.N.name}**](${el.N.link}) | ${el.R.toString()} | ${el.R.toString()} | ${el.Code} | ${el.Modular} | ${el.I} | ${el.PL} | ${el['B.s']} | ${el['N.s']} | ${el.Deps} |\n`
     });
-
-    return temp;
   } else if (table === 2) {
-    return temp;
+    temp = "### Modules to process images\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n"
+    obj.forEach(el=> {
+      temp += `| [**${el.N.name}**](${el.N.link}) | ${el.Code} | ${el.Modular} | ${el.I} | ${el.PL} | ${el['B.s']} | ${el['N.s']} | ${el.Deps} |\n`
+    });
   }
+
+  return temp;
 }
 
+writeMd(`${__dirname}/../output/README.md`, tableObjToMd(1, rwTableObj));
+
+fs.writeFileSync(`${__dirname}/../output/READMEfs1.md`, tableObjToMd(1, rwTableObj));
+fs.writeFileSync(`${__dirname}/../output/READMEfs2.md`, tableObjToMd(2, processTableObj));
 
 
-writeMd(`${__dirname}/../output/README.md`, tableObjToMd(1, rwTableObj))
-
-fs.writeFileSync(`${__dirname}/../output/READMEfs.md`, tableObjToMd(1, rwTableObj))
 // function jsToMd(data) {
 //   // let table1md = '';
 //   // let table2md = '';
