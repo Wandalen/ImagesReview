@@ -48,11 +48,11 @@ function tableObjToMd(table, obj) {
     temp =
       "### Modules to read/write/convert/compress images\n| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n";
     obj.forEach((el) => {
-      temp += `| [**${el.N.name}**](${
-        el.N.link
-      }) | ${el.R.toString()} | ${el.R.toString()} | ${el.Code} | ${
-        el.Modular
-      } | ${el.I} | ${el.PL} | ${el["B.s"]} | ${el["N.s"]} | ${el.Deps} |\n`;
+      temp += `| [**${el.N.name}**](${el.N.link}) | ${el.R.join(
+        ", "
+      )} | ${el.R.join(", ")} | ${el.Code} | ${el.Modular} | ${el.I} | ${
+        el.PL
+      } | ${el["B.s"]} | ${el["N.s"]} | ${el.Deps} |\n`;
     });
   } else if (table === 2) {
     temp =
@@ -80,7 +80,7 @@ let final = `# Awesome image!\nCurated overview of awesome Javascript projects t
 )}\n${tableObjToMd(2, processTableObj)}`;
 
 // Writing to files
-writeMd(`${__dirname}/../output/README.md`, tableObjToMd(1, rwTableObj));
+writeMd(`${__dirname}/../output/READMEwTools.md`, tableObjToMd(1, rwTableObj));
 
 fs.writeFileSync(
   `${__dirname}/../output/READMEfs1.md`,
@@ -97,7 +97,7 @@ fs.writeFileSync(
   resourcesToMd(resources)
 );
 
-fs.writeFileSync(`${__dirname}/../output/READMEfsFinal.md`, final);
+fs.writeFileSync(`${__dirname}/../output/README.md`, final);
 
 // function jsToMd(data) {
 //   // let table1md = '';
