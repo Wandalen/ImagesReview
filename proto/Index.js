@@ -65,16 +65,39 @@ function tableObjToMd(table, obj) {
   return temp;
 }
 
+function resourcesToMd(res) {
+  let temp = "### Resources:\n";
+  res.forEach((el, i) => {
+    temp += `${i + 1}. [${el.Name}](${el.Link})\n`;
+  });
+
+  return temp;
+}
+
+let final = `# Awesome image!\nCurated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n${tableObjToMd(
+  1,
+  rwTableObj
+)}\n${tableObjToMd(2, processTableObj)}`;
+
+// Writing to files
 writeMd(`${__dirname}/../output/README.md`, tableObjToMd(1, rwTableObj));
 
 fs.writeFileSync(
   `${__dirname}/../output/READMEfs1.md`,
   tableObjToMd(1, rwTableObj)
 );
+
 fs.writeFileSync(
   `${__dirname}/../output/READMEfs2.md`,
   tableObjToMd(2, processTableObj)
 );
+
+fs.writeFileSync(
+  `${__dirname}/../output/READMEfsResources.md`,
+  resourcesToMd(resources)
+);
+
+fs.writeFileSync(`${__dirname}/../output/READMEfsFinal.md`, final);
 
 // function jsToMd(data) {
 //   // let table1md = '';
@@ -95,15 +118,4 @@ fs.writeFileSync(
 //   } = data;
 
 //   output += tableObjToMd(rwcc);
-
 // }
-
-// jsToMd(data);
-// console.log(data);
-
-// wTools.fileProvider.fileWrite({
-//   filePath: `${__dirname}/output/README.md`,
-//   data: JSON.stringify(data),
-// });
-
-fs.writeFileSync("TEST.md", `HELLOO\nTEST line`);
