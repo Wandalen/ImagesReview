@@ -1,0 +1,181 @@
+"Modules to read/write/convert/compress images":
+  - N: sharp
+    R:
+      - jpg
+      - png
+      - webp
+      - tiff
+      - gif
+      - svg
+    W:
+      - jpg
+      - png
+      - webp
+      - tiff
+    Code: open
+    Modular: yes
+    I: Native binding
+    PL: JavaScript
+    B.s: "-"
+    N.s: "+"
+    Deps: 1425
+  - N: imagemin
+    R:
+      - jpg
+      - png
+      - webp
+      - gif
+      - svg
+    W:
+      - jpg
+      - png
+      - webp
+      - gif
+      - svg
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 682
+  - N: lwip
+    R:
+      - jpg
+      - png
+      - gif
+    W:
+      - jpg
+      - png
+      - gif
+    Code: open
+    Modular: yes
+    I: Native binding
+    PL: C
+    B.s: "-"
+    N.s: "+"
+    Deps: 79
+  - N: image-js
+    R:
+      - jpg
+      - png
+      - tiff
+    W:
+      - jpg
+      - png
+      - tiff
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 19
+  - N: imagetracerjs
+    R:
+      - jpg
+      - png
+      - webp
+      - gif
+      - bmp
+    W:
+      - svg
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 5
+  - N: image-conversion
+    R:
+      - jpg
+      - png
+      - gif
+    W:
+      - jpg
+      - png
+      - gif
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: TypeScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 2
+  - N: Compressor
+    R:
+      - jpg
+      - png
+    W:
+      - jpg
+      - png
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "-"
+    Deps: 21
+  - N: CamanJS
+    R:
+      - jpg
+      - png
+    W:
+      - jpg
+      - png
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 5
+  - N: Capa-Image-Lib
+    R:
+      - jpg
+      - png
+    W:
+      - jpg
+      - png
+    Code: open
+    Modular: yes
+    I: Native binding
+    PL: C++
+    B.s: "-"
+    N.s: "+"
+    Deps: 0
+  - N: imgsquash
+    R:
+      - jpg
+      - png
+    W:
+      - jpg
+      - png
+    Code: open
+    Modular: Integrated GUI
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: "-"
+  - N: gm
+    R:
+      - jpg
+      - png
+      - gif
+      - pdf
+      - webp
+    W:
+      - jpg
+      - png
+      - gif
+      - pdf
+      - webp
+    Code: closed
+    Modular: yes
+    I: CUI adapter
+    PL: C
+    B.s: "-"
+    N.s: "+"
+    Deps: 1122
