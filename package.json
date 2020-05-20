@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "wFiles": "^0.6.674",
-    "wTools": "^0.8.505"
+    "wFiles": "=alpha",
+    "wTools": "=alpha"
   }
 }
