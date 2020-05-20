@@ -1,3 +1,4 @@
+const fs = require('fs');
 const wTools = require("wTools");
 require("wFiles");
 
@@ -6,60 +7,77 @@ function readYML(yml) {
     filePath: yml,
     encoding: "yaml",
   });
+
   return data;
 }
 
-const rwTable = readYML(`${__dirname}/../data/readWriteConvertCompressImg.yml`);
-const processTable = readYML(`${__dirname}/../data/processImg.yml`);
-const mainInfo = readYML(`${__dirname}/../data/mainInfo.yml`);
-const resources = readYML(`${__dirname}/../data/resources.yml`);
+function writeMd(md, data) {
+  wTools.fileProvider.fileWrite({
+      filePath: md,
+      data: JSON.stringify(data),
+    });
+}
 
-console.log(rwTable['Modules to read/write/convert/compress images'][0]);
+const {'Modules to read/write/convert/compress images': rwTableObj} = readYML(`${__dirname}/../data/readWriteConvertCompressImg.yml`);
+const {'Modules to process images' : processTableObj} = readYML(`${__dirname}/../data/processImg.yml`);
+const {'Awesome image!': header, "Columns' definitions": columnsDef, 'Sorting Algorithm (descending order significance)': algo} = readYML(`${__dirname}/../data/mainInfo.yml`);
+const {Resources: resources} = readYML(`${__dirname}/../data/resources.yml`);
 
+// console.log(rwTable['Modules to read/write/convert/compress images']);
+// console.log(processTableObj);
+console.log(resources);
+// console.log('---')
+// console.log(columnsDef);
+// console.log('---')
+// console.log(algo);
+// console.log('---');
 
 function tableObjToMd(table, obj) {
   let temp = '';
   
   if (table === 1) {
-    temp = `### Modules to read/write/convert/compress images\n
-      | **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |\n
-      | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n
-    `;
+    temp = "### Modules to read/write/convert/compress images\n| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n";
     obj.forEach(el => {
-      temp += `| ${el.N} | ${el.R.toString()} | ${el.R.toString()} |${el.Code}|${el.Modular}|${el.I}|${el.PL}|${el['B.s']}|${el['N.s']}|${el.Deps}|\n`
+      temp += `| [**${el.N.name}**](${el.N.link}) | ${el.R.toString()} | ${el.R.toString()} | ${el.Code} | ${el.Modular} | ${el.I} | ${el.PL} | ${el['B.s']} | ${el['N.s']} | ${el.Deps} |\n`
     });
-
-    return temp;
   } else if (table === 2) {
-    return temp;
+    temp = "### Modules to process images\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n"
+    obj.forEach(el=> {
+      temp += `| [**${el.N.name}**](${el.N.link}) | ${el.Code} | ${el.Modular} | ${el.I} | ${el.PL} | ${el['B.s']} | ${el['N.s']} | ${el.Deps} |\n`
+    });
   }
+
+  return temp;
 }
 
-function jsToMd(data) {
+writeMd(`${__dirname}/../output/README.md`, tableObjToMd(1, rwTableObj));
 
-  // let table1md = '';
-  // let table2md = '';
-  // let rulesmd = '';
-  // let algomd = '';
-  // let resourcesmd = '';
-
-  let output = `
-  # Awesome image!\n
-  Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n`
-  const {
-    "Modules to read/write/convert/compress images": rwcc,
-    "Modules to process images": p,
-    "Columns' definitions": rules,
-    "Sorting Algorithm (descending order significance)": algo,
-    "Resources": resources,
-  } = data;
+fs.writeFileSync(`${__dirname}/../output/READMEfs1.md`, tableObjToMd(1, rwTableObj));
+fs.writeFileSync(`${__dirname}/../output/READMEfs2.md`, tableObjToMd(2, processTableObj));
 
 
-  output += tableObjToMd(rwcc);
+// function jsToMd(data) {
+//   // let table1md = '';
+//   // let table2md = '';
+//   // let rulesmd = '';
+//   // let algomd = '';
+//   // let resourcesmd = '';
 
-}
+//   let output = `
+//   # Awesome image!\n
+//   Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n`
+//   const {
+//     "Modules to read/write/convert/compress images": rwcc,
+//     "Modules to process images": p,
+//     "Columns' definitions": rules,
+//     "Sorting Algorithm (descending order significance)": algo,
+//     "Resources": resources,
+//   } = data;
 
 
+//   output += tableObjToMd(rwcc);
+
+// }
 
 // jsToMd(data);
 // console.log(data);
@@ -68,3 +86,7 @@ function jsToMd(data) {
 //   filePath: `${__dirname}/output/README.md`,
 //   data: JSON.stringify(data),
 // });
+
+
+
+fs.writeFileSync('TEST.md', `HELLOO\nTEST line`);
