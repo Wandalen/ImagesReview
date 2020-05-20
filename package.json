@@ -2,7 +2,7 @@
   "name": "OverviewImage",
   "version": "1.0.0",
   "description": "Curated review of awesome Javascript projects to read / write / convert / compress / process images of different formats.",
-  "main": "index.js",
+  "main": "Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
