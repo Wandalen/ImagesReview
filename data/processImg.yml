@@ -1,0 +1,161 @@
+"Modules to process images":
+  - N: Jimp
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 1075
+  - N: Resemble.js
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 50
+  - N: Pica
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 47
+  - N: image-js
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 19
+  - N: Smartcrop
+    Code: open
+    Modular: Integrated GUI
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 19
+  - N: tui.image-editor
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 15
+  - N: merge-images
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 11
+  - N: CamanJS
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 5
+  - N: tui.image-editor GUI
+    Code: open
+    Modular: Integrated GUI
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 2
+  - N: UPNG.js
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 1
+  - N: MarvinJ
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 0
+  - N: sharp
+    Code: open
+    Modular: yes
+    I: Native binding
+    PL: JavaScript
+    B.s: "-"
+    N.s: "+"
+    Deps: 1425
+  - N: Cropper
+    Code: open
+    Modular: Integrated GUI
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "-"
+    Deps: 276
+  - N: lwip
+    Code: open
+    Modular: yes
+    I: Native binding
+    PL: C
+    B.s: "-"
+    N.s: "+"
+    Deps: 79
+  - N: pngjs-image
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "-"
+    N.s: "+"
+    Deps: 27
+  - N: glfx.js
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "-"
+    Deps: 5
+  - N: lena.js
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "-"
+    Deps: 0
+  - N: web-dsp
+    Code: open
+    Modular: yes
+    I: Native-binding
+    PL: C++
+    B.s: "+"
+    N.s: "-"
+    Deps: 0
+  - N: Filtrr2
+    Code: open
+    Modular: Integrated GUI
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "-"
+    Deps: "-"
+  - N: img2css
+    Code: open
+    Modular: Integrated GUI
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "-"
+    Deps: "-"
