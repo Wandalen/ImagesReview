@@ -1,15 +1,22 @@
 {
-  "name": "imagesproject",
+  "name": "OverviewImage",
   "version": "1.0.0",
-  "description": "",
+  "description": "Curated review of awesome Javascript projects to read / write / convert / compress / process images of different formats.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "contributors" : [
+    "Kostiantyn Wandalen <wanalen@01.school>",
+    "Yevhen Shulha <jackshel45@gmail.com>"
+  ],
   "license": "ISC",
   "dependencies": {
     "wFiles": "=alpha",
     "wTools": "=alpha"
-  }
+  },
+  "keywords" : [
+    "images"
+  ]
 }
