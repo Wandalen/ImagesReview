@@ -1,5 +1,7 @@
 "Modules to process images":
-  - N: Jimp
+  - N:
+      name: Jimp
+      link: https://github.com/oliver-moran/jimp/tree/master/packages/jimp
     Code: open
     Modular: yes
     I: Pure
@@ -7,7 +9,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 1075
-  - N: Resemble.js
+  - N:
+      name: Resemble.js
+      link: https://github.com/rsmbl/Resemble.js
     Code: open
     Modular: yes
     I: Pure
@@ -15,7 +19,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 50
-  - N: Pica
+  - N:
+      name: Pica
+      link: https://github.com/nodeca/pica
     Code: open
     Modular: yes
     I: Pure
@@ -23,7 +29,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 47
-  - N: image-js
+  - N:
+      name: image-js
+      link: https://github.com/image-js/image-js
     Code: open
     Modular: yes
     I: Pure
@@ -31,7 +39,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 19
-  - N: Smartcrop
+  - N:
+      name: Smartcrop
+      link: https://github.com/jwagner/smartcrop.js
     Code: open
     Modular: Integrated GUI
     I: Pure
@@ -39,7 +49,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 19
-  - N: tui.image-editor
+  - N:
+      name: tui.image-editor
+      link: https://github.com/nhn/tui.image-editor
     Code: open
     Modular: yes
     I: Pure
@@ -47,7 +59,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 15
-  - N: merge-images
+  - N:
+      name: merge-images
+      link: https://github.com/lukechilds/merge-images
     Code: open
     Modular: yes
     I: Pure
@@ -55,7 +69,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 11
-  - N: CamanJS
+  - N:
+      name: CamanJS
+      link: https://github.com/meltingice/CamanJS/
     Code: open
     Modular: yes
     I: Pure
@@ -63,7 +79,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 5
-  - N: tui.image-editor GUI
+  - N:
+      name: tui.image-editor GUI
+      link: https://github.com/nhn/toast-ui.react-image-editor
     Code: open
     Modular: Integrated GUI
     I: Pure
@@ -71,7 +89,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 2
-  - N: UPNG.js
+  - N:
+      name: UPNG.js
+      link: https://github.com/photopea/UPNG.js
     Code: open
     Modular: yes
     I: Pure
@@ -79,7 +99,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 1
-  - N: MarvinJ
+  - N:
+      name: MarvinJ
+      link: https://github.com/gabrielarchanjo/marvinj
     Code: open
     Modular: yes
     I: Pure
@@ -87,7 +109,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 0
-  - N: sharp
+  - N:
+      name: sharp
+      link: https://github.com/lovell/sharp
     Code: open
     Modular: yes
     I: Native binding
@@ -95,7 +119,9 @@
     B.s: "-"
     N.s: "+"
     Deps: 1425
-  - N: Cropper
+  - N:
+      name: Cropper
+      link: https://github.com/fengyuanchen/cropperjs
     Code: open
     Modular: Integrated GUI
     I: Pure
@@ -103,7 +129,9 @@
     B.s: "+"
     N.s: "-"
     Deps: 276
-  - N: lwip
+  - N:
+      name: lwip
+      link: https://github.com/EyalAr/lwip
     Code: open
     Modular: yes
     I: Native binding
@@ -111,7 +139,9 @@
     B.s: "-"
     N.s: "+"
     Deps: 79
-  - N: pngjs-image
+  - N:
+      name: pngjs-image
+      link: https://github.com/YahooArchive/pngjs-image
     Code: open
     Modular: yes
     I: Pure
@@ -119,7 +149,9 @@
     B.s: "-"
     N.s: "+"
     Deps: 27
-  - N: glfx.js
+  - N:
+      name: glfx.js
+      link: https://github.com/evanw/glfx.js
     Code: open
     Modular: yes
     I: Pure
@@ -127,7 +159,9 @@
     B.s: "+"
     N.s: "-"
     Deps: 5
-  - N: lena.js
+  - N:
+      name: lena.js
+      link: https://github.com/davidsonfellipe/lena.js
     Code: open
     Modular: yes
     I: Pure
@@ -135,7 +169,9 @@
     B.s: "+"
     N.s: "-"
     Deps: 0
-  - N: web-dsp
+  - N:
+      name: web-dsp
+      link: https://github.com/shamadee/web-dsp
     Code: open
     Modular: yes
     I: Native-binding
@@ -143,7 +179,9 @@
     B.s: "+"
     N.s: "-"
     Deps: 0
-  - N: Filtrr2
+  - N:
+      name: Filtrr2
+      link: https://github.com/alexmic/filtrr/tree/master/filtrr2
     Code: open
     Modular: Integrated GUI
     I: Pure
@@ -151,7 +189,9 @@
     B.s: "+"
     N.s: "-"
     Deps: "-"
-  - N: img2css
+  - N:
+      name: img2css
+      link: https://github.com/javierbyte/img2css
     Code: open
     Modular: Integrated GUI
     I: Pure
