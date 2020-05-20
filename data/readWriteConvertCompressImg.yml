@@ -1,5 +1,7 @@
 "Modules to read/write/convert/compress images":
-  - N: sharp
+  - N:
+      name: sharp
+      link: https://github.com/lovell/sharp
     R:
       - jpg
       - png
@@ -19,7 +21,9 @@
     B.s: "-"
     N.s: "+"
     Deps: 1425
-  - N: imagemin
+  - N:
+      name: imagemin
+      link: https://github.com/imagemin/imagemin
     R:
       - jpg
       - png
@@ -39,7 +43,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 682
-  - N: lwip
+  - N:
+      name: lwip
+      link: https://github.com/EyalAr/lwip
     R:
       - jpg
       - png
@@ -55,7 +61,9 @@
     B.s: "-"
     N.s: "+"
     Deps: 79
-  - N: image-js
+  - N:
+      name: image-js
+      link: https://github.com/image-js/image-js
     R:
       - jpg
       - png
@@ -71,7 +79,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 19
-  - N: imagetracerjs
+  - N:
+      name: imagetracerjs
+      link: https://github.com/jankovicsandras/imagetracerjs
     R:
       - jpg
       - png
@@ -87,7 +97,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 5
-  - N: image-conversion
+  - N:
+      name: image-conversion
+      link: https://github.com/WangYuLue/image-conversion
     R:
       - jpg
       - png
@@ -103,7 +115,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 2
-  - N: Compressor
+  - N:
+      name: Compressor
+      link: https://github.com/fengyuanchen/compressorjs
     R:
       - jpg
       - png
@@ -117,7 +131,9 @@
     B.s: "+"
     N.s: "-"
     Deps: 21
-  - N: CamanJS
+  - N:
+      name: CamanJS
+      link: https://github.com/meltingice/CamanJS/
     R:
       - jpg
       - png
@@ -131,7 +147,9 @@
     B.s: "+"
     N.s: "+"
     Deps: 5
-  - N: Capa-Image-Lib
+  - N:
+      name: Capa-Image-Lib
+      link: https://gitlab.com/Capa_Album/capa_image_lib
     R:
       - jpg
       - png
@@ -145,7 +163,9 @@
     B.s: "-"
     N.s: "+"
     Deps: 0
-  - N: imgsquash
+  - N:
+      name: imgsquash
+      link: https://github.com/eashish93/imgsquash
     R:
       - jpg
       - png
@@ -159,7 +179,9 @@
     B.s: "+"
     N.s: "+"
     Deps: "-"
-  - N: gm
+  - N:
+      name: gm
+      link: https://github.com/aheckmann/gm
     R:
       - jpg
       - png
