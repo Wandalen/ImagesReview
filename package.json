@@ -17,6 +17,9 @@
     "wTools": "=alpha"
   },
   "keywords" : [
-    "images"
+    "images",
+    "imagesOverview",
+    "imagesProcessing",
+    "yaml2md"
   ]
 }
