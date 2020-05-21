@@ -1,11 +1,5 @@
-// testing
-const fs = require("fs");
 const _ = require("wTools");
 require("wFiles");
-
-function abs() {
-  return _.path.s.join(__dirname, ...arguments);
-}
 
 function readYML(yml) {
   const data = _.fileProvider.fileRead({
@@ -36,7 +30,7 @@ const { Resources: resources } = readYML('/../data/resources.yml');
 // console.log(rwTable['Modules to read/write/convert/compress images']);
 // console.log(processTableObj);
 // console.log('---')
-// console.log(columnsDef);
+console.log(columnsDef);
 // console.log('---')
 // console.log(algo);
 // console.log('---');
@@ -82,3 +76,6 @@ let final = `# Awesome image!\nCurated overview of awesome Javascript projects t
 // Writing to files
 writeMd('/../output/README.md', final);
 
+function abs() {
+  return _.path.s.join(__dirname, ...arguments);
+}
