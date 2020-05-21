@@ -1,28 +1,29 @@
 const _ = require("wTools");
 require("wFiles");
 
-const { "Modules to read/write/convert/compress images": rwTableObj } = readYML(
-  '/../data/readWriteConvertCompressImg.yml'
-);
-const { "Modules to process images": processTableObj } = readYML(
-  '/../data/processImg.yml'
+const {
+  "Modules to read/write/convert/compress images": rwTableObj
+} = readYML("../data/readWriteConvertCompressImg.yml");
+const {
+  "Modules to process images": processTableObj
+} = readYML(
+  "../data/processImg.yml"
 );
 const {
   "Awesome image!": header,
   "Columns' definitions": columnsDef,
   "Sorting Algorithm (descending order significance)": algo,
-} = readYML('/../data/mainInfo.yml');
-const { Resources: resources } = readYML('/../data/resources.yml');
-
+} = readYML("../data/mainInfo.yml");
+const {
+  Resources: resources
+} = readYML("../data/resources.yml");
 
 // console.log(rwTable['Modules to read/write/convert/compress images']);
 // console.log(processTableObj);
 // console.log('---')
-// console.log(columnsDef);
+console.log(columnsDef);
 // console.log('---')
 // console.log(algo);
-console.log('---');
-
 
 let final = `# Awesome image!\nCurated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n${tableObjToMd(
   1,
@@ -30,12 +31,14 @@ let final = `# Awesome image!\nCurated overview of awesome Javascript projects t
 )}\n${tableObjToMd(2, processTableObj)}`;
 
 // Writing to files
-writeMd('/../output/README.md', final);
-
+writeMd("../output/README.md", final);
 
 function abs() {
   return _.path.s.join(__dirname, ...arguments);
 }
+
+// console.log(abs("../data/readWriteConvertCompressImg.yml"));
+// console.log(abs("../output/README.md"))
 
 function readYML(yml) {
   const data = _.fileProvider.fileRead({
