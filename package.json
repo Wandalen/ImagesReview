@@ -7,16 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
-  "contributors" : [
+  "contributors": [
     "Kostiantyn Wandalen <wanalen@01.school>",
     "Yevhen Shulha <jackshel45@gmail.com>"
   ],
   "license": "ISC",
   "dependencies": {
-    "wFiles": "=alpha",
-    "wTools": "=alpha"
+    "wFiles": "alpha",
+    "wTools": "alpha"
   },
-  "keywords" : [
-    "images"
+  "keywords": [
+    "images",
+    "imagesOverview",
+    "imagesProcessing"
   ]
 }
