@@ -33,6 +33,8 @@ function abs()
   return _.path.s.join(__dirname, ...arguments);
 }
 
+exports.abs = abs;
+
 function readYML(yml) 
 {
   const data = _.fileProvider.fileRead({
@@ -49,6 +51,8 @@ function writeMd(md, data)
 {
   _.fileProvider.fileWrite(abs(md), data);
 }
+
+exports.writeMd = writeMd;
 
 function tableObjToMd(table, obj) 
 {

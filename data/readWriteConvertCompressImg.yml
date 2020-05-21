@@ -1,7 +1,7 @@
-"Modules to read/write/convert/compress images":
-  - N:
+Modules to read/write/convert/compress images:
+  - 'N':
       name: sharp
-      link: https://github.com/lovell/sharp
+      link: 'https://github.com/lovell/sharp'
     R:
       - jpg
       - png
@@ -15,15 +15,15 @@
       - webp
       - tiff
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Native binding
     PL: JavaScript
-    B.s: "-"
-    N.s: "+"
+    B.s: '-'
+    N.s: +
     Deps: 1425
-  - N:
+  - 'N':
       name: imagemin
-      link: https://github.com/imagemin/imagemin
+      link: 'https://github.com/imagemin/imagemin'
     R:
       - jpg
       - png
@@ -37,15 +37,15 @@
       - gif
       - svg
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Pure
     PL: JavaScript
-    B.s: "+"
-    N.s: "+"
+    B.s: +
+    N.s: +
     Deps: 682
-  - N:
+  - 'N':
       name: lwip
-      link: https://github.com/EyalAr/lwip
+      link: 'https://github.com/EyalAr/lwip'
     R:
       - jpg
       - png
@@ -55,15 +55,15 @@
       - png
       - gif
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Native binding
     PL: C
-    B.s: "-"
-    N.s: "+"
+    B.s: '-'
+    N.s: +
     Deps: 79
-  - N:
+  - 'N':
       name: image-js
-      link: https://github.com/image-js/image-js
+      link: 'https://github.com/image-js/image-js'
     R:
       - jpg
       - png
@@ -73,15 +73,15 @@
       - png
       - tiff
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Pure
     PL: JavaScript
-    B.s: "+"
-    N.s: "+"
+    B.s: +
+    N.s: +
     Deps: 19
-  - N:
+  - 'N':
       name: imagetracerjs
-      link: https://github.com/jankovicsandras/imagetracerjs
+      link: 'https://github.com/jankovicsandras/imagetracerjs'
     R:
       - jpg
       - png
@@ -91,15 +91,15 @@
     W:
       - svg
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Pure
     PL: JavaScript
-    B.s: "+"
-    N.s: "+"
+    B.s: +
+    N.s: +
     Deps: 5
-  - N:
+  - 'N':
       name: image-conversion
-      link: https://github.com/WangYuLue/image-conversion
+      link: 'https://github.com/WangYuLue/image-conversion'
     R:
       - jpg
       - png
@@ -109,15 +109,15 @@
       - png
       - gif
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Pure
     PL: TypeScript
-    B.s: "+"
-    N.s: "+"
+    B.s: +
+    N.s: +
     Deps: 2
-  - N:
+  - 'N':
       name: Compressor
-      link: https://github.com/fengyuanchen/compressorjs
+      link: 'https://github.com/fengyuanchen/compressorjs'
     R:
       - jpg
       - png
@@ -125,15 +125,15 @@
       - jpg
       - png
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Pure
     PL: JavaScript
-    B.s: "+"
-    N.s: "-"
+    B.s: +
+    N.s: '-'
     Deps: 21
-  - N:
+  - 'N':
       name: CamanJS
-      link: https://github.com/meltingice/CamanJS/
+      link: 'https://github.com/meltingice/CamanJS/'
     R:
       - jpg
       - png
@@ -141,15 +141,15 @@
       - jpg
       - png
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Pure
     PL: JavaScript
-    B.s: "+"
-    N.s: "+"
+    B.s: +
+    N.s: +
     Deps: 5
-  - N:
+  - 'N':
       name: Capa-Image-Lib
-      link: https://gitlab.com/Capa_Album/capa_image_lib
+      link: 'https://gitlab.com/Capa_Album/capa_image_lib'
     R:
       - jpg
       - png
@@ -157,15 +157,15 @@
       - jpg
       - png
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Native binding
     PL: C++
-    B.s: "-"
-    N.s: "+"
+    B.s: '-'
+    N.s: +
     Deps: 0
-  - N:
+  - 'N':
       name: imgsquash
-      link: https://github.com/eashish93/imgsquash
+      link: 'https://github.com/eashish93/imgsquash'
     R:
       - jpg
       - png
@@ -176,12 +176,12 @@
     Modular: Integrated GUI
     I: Pure
     PL: JavaScript
-    B.s: "+"
-    N.s: "+"
-    Deps: "-"
-  - N:
+    B.s: +
+    N.s: +
+    Deps: '-'
+  - 'N':
       name: gm
-      link: https://github.com/aheckmann/gm
+      link: 'https://github.com/aheckmann/gm'
     R:
       - jpg
       - png
@@ -195,9 +195,9 @@
       - pdf
       - webp
     Code: closed
-    Modular: yes
+    Modular: 'yes'
     I: CUI adapter
     PL: C
-    B.s: "-"
-    N.s: "+"
+    B.s: '-'
+    N.s: +
     Deps: 1122
