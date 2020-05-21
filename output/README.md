@@ -40,13 +40,30 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**img2css**](https://github.com/javierbyte/img2css) | open | Integrated GUI | Pure | JavaScript | + | - | - |
 
 **Columns' definitions**
-* *N,Name of the module* - undefined
-* *R,Reading formats* - undefined
-* *W,Writing formats* - undefined
-* *Code,Is the module's source code open or closed* - undefined
-* *Modular,Is it modular or integrated GUI* - undefined
-* *I,Pure - Written completely in JavaScript,Native Binding -  wrapper library that bridges two programming languages. It provides glue code specifically made to allow JavaScript to use a foreign code written in C, C++, etc.,CUI adapter - wrapper library that transformes JS instructions into shell commands of another library or framework (typically written in a lower level code)* - undefined
-* *PL,Programming language in which module is written* - undefined
-* *B.s,Does the module support the browser* - undefined
-* *N.s,Does the module support Node.js* - undefined
-* *Deps,The amount of dependents of this module* - undefined
+* *N* - Name of the module
+* *R* - Reading formats
+* *W* - Writing formats
+* *Code* - Is the module's source code open or closed
+* *Modular* - Is it modular or integrated GUI
+* *I*:
+	* Pure - Written completely in JavaScript
+	* Native Binding -  wrapper library that bridges two programming languages. It provides glue code specifically made to allow JavaScript to use a foreign code written in C, C++, etc.
+	* CUI adapter - wrapper library that transformes JS instructions into shell commands of another library or framework (typically written in a lower level code)
+* *PL* - Programming language in which module is written
+* *B.s* - Does the module support the browser
+* *N.s* - Does the module support Node.js
+* *Deps* - The amount of dependents of this module
+
+**Sorting Algorithm** (descending order of significance)
+1. Sort by Code (Open > Closed)
+2. Sort by the sum of reading and writing formats (For the table "Modules to read/write/convert/compress images") or sum of B.s and N.S (For the table "Modules to process images")
+3. Sort by the amount of dependents
+
+### Resources:
+1. [Overview of 411 image-processing projects (all programming languages)](https://awesomeopensource.com/projects/image-processing)
+2. [10 JavaScript Image Manipulation Libraries for 2020](https://blog.bitsrc.io/image-manipulation-libraries-for-javascript-187fde1ad5af)
+3. [Overview and comparison of popular js image processing libraries](https://webkid.io/blog/image-processing-in-javascript/)
+4. [Overview of 20 Javascript Image Processing Plugins](https://bashooka.com/coding/best-of-20-javascript-image-processing-plugins/)
+5. [Overview of 8 JavaScript Image processing libraries](https://tangiblejs.com/libraries/image-processing)
+6. [The most popular JavaScript Image processing repositories](https://bestofjs.org/projects?tags=image)
+7. [Image processing packages in npm](https://www.npmjs.com/search?q=image-processing)
