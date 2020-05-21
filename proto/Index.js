@@ -52,8 +52,6 @@ function writeMd(md, data)
   _.fileProvider.fileWrite(abs(md), data);
 }
 
-exports.writeMd = writeMd;
-
 function tableObjToMd(table, obj) 
 {
   let temp = "";
