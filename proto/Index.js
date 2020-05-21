@@ -81,7 +81,7 @@ function colsDefsToMd( cols )
     {
       temp += `* *${ keyVal[ 0 ] }*:\n`
 
-      keyVal[ 1 ].forEach(el=>
+      keyVal[ 1 ].forEach( el =>
       {
         temp += `\t* ${ el }\n`
       });
