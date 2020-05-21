@@ -1,19 +1,6 @@
 const _ = require("wTools");
 require("wFiles");
 
-function readYML(yml) {
-  const data = _.fileProvider.fileRead({
-    filePath: abs(yml),
-    encoding: "yaml",
-  });
-
-  return data;
-}
-
-function writeMd(md, data) {
-  _.fileProvider.fileWrite(abs(md), data);
-}
-
 const { "Modules to read/write/convert/compress images": rwTableObj } = readYML(
   '/../data/readWriteConvertCompressImg.yml'
 );
@@ -27,13 +14,50 @@ const {
 } = readYML('/../data/mainInfo.yml');
 const { Resources: resources } = readYML('/../data/resources.yml');
 
+
 // console.log(rwTable['Modules to read/write/convert/compress images']);
 // console.log(processTableObj);
 // console.log('---')
-console.log(columnsDef);
+// console.log(columnsDef);
 // console.log('---')
 // console.log(algo);
 // console.log('---');
+
+
+let final = `# Awesome image!\nCurated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n${tableObjToMd(
+  1,
+  rwTableObj
+)}\n${tableObjToMd(2, processTableObj)}`;
+
+// Writing to files
+writeMd('/../output/README.md', final);
+
+
+function abs() {
+  return _.path.s.join(__dirname, ...arguments);
+}
+
+function readYML(yml) {
+  const data = _.fileProvider.fileRead({
+    filePath: abs(yml),
+    encoding: "yaml",
+  });
+
+  return data;
+}
+
+function writeMd(md, data) {
+  _.fileProvider.fileWrite(abs(md), data);
+}
+
+function resourcesToMd(res) {
+  let temp = "### Resources:\n";
+  res.forEach((el, i) => {
+    temp += `${i + 1}. [${el.Name}](${el.Link})\n`;
+  });
+
+  return temp;
+}
 
 function tableObjToMd(table, obj) {
   let temp = "";
@@ -57,25 +81,4 @@ function tableObjToMd(table, obj) {
   }
 
   return temp;
-}
-
-function resourcesToMd(res) {
-  let temp = "### Resources:\n";
-  res.forEach((el, i) => {
-    temp += `${i + 1}. [${el.Name}](${el.Link})\n`;
-  });
-
-  return temp;
-}
-
-let final = `# Awesome image!\nCurated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n${tableObjToMd(
-  1,
-  rwTableObj
-)}\n${tableObjToMd(2, processTableObj)}`;
-
-// Writing to files
-writeMd('/../output/README.md', final);
-
-function abs() {
-  return _.path.s.join(__dirname, ...arguments);
 }
