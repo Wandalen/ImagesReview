@@ -67,9 +67,11 @@ function tableObjToMd(table, obj)
     {
       temp += `| [**${el.N.name}**](${el.N.link}) | ${el.R.join(", ")} | ${el.R.join(", ")} | ${el.Code} | ${el.Modular} | ${el.I} | ${el.PL} | ${el["B.s"]} | ${el["N.s"]} | ${el.Deps} |\n`;
     });
+    
   } else if (table === 2) 
   {
     temp ="### Modules to process images\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n";
+    
     obj.forEach((el) => 
     {
       temp += `| [**${el.N.name}**](${el.N.link}) | ${el.Code} | ${el.Modular} | ${el.I} | ${el.PL} | ${el["B.s"]} | ${el["N.s"]} | ${el.Deps} |\n`;
