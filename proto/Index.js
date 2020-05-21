@@ -1,11 +1,15 @@
 // testing
 const fs = require("fs");
-const wTools = require("wTools");
+const _ = require("wTools");
 require("wFiles");
 
+function abs() {
+  return _.path.s.join(__dirname, ...arguments);
+}
+
 function readYML(yml) {
-  const data = wTools.fileProvider.fileRead({
-    filePath: yml,
+  const data = _.fileProvider.fileRead({
+    filePath: abs(yml),
     encoding: "yaml",
   });
 
@@ -13,28 +17,24 @@ function readYML(yml) {
 }
 
 function writeMd(md, data) {
-  wTools.fileProvider.fileWrite({
-    filePath: md,
-    data: JSON.stringify(data),
-  });
+  _.fileProvider.fileWrite(abs(md), data);
 }
 
 const { "Modules to read/write/convert/compress images": rwTableObj } = readYML(
-  `${__dirname}/../data/readWriteConvertCompressImg.yml`
+  '/../data/readWriteConvertCompressImg.yml'
 );
 const { "Modules to process images": processTableObj } = readYML(
-  `${__dirname}/../data/processImg.yml`
+  '/../data/processImg.yml'
 );
 const {
   "Awesome image!": header,
   "Columns' definitions": columnsDef,
   "Sorting Algorithm (descending order significance)": algo,
-} = readYML(`${__dirname}/../data/mainInfo.yml`);
-const { Resources: resources } = readYML(`${__dirname}/../data/resources.yml`);
+} = readYML('/../data/mainInfo.yml');
+const { Resources: resources } = readYML('/../data/resources.yml');
 
 // console.log(rwTable['Modules to read/write/convert/compress images']);
 // console.log(processTableObj);
-console.log(resources);
 // console.log('---')
 // console.log(columnsDef);
 // console.log('---')
@@ -80,42 +80,5 @@ let final = `# Awesome image!\nCurated overview of awesome Javascript projects t
 )}\n${tableObjToMd(2, processTableObj)}`;
 
 // Writing to files
-writeMd(`${__dirname}/../output/READMEwTools.md`, tableObjToMd(1, rwTableObj));
+writeMd('/../output/README.md', final);
 
-fs.writeFileSync(
-  `${__dirname}/../output/READMEfs1.md`,
-  tableObjToMd(1, rwTableObj)
-);
-
-fs.writeFileSync(
-  `${__dirname}/../output/READMEfs2.md`,
-  tableObjToMd(2, processTableObj)
-);
-
-fs.writeFileSync(
-  `${__dirname}/../output/READMEfsResources.md`,
-  resourcesToMd(resources)
-);
-
-fs.writeFileSync(`${__dirname}/../output/README.md`, final);
-
-// function jsToMd(data) {
-//   // let table1md = '';
-//   // let table2md = '';
-//   // let rulesmd = '';
-//   // let algomd = '';
-//   // let resourcesmd = '';
-
-//   let output = `
-//   # Awesome image!\n
-//   Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n`
-//   const {
-//     "Modules to read/write/convert/compress images": rwcc,
-//     "Modules to process images": p,
-//     "Columns' definitions": rules,
-//     "Sorting Algorithm (descending order significance)": algo,
-//     "Resources": resources,
-//   } = data;
-
-//   output += tableObjToMd(rwcc);
-// }
