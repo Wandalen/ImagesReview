@@ -35,8 +35,24 @@ function sortTable(a, b)
     } else 
     // 3. Sort the amount of dependents
     {
-      let aDep = +a.Deps;
-      let bDep = +b.Deps;
+      let aDep;
+      let bDep;
+      if (a.Deps === '-') 
+      {
+        aDep = -1;
+      } 
+      if (b.Deps === '-')
+      {
+        bDep = -1;
+      } 
+      if(a.Deps !== '-') 
+      {
+        aDep = +a.Deps;
+      }
+      if (b.Deps !== '-')
+      {
+        bDep = +b.Deps;
+      }
 
       if (aDep > bDep)
       {
@@ -52,5 +68,9 @@ function sortTable(a, b)
   }
 }
 
+let copyRW = JSON.parse(JSON.stringify(rwTableObj));
+copyRW = copyRW.sort(sortTable).reverse();
 
-console.log(rwTableObj);
+// console.log(rwTableObj);
+// console.log('-------------------')
+console.log(copyRW);
