@@ -67,7 +67,7 @@ function tableObjToMd(table, obj)
     {
       temp += `| [**${el.N.name}**](${el.N.link}) | ${el.R.join(", ")} | ${el.R.join(", ")} | ${el.Code} | ${el.Modular} | ${el.I} | ${el.PL} | ${el["B.s"]} | ${el["N.s"]} | ${el.Deps} |\n`;
     });
-    
+
   } else if (table === 2) 
   {
     temp ="### Modules to process images\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n";
@@ -85,16 +85,20 @@ function colsDefsToMd(cols)
   {
     let temp = "**Columns' definitions**\n"
 
-    cols.forEach(el=>{
+    cols.forEach(el=>
+    {
       let [key, value] = Object.entries(el);
       
-      if (Array.isArray(el)){
+      if (Array.isArray(el))
+      {
         temp += `* *${key}*:\n`
 
-        el.forEach(el=>{
+        el.forEach(el=>
+        {
           temp+= `\t* ${el}\n`
-        })
-      } else {
+        });
+      } else 
+      {
         temp += `* *${key}* - ${value}\n`
       } 
     });
@@ -105,7 +109,9 @@ function colsDefsToMd(cols)
 function resourcesToMd(res) 
   {
     let temp = "### Resources:\n";
-    res.forEach((el, i) => {
+    
+    res.forEach((el, i) => 
+    {
       temp += `${i + 1}. [${el.Name}](${el.Link})\n`;
     });
 
