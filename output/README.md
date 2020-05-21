@@ -38,3 +38,15 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**web-dsp**](https://github.com/shamadee/web-dsp) | open | yes | Native-binding | C++ | + | - | 0 |
 | [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2) | open | Integrated GUI | Pure | JavaScript | + | - | - |
 | [**img2css**](https://github.com/javierbyte/img2css) | open | Integrated GUI | Pure | JavaScript | + | - | - |
+
+**Columns' definitions**
+* *N,Name of the module* - undefined
+* *R,Reading formats* - undefined
+* *W,Writing formats* - undefined
+* *Code,Is the module's source code open or closed* - undefined
+* *Modular,Is it modular or integrated GUI* - undefined
+* *I,Pure - Written completely in JavaScript,Native Binding -  wrapper library that bridges two programming languages. It provides glue code specifically made to allow JavaScript to use a foreign code written in C, C++, etc.,CUI adapter - wrapper library that transformes JS instructions into shell commands of another library or framework (typically written in a lower level code)* - undefined
+* *PL,Programming language in which module is written* - undefined
+* *B.s,Does the module support the browser* - undefined
+* *N.s,Does the module support Node.js* - undefined
+* *Deps,The amount of dependents of this module* - undefined

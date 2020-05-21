@@ -28,7 +28,7 @@ console.log(columnsDef);
 let final = `# Awesome image!\nCurated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n${tableObjToMd(
   1,
   rwTableObj
-)}\n${tableObjToMd(2, processTableObj)}`;
+)}\n${tableObjToMd(2, processTableObj)}\n${colsDefsToMd(columnsDef)}`;
 
 // Writing to files
 writeMd("../output/README.md", final);
@@ -36,9 +36,6 @@ writeMd("../output/README.md", final);
 function abs() {
   return _.path.s.join(__dirname, ...arguments);
 }
-
-// console.log(abs("../data/readWriteConvertCompressImg.yml"));
-// console.log(abs("../output/README.md"))
 
 function readYML(yml) {
   const data = _.fileProvider.fileRead({
@@ -51,15 +48,6 @@ function readYML(yml) {
 
 function writeMd(md, data) {
   _.fileProvider.fileWrite(abs(md), data);
-}
-
-function resourcesToMd(res) {
-  let temp = "### Resources:\n";
-  res.forEach((el, i) => {
-    temp += `${i + 1}. [${el.Name}](${el.Link})\n`;
-  });
-
-  return temp;
 }
 
 function tableObjToMd(table, obj) {
@@ -82,6 +70,36 @@ function tableObjToMd(table, obj) {
       temp += `| [**${el.N.name}**](${el.N.link}) | ${el.Code} | ${el.Modular} | ${el.I} | ${el.PL} | ${el["B.s"]} | ${el["N.s"]} | ${el.Deps} |\n`;
     });
   }
+
+  return temp;
+}
+
+function colsDefsToMd(cols)
+  {
+    let temp = "**Columns' definitions**\n"
+
+    cols.forEach(el=>{
+      let [key, value] = Object.entries(el);
+      
+      if (Array.isArray(el)){
+        temp += `* *${key}*:\n`
+
+        el.forEach(el=>{
+          temp+= `\t* ${el}\n`
+        })
+      } else {
+        temp += `* *${key}* - ${value}\n`
+      } 
+    });
+
+    return temp;
+  }
+
+function resourcesToMd(res) {
+  let temp = "### Resources:\n";
+  res.forEach((el, i) => {
+    temp += `${i + 1}. [${el.Name}](${el.Link})\n`;
+  });
 
   return temp;
 }
