@@ -43,6 +43,8 @@ function readYML(yml)
   return data;
 }
 
+exports.readYML = readYML;
+
 function writeMd(md, data) 
 {
   _.fileProvider.fileWrite(abs(md), data);
