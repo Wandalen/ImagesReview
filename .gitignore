@@ -1,2 +1,10 @@
+
+./_
+.*
+-*
+*.log
+*.db
+*.tmp
+*.out
 node_modules
 package-lock.json

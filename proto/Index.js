@@ -21,7 +21,7 @@ const { Resources: resources } = readYML('/../data/resources.yml');
 // console.log(columnsDef);
 // console.log('---')
 // console.log(algo);
-// console.log('---');
+console.log('---');
 
 
 let final = `# Awesome image!\nCurated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.\n${tableObjToMd(
