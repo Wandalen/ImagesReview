@@ -17,29 +17,29 @@ function sortTable( a, b )
   {
     return 1;
   }
-else if( a.Code === 'closed' && b.Code === 'open' )
-{
-  return -1;
-}
-else
-// 2. Sort by the amount of formats to read/write
-{
-  let aTotal = a.R.length + a.W.length;
-  let bTotal = b.R.length + b.W.length;
+  else if( a.Code === 'closed' && b.Code === 'open' )
+  {
+    return -1;
+  }
+  else
+  // 2. Sort by the amount of formats to read/write
+  {
+    let aTotal = a.R.length + a.W.length;
+    let bTotal = b.R.length + b.W.length;
 
     if( aTotal > bTotal )
     {
       return 1;
     }
-else if( aTotal < bTotal )
-{
-  return -1
-}
-else
-// 3. Sort the amount of dependents
-{
-  let aDep,
-    bDep;
+    else if( aTotal < bTotal )
+    {
+      return -1
+    }
+    else
+    // 3. Sort the amount of dependents
+    {
+      let aDep, bDep;
+
       if( a.Deps === '-' )
       {
         aDep = -1;
@@ -61,14 +61,14 @@ else
       {
         return 1;
       }
-else if( aDep < bDep )
-{
-  return -1;
-}
-else
-{
-  return 0;
-}
-}
-}
+      else if( aDep < bDep )
+      {
+        return -1;
+      }
+      else
+      {
+        return 0;
+      }
+    }
+  }
 }
