@@ -59,15 +59,15 @@ function tableObjToMd( table, obj )
     } );
 
   }
-else if( table === 2 )
-{
-  temp ='### Modules to process images\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n';
-
-  obj.forEach( ( el ) =>
+  else if( table === 2 )
   {
-    temp += `| [**${ el.N.name }**](${ el.N.link }) | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } |\n`;
-  } );
-}
+    temp ='### Modules to process images\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n';
+
+    obj.forEach( ( el ) =>
+    {
+      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } |\n`;
+    } );
+  }
 
   return temp;
 }
@@ -89,7 +89,7 @@ function colsDefsToMd( cols )
         temp += `\t* ${ el }\n`
       } );
     }
-else
+    else
     {
       temp += `* *${ keyVal[ 0 ] }* - ${ keyVal[ 1 ] }\n`
     }
