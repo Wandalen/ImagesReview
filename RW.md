@@ -1,6 +1,8 @@
+### Format support comparison
+
 | **N** | **jpg** | **png** | **webp** | **tiff** | **gif** | **svg** | **bmp**|
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | [RW]() | [RW]() | [RW]() | [RW]() | [R]() | [R]() | - |
+| [**sharp**](https://github.com/lovell/sharp) | [RW](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/input.js#L348) | [RW]() | [RW]() | [RW]() | [R]() | [R]() | - |
 | [**imagemin**](https://github.com/imagemin/imagemin) | [RW]() | [RW]() | [RW]() | [RW]() | [R]() | [R]() | - |
 | [**lwip**](https://github.com/EyalAr/lwip) | [RW]() | [RW]() | [RW]() | [RW]() | [R]() | [R]() | - |
 | [**image-js**](https://github.com/image-js/image-js) | [RW]() | [RW]() | [RW]() | [RW]() | [R]() | [R]() | - |
