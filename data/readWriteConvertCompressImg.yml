@@ -62,6 +62,24 @@ Modules to read/write/convert/compress images:
     N.s: +
     Deps: 79
   - 'N':
+      name: image-js
+      link: 'https://github.com/image-js/image-js'
+    R:
+      - jpg
+      - png
+      - tiff
+    W:
+      - jpg
+      - png
+      - tiff
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 19
+  - 'N':
       name: imagetracerjs
       link: 'https://github.com/jankovicsandras/imagetracerjs'
     R:
@@ -113,24 +131,6 @@ Modules to read/write/convert/compress images:
     B.s: +
     N.s: '-'
     Deps: 21
-  - 'N':
-      name: image-js
-      link: 'https://github.com/image-js/image-js'
-    R:
-      - jpg
-      - png
-      - tiff
-    W:
-      - jpg
-      - png
-      - tiff
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 19
   - 'N':
       name: CamanJS
       link: 'https://github.com/meltingice/CamanJS/'
