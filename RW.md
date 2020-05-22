@@ -2,7 +2,7 @@
 
 | **N** | **jpg** | **png** | **webp** | **tiff** | **gif** | **svg** | **bmp**|
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | [R](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/input.js#L348) [W](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/output.js#L793) | [RW]() | [RW]() | [RW]() | [R]() | [R]() | - |
+| [**sharp**](https://github.com/lovell/sharp) | [R](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/input.js#L87) [W](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/output.js#L793) | [R](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/input.js#L87) [W]()| [R](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/input.js#L87) [W]() | [R](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/input.js#L101) [W]() | [R](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/input.js#L101) | [R](https://github.com/lovell/sharp/blob/507eef3053645cbfab72df70a6e3285afc1d3699/lib/input.js#L87) | - |
 | [**imagemin**](https://github.com/imagemin/imagemin) | [R]() [W]() | [RW]() | [RW]() | [RW]() | [R]() | [R]() | - |
 | [**lwip**](https://github.com/EyalAr/lwip) | [R]() [W]() | [R]() | [RW]() | [RW]() | [R]() | [R]() | - |
 | [**image-js**](https://github.com/image-js/image-js) | [R]() [W]() | [RW]() | [RW]() | [RW]() | [R]() | [R]() | - |
