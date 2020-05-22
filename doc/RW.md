@@ -5,7 +5,7 @@
 | [**sharp**](https://github.com/lovell/sharp) | [R]() [W]() | [R]() [W]() | [R]() [W]() | [R]() [W]() | [R]() | [R]() | - |
 | [**imagemin**](https://github.com/imagemin/imagemin) | [R]() [W]() | [R]() [W]() | [R]() [W]() | - | [R]() [W]() | [R]() [W]() | - |
 | [**lwip**](https://github.com/EyalAr/lwip) | [R]() [W]() | [R]() [W]() | - | - | [R]() [W]() | - | - |
-| [**image-js**](https://github.com/image-js/image-js) | [R](https://github.com/image-js/fast-jpeg/blob/10e99ebefc6601819ae9e0b6b2fa746a1a4d6458/src/decode.js#L6) [W]() | [R]() [W]() | - | [R](https://github.com/image-js/tiff/blob/286d6edd1abdd9200ed982aa69feee1ed5ea62b4/src/tiffDecoder.ts#L54) [W]() | - | - | - |
+| [**image-js**](https://github.com/image-js/image-js) | [R](https://github.com/eugeneware/jpeg-js/blob/a2f7080781a5539c65c2b42927cae28f1f051be5/lib/decoder.js#L1067) [W](https://github.com/eugeneware/jpeg-js/blob/a2f7080781a5539c65c2b42927cae28f1f051be5/lib/encoder.js#L42) | [R](https://github.com/image-js/fast-png/blob/25fcf4e7de99d719df6dcc1bcef4f5ce51483e53/src/PNGDecoder.ts#L27) [W](https://github.com/image-js/fast-png/blob/25fcf4e7de99d719df6dcc1bcef4f5ce51483e53/src/PNGEncoder.ts#L24) | - | [R](https://github.com/image-js/tiff/blob/286d6edd1abdd9200ed982aa69feee1ed5ea62b4/src/tiffDecoder.ts#L54) [W]() | - | - | - |
 | [**imagetracerjs**]() | [R]() | [R]() | [R]() | - | [R]() | [W]() | [R]() |
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | [R]() [W]() | [R]() [W]() | - | - | [R]() [W]() | - | - |
 | [**Compressor**](https://github.com/fengyuanchen/compressorjs) | [R]() [W]() | [R]() [W]() | - | -| - | - | - |
