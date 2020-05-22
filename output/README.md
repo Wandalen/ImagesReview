@@ -1,5 +1,6 @@
 # Awesome image!
-Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.
+Curated overview of awesome Javascript projects to read / write / convert / compress /  process images of different formats.
+
 ### Modules to read/write/convert/compress images
 | **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
@@ -38,6 +39,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**web-dsp**](https://github.com/shamadee/web-dsp) | open | yes | Native-binding | C++ | + | - | 0 |
 | [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2) | open | Integrated GUI | Pure | JavaScript | + | - | - |
 | [**img2css**](https://github.com/javierbyte/img2css) | open | Integrated GUI | Pure | JavaScript | + | - | - |
+
 
 **Columns' definitions**
 * *N* - Name of the module
