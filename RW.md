@@ -8,8 +8,8 @@
 | [**image-js**](https://github.com/image-js/image-js) | [R]() [W]() | [R]() [W]() | - | [R]() [W]() | - | - | - |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | [R]() | [R]() | [R]() | - | [R]() | [W]() | [R]() |
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | [R]() [W]() | [R]() [W]() | - | - | [R]() [W]() | - | - |
-| [**Compressor**](https://github.com/fengyuanchen/compressorjs) | [[R]() [W]() | [R]() [W]() | - | -| - | - | - |
-| [**CamanJS**](https://github.com/meltingice/CamanJS/) | [[R]() [W]() | [R]() [W]() | - | -| - | - | - |
-| [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib#README) | [[R]() [W]() | [R]() [W]() | - | -| - | - | - |
-| [**imgsquash**](https://github.com/eashish93/imgsquash) | [[R]() [W]() | [R]() [W]() | - | -| - | - | - |
+| [**Compressor**](https://github.com/fengyuanchen/compressorjs) | [R]() [W]() | [R]() [W]() | - | -| - | - | - |
+| [**CamanJS**](https://github.com/meltingice/CamanJS/) | [R]() [W]() | [R]() [W]() | - | -| - | - | - |
+| [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib#README) | [R]() [W]() | [R]() [W]() | - | -| - | - | - |
+| [**imgsquash**](https://github.com/eashish93/imgsquash) | [R]() [W]() | [R]() [W]() | - | -| - | - | - |
 | [**gm**](https://github.com/aheckmann/gm) | [R]() [W]()  | [R]() [W]()  | [R]() [W]()  | - | [R]() [W]() | - | - |
