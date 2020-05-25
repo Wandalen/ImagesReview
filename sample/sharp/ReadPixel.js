@@ -7,6 +7,5 @@ async function extractPix( path )
 
   console.log( 'rgb(' + data.toJSON().data.slice( 0, 3 ) + ')' );
 }
-
+// prints rgb(255,0,0)
 extractPix( `${__dirname}/../../data/Input.png` );
-
