@@ -8,4 +8,5 @@ async function extractPix( path )
   console.log( 'rgb(' + data.toJSON().data.slice( 0, 3 ) + ')' );
 }
 
-extractPix( `${__dirname}/input.jpg` );
+// extractPix( `${__dirname}/../../../data/In.png` );
+extractPix( `${__dirname}/Inpu.png` );
