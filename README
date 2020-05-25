@@ -22,7 +22,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | [**Jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp)| open | yes | Pure | JavaScript | + | + | 1075|
-| [**imagemin**](https://github.com/imagemin/imagemin) |jpg, png, webp, gif, svg  | jpg, png, webp, gif, svg  | open | yes | Pure | JavaScript | + | + | 682 |
+| [**imagemin**](https://github.com/imagemin/imagemin) | open | yes | Pure | JavaScript | + | + | 682 |
 | [**Resemble.js**](https://github.com/rsmbl/Resemble.js) | open | yes | Pure | JavaScript | + | + | 50 | 
 | [**Pica**](https://github.com/nodeca/pica) | open | yes | Pure | JavaScript | + | + | 47 | 
 | [**image-js**](https://github.com/image-js/image-js) | open | yes | Pure | JavaScript | + | + | 19 | 
