@@ -9,7 +9,7 @@
 | [**imagetracerjs**]() | R | R | R | - | R | W | R |
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | R W | R W | - | - | R W | - | - |
 | [**Compressor**](https://github.com/fengyuanchen/compressorjs) | R W | R W | - | -| - | - | - |
-| [**CamanJS**](https://github.com/meltingice/CamanJS/) | R W | R W | - | - | - | - | - |
+| [**CamanJS**](https://github.com/meltingice/CamanJS/) | [R](https://github.com/Automattic/node-canvas/blob/9cd9aa37fd8755f40dbbbc6ce1a0fb06ceefb87b/src/Image.cc#L1065) W | [R](https://github.com/Automattic/node-canvas/blob/9cd9aa37fd8755f40dbbbc6ce1a0fb06ceefb87b/src/Canvas.cc#L246) W | - | - | - | - | - |
 | [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib) | R W | R W | - | - | - | - | - |
 | [**imgsquash**](https://github.com/eashish93/imgsquash) | R W | R W | - | - | - | - | - |
 | [**gm**](https://github.com/aheckmann/gm) | R W  | R W  | R W  | - | R W | - | - |
