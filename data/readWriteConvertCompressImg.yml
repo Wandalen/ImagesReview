@@ -22,28 +22,6 @@ Modules to read/write/convert/compress images:
     N.s: +
     Deps: 1425
   - 'N':
-      name: imagemin
-      link: 'https://github.com/imagemin/imagemin'
-    R:
-      - jpg
-      - png
-      - webp
-      - gif
-      - svg
-    W:
-      - jpg
-      - png
-      - webp
-      - gif
-      - svg
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 682
-  - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'
     R:
@@ -61,6 +39,24 @@ Modules to read/write/convert/compress images:
     B.s: '-'
     N.s: +
     Deps: 79
+  - 'N':
+      name: image-js
+      link: 'https://github.com/image-js/image-js'
+    R:
+      - jpg
+      - png
+      - tiff
+    W:
+      - jpg
+      - png
+      - tiff
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 19
   - 'N':
       name: imagetracerjs
       link: 'https://github.com/jankovicsandras/imagetracerjs'
@@ -113,24 +109,6 @@ Modules to read/write/convert/compress images:
     B.s: +
     N.s: '-'
     Deps: 21
-  - 'N':
-      name: image-js
-      link: 'https://github.com/image-js/image-js'
-    R:
-      - jpg
-      - png
-      - tiff
-    W:
-      - jpg
-      - png
-      - tiff
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 19
   - 'N':
       name: CamanJS
       link: 'https://github.com/meltingice/CamanJS/'

@@ -13,13 +13,18 @@ const
 
 const { Resources : resources } = readYML( '../data/resources.yml' );
 
-let header1 = '# Awesome image!\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
+let header1 = '# Awesome image!\n\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
 let header2 = ' process images of different formats.\n'
 let final = `${header1} ${header2}\n${tableObjToMd( 1, rwTableObj )}\n${tableObjToMd( 2, processTableObj )}\n
 ${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )}`;
 
 // Writing to file
 writeMd( '../output/README.md', final );
+// writeMd( '../README', final );
+
+_.fileProvider.fileWrite( abs( '../README' ), _.fileProvider.fileRead( {
+  filePath : abs( '../README.md' ),
+} ) );
 
 function abs()
 {
@@ -51,7 +56,7 @@ function tableObjToMd( table, obj )
 
   if( table === 1 )
   {
-    temp = '### Modules to read/write/convert/compress images\n| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n';
+    temp = '### Modules to read/write/convert/compress images\n\n| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n';
 
     obj.forEach( ( el ) =>
     {
@@ -61,7 +66,7 @@ function tableObjToMd( table, obj )
   }
   else if( table === 2 )
   {
-    temp ='### Modules to process images\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n';
+    temp ='### Modules to process images\n\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n';
 
     obj.forEach( ( el ) =>
     {
@@ -111,7 +116,7 @@ function algoToMd( algo )
 
 function resourcesToMd( res )
 {
-  let temp = '### Resources:\n';
+  let temp = '### Resources:\n\n';
 
   res.forEach( ( el, i ) =>
   {

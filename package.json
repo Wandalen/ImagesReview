@@ -13,6 +13,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "sharp": "^0.25.3",
     "wFiles": "alpha",
     "wTools": "alpha"
   },
