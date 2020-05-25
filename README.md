@@ -7,7 +7,6 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | 
 | [**sharp**](https://github.com/lovell/sharp)| jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1425 | 
-| [**imagemin**](https://github.com/imagemin/imagemin) |jpg, png, webp, gif, svg  | jpg, png, webp, gif, svg  | open | yes | Pure | JavaScript | + | + | 682 |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | jpg, png, gif | open | yes | Native binding | C | - | + | 79 |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png | jpg, png | open | yes | Pure | JavaScript | + | + |19 |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpg, png, webp, gif, bmp | svg | open | yes | Pure | JavaScript | + | + | 5 |
@@ -23,6 +22,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | [**Jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp)| open | yes | Pure | JavaScript | + | + | 1075|
+| [**imagemin**](https://github.com/imagemin/imagemin) |jpg, png, webp, gif, svg  | jpg, png, webp, gif, svg  | open | yes | Pure | JavaScript | + | + | 682 |
 | [**Resemble.js**](https://github.com/rsmbl/Resemble.js) | open | yes | Pure | JavaScript | + | + | 50 | 
 | [**Pica**](https://github.com/nodeca/pica) | open | yes | Pure | JavaScript | + | + | 47 | 
 | [**image-js**](https://github.com/image-js/image-js) | open | yes | Pure | JavaScript | + | + | 19 | 

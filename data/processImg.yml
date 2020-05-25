@@ -10,6 +10,16 @@
     N.s: "+"
     Deps: 1075
   - N:
+      name: imagemin
+      link: 'https://github.com/imagemin/imagemin'
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 682
+  - N:
       name: Resemble.js
       link: https://github.com/rsmbl/Resemble.js
     Code: open

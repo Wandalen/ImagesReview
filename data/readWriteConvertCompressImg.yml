@@ -22,28 +22,6 @@ Modules to read/write/convert/compress images:
     N.s: +
     Deps: 1425
   - 'N':
-      name: imagemin
-      link: 'https://github.com/imagemin/imagemin'
-    R:
-      - jpg
-      - png
-      - webp
-      - gif
-      - svg
-    W:
-      - jpg
-      - png
-      - webp
-      - gif
-      - svg
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 682
-  - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'
     R:
