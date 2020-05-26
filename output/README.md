@@ -7,6 +7,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1425 |
+| [**Jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1075 |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | jpg, png, gif | open | yes | Native binding | C | - | + | 79 |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png, tiff | open | yes | Pure | JavaScript | + | + | 19 |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | jpg, png, webp, gif, bmp | jpg, png, webp, gif, bmp | open | yes | Pure | JavaScript | + | + | 5 |

@@ -15,7 +15,8 @@
   "dependencies": {
     "sharp": "^0.25.3",
     "wFiles": "alpha",
-    "wTools": "alpha"
+    "wTools": "alpha",
+    "wnpmtools": "^0.3.84"
   },
   "keywords": [
     "images",

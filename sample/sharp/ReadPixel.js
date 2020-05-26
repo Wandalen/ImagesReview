@@ -9,10 +9,21 @@ async function extractPix( path )
 }
 
 extractPix( `${__dirname}/../../data/images/Image.png` );
-extractPix( `${__dirname}/../../data/images/Image.jpg` );
-extractPix( `${__dirname}/../../data/images/Image.tif` );
-extractPix( `${__dirname}/../../data/images/Image.webp` );
-extractPix( `${__dirname}/../../data/images/Image.gif` );
-extractPix( `${__dirname}/../../data/images/Image.svg` );
-
 // OUTPUT: rgb(255,0,0)
+
+extractPix( `${__dirname}/../../data/images/Image.jpg` );
+// OUTPUT: rgb(77,77,79)
+
+extractPix( `${__dirname}/../../data/images/Image.tif` );
+// OUTPUT: rgb(255,0,0)
+
+extractPix( `${__dirname}/../../data/images/Image.webp` );
+// OUTPUT: rgb(83,83,83)
+
+extractPix( `${__dirname}/../../data/images/Image.gif` );
+// OUTPUT: rgb(51,85,51)
+
+extractPix( `${__dirname}/../../data/images/Image.svg` );
+// OUTPUT: rgb(0,0,0)
+
+
