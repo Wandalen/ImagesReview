@@ -1,4 +1,4 @@
-const sharp = require( 'sharp' );
+const { Image } = require( 'image-js' );
 
 const { extractPix } = require( './ReadPixel' );
 

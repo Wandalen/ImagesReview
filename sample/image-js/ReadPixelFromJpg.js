@@ -1,4 +1,4 @@
-const Jimp = require( 'jimp' );
+const { Image } = require( 'image-js' );
 
 const { extractPix } = require( './ReadPixel' );
 
