@@ -13,6 +13,8 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "caman": "^4.1.2",
+    "compressorjs": "^1.0.6",
     "image-js": "^0.21.9",
     "jimp": "^0.12.1",
     "sharp": "^0.25.3",
