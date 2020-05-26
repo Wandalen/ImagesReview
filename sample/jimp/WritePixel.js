@@ -1,6 +1,5 @@
 const Jimp = require( 'jimp' );
 
-
 function wPj()
 {
   let buf = Buffer.from( {
