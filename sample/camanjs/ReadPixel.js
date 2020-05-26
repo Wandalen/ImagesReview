@@ -1,6 +1,4 @@
-let Caman = require( 'caman' ).Caman;
-
-// console.log( Caman )
+const Caman = require( 'caman' ).Caman;
 
 function extractPix( path )
 {
@@ -10,4 +8,4 @@ function extractPix( path )
   } )
 }
 
-// extractPix( `${__dirname}/../../data/images/Image.jpg` );
+extractPix( `${__dirname}/../../data/images/Image.jpg` );
