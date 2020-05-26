@@ -21,6 +21,28 @@ Modules to read/write/convert/compress images:
     B.s: '-'
     N.s: +
     Deps: 1425
+  - N:
+      name: Jimp
+      link: https://github.com/oliver-moran/jimp/tree/master/packages/jimp
+    R:
+      - jpg
+      - png
+      - gif
+      - tiff
+      - bmp
+    W:
+      - jpg
+      - png
+      - gif
+      - tiff
+      - bmp
+    Code: open
+    Modular: yes
+    I: Pure
+    PL: JavaScript
+    B.s: "+"
+    N.s: "+"
+    Deps: 1075
   - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'

@@ -8,6 +8,4 @@ async function extractPix( path )
   console.log( 'rgb(' + data.toJSON().data.slice( 0, 3 ) + ')' );
 }
 
-extractPix( `${__dirname}/../../data/Image.png` );
-
-// OUTPUT: rgb(255,0,0)
+module.exports.extractPix = extractPix;

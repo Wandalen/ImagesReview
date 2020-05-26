@@ -13,9 +13,11 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "jimp": "^0.12.1",
     "sharp": "^0.25.3",
     "wFiles": "alpha",
-    "wTools": "alpha"
+    "wTools": "alpha",
+    "wnpmtools": "^0.3.84"
   },
   "keywords": [
     "images",
