@@ -19,7 +19,7 @@ let final = `${header1} ${header2}\n${tableObjToMd( 1, rwTableObj )}\n${tableObj
 ${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )}`;
 
 // Writing to file
-writeMd( '../output/README.md', final );
+// writeMd( '../output/README.md', final );
 // writeMd( '../README', final );
 
 _.fileProvider.fileWrite( abs( '../README' ), _.fileProvider.fileRead( {
