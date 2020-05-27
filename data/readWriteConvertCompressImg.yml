@@ -20,10 +20,10 @@ Modules to read/write/convert/compress images:
     PL: JavaScript
     B.s: '-'
     N.s: +
-    Deps: 1425
-  - N:
-      name: Jimp
-      link: https://github.com/oliver-moran/jimp/tree/master/packages/jimp
+    Deps: 1431
+  - 'N':
+      name: jimp
+      link: 'https://github.com/oliver-moran/jimp/tree/master/packages/jimp'
     R:
       - jpg
       - png
@@ -37,12 +37,12 @@ Modules to read/write/convert/compress images:
       - tiff
       - bmp
     Code: open
-    Modular: yes
+    Modular: 'yes'
     I: Pure
     PL: JavaScript
-    B.s: "+"
-    N.s: "+"
-    Deps: 1075
+    B.s: +
+    N.s: +
+    Deps: 1083
   - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'
@@ -78,7 +78,7 @@ Modules to read/write/convert/compress images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 19
+    Deps: 21
   - 'N':
       name: imagetracerjs
       link: 'https://github.com/jankovicsandras/imagetracerjs'
@@ -116,7 +116,7 @@ Modules to read/write/convert/compress images:
     N.s: +
     Deps: 2
   - 'N':
-      name: Compressor
+      name: compressor
       link: 'https://github.com/fengyuanchen/compressorjs'
     R:
       - jpg
@@ -130,9 +130,9 @@ Modules to read/write/convert/compress images:
     PL: JavaScript
     B.s: +
     N.s: '-'
-    Deps: 21
+    Deps: 0
   - 'N':
-      name: CamanJS
+      name: caman
       link: 'https://github.com/meltingice/CamanJS/'
     R:
       - jpg
@@ -148,7 +148,7 @@ Modules to read/write/convert/compress images:
     N.s: +
     Deps: 5
   - 'N':
-      name: Capa-Image-Lib
+      name: capa_image_lib
       link: 'https://gitlab.com/Capa_Album/capa_image_lib'
     R:
       - jpg
@@ -200,4 +200,4 @@ Modules to read/write/convert/compress images:
     PL: C
     B.s: '-'
     N.s: +
-    Deps: 1122
+    Deps: 1121
