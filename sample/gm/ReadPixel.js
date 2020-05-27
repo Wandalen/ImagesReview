@@ -4,15 +4,12 @@ const gm = require( 'gm' ).subClass( { imageMagick : true } );
 
 function extractPix( path )
 {
-  console.log( gm( path ) );
-  // gm( `${__dirname}\\\Image.png` )
-  // .resize( 240, 240 )
-  // .noProfile()
-  // .write( `${__dirname}/resize.png`, function ( err )
-  // {
-  //   if( err ) console.log( err );
-  // } );
+  gm( path ).identify( ( err, data ) =>
+  {
+    if( err ) console.log( err );
+    console.log( data.Histogram[ '1' ][ 2 ] )
+  } );
+
 }
-extractPix( `${__dirname}/../../data/images/Image.png` )
-// extractPix( `${__dirname}\\\Image.png` )
+
 module.exports.extractPix = extractPix;
