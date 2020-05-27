@@ -1,4 +1,3 @@
-// const ImageTracer = require( 'imagetracerjs' );
 const fs = require( 'fs' );
 
 // const ImageTracer = require( __dirname + '/utils/imagetracer_v1.2.6.js' );
