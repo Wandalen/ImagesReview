@@ -4,12 +4,12 @@ require( 'wFiles' );
 const { readYML, abs } = require( './Index' );
 const sortOrder = [ 'Code', 'R', 'W', 'Deps' ];
 
-let { 'Modules to read/write/convert/compress images' : rwTableObj } = readYML( '../data/readWriteConvertCompressImg.yml' );
+let { 'Modules to read/write/convert/compress images' : rwTableObj } = readYML( '../data/ReadWriteConvertCompressImg.yml' );
 
 rwTableObj = rwTableObj.sort( sortTable ).reverse();
 rwTableObj = { 'Modules to read/write/convert/compress images' : rwTableObj };
 
-_.fileProvider.fileWrite( { filePath : abs( '../data/readWriteConvertCompressImg.yml' ), data : rwTableObj, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/ReadWriteConvertCompressImg.yml' ), data : rwTableObj, encoding : 'yaml' } );
 
 function sortTable( a, b )
 {

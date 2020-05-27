@@ -116,22 +116,6 @@ Modules to read/write/convert/compress images:
     N.s: +
     Deps: 2
   - 'N':
-      name: compressor
-      link: 'https://github.com/fengyuanchen/compressorjs'
-    R:
-      - jpg
-      - png
-    W:
-      - jpg
-      - png
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: '-'
-    Deps: 0
-  - 'N':
       name: caman
       link: 'https://github.com/meltingice/CamanJS/'
     R:
@@ -162,6 +146,22 @@ Modules to read/write/convert/compress images:
     PL: C++
     B.s: '-'
     N.s: +
+    Deps: 0
+  - 'N':
+      name: compressor
+      link: 'https://github.com/fengyuanchen/compressorjs'
+    R:
+      - jpg
+      - png
+    W:
+      - jpg
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: '-'
     Deps: 0
   - 'N':
       name: imgsquash

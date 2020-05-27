@@ -4,7 +4,7 @@ const wNpm = require( 'wnpmtools' );
 
 const { readYML, abs } = require( './Index' );
 
-let { 'Modules to read/write/convert/compress images' : tableYML } = readYML( '../data/readWriteConvertCompressImg.yml' );
+let { 'Modules to read/write/convert/compress images' : tableYML } = readYML( '../data/ReadWriteConvertCompressImg.yml' );
 let moduleNames = tableYML.filter( ( el ) => el.Deps !== '-' ).map( ( el ) => el.N.name );
 
 udpateDeps( moduleNames );

@@ -1,17 +1,17 @@
 const _ = require( 'wTools' );
 require( 'wFiles' );
 
-const { 'Modules to read/write/convert/compress images' : rwTableObj } = readYML( '../data/readWriteConvertCompressImg.yml' );
+const { 'Modules to read/write/convert/compress images' : rwTableObj } = readYML( '../data/ReadWriteConvertCompressImg.yml' );
 
-const { 'Modules to process images' : processTableObj } = readYML( '../data/processImg.yml' );
+const { 'Modules to process images' : processTableObj } = readYML( '../data/ProcessImg.yml' );
 
 const
   {
     'Columns\' definitions' : columnsDef,
     'Sorting Algorithm (descending order significance)' : algo,
-  } = readYML( '../data/mainInfo.yml' );
+  } = readYML( '../data/MainInfo.yml' );
 
-const { Resources : resources } = readYML( '../data/resources.yml' );
+const { Resources : resources } = readYML( '../data/Resources.yml' );
 
 let header1 = '# Awesome image!\n\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
 let header2 = ' process images of different formats.\n'
