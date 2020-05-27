@@ -1,21 +1,25 @@
-const ImageTracer = require( 'imagetracerjs' );
+// const ImageTracer = require( 'imagetracerjs' );
+const fs = require( 'fs' );
 
+const ImageTracer = require( __dirname + '/utils/imagetracer_v1.2.6.js' );
+const PNGReader = require( __dirname + '/utils/PNGReader.js' )
 function extractPix( path )
 {
-  ImageTracer.loadImage(
+  fs.readFile(
     path,
-    function( canvas )
+    function( err, bytes )
     {
+      if( err ) console.log( err );
+      const reader = new PNGReader( bytes );
 
-      // Getting ImageData from canvas with the helper function getImgdata().
-      let imgd = ImageTracer.getImgdata( canvas );
+      reader.parse( ( err, png ) =>
+      {
+        if( err ) console.log( err );
 
-      // Synchronous tracing to SVG string
-      let svgstr = ImageTracer.imagedataToSVG( imgd, { scale : 5 } );
-
-      // Appending SVG
-      ImageTracer.appendSVGString( svgstr, 'svgcontainer' );
-
+        console.log( 'rgb(' + png.pixels.toJSON().data.slice( 0, 3 ) + ')' )
+      } );
     }
   );
 }
+
+module.exports.extractPix = extractPix;
