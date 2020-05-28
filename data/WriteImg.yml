@@ -1,21 +1,5 @@
 Modules to write images:
   - 'N':
-      name: sharp
-      link: 'https://github.com/lovell/sharp'
-    Write:
-      - jpg
-      - png
-      - webp
-      - tiff
-    Code: open
-    Modular: 'yes'
-    I: Native binding
-    PL: JavaScript
-    B.s: '-'
-    N.s: +
-    Deps: 1431
-    Working: Working
-  - 'N':
       name: jimp
       link: 'https://github.com/oliver-moran/jimp/tree/master/packages/jimp'
     Write:
@@ -31,6 +15,22 @@ Modules to write images:
     B.s: +
     N.s: +
     Deps: 1083
+    Working: Working
+  - 'N':
+      name: sharp
+      link: 'https://github.com/lovell/sharp'
+    Write:
+      - jpg
+      - png
+      - webp
+      - tiff
+    Code: open
+    Modular: 'yes'
+    I: Native binding
+    PL: JavaScript
+    B.s: '-'
+    N.s: +
+    Deps: 1431
     Working: Working
   - 'N':
       name: image-js
