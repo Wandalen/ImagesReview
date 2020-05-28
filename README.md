@@ -16,6 +16,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**CamanJS**](https://github.com/meltingice/CamanJS/) | jpg, png | jpg, png | open | yes | Pure | JavaScript | + | + | 5 |
 | [**Capa-Image-Lib**](https://gitlab.com/Capa_Album/capa_image_lib#README) | jpg, png | jpg, png | open | yes | Native binding | С++ | - | + | 0 |
 | [**imgsquash**](https://github.com/eashish93/imgsquash) | jpg, png | jpg, png | open | Integrated GUI | Pure | JavaScript | + | + | - |
+| [**pngjs**](https://github.com/arian/pngjs) | png | - | open | yes | Pure | JavaScript | - | + | - |
 | [**gm**](https://github.com/aheckmann/gm) | gif, jpg, png, pdf, webp | gif, jpg, png, pdf, webp | closed | yes | CUI adapter | C | - | + | 1122 | 
 
 ### Modules to process images
