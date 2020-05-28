@@ -245,7 +245,81 @@ function sortTable( a, b )
   // Case when possible
   else if( sortOrder[ 0 ] === 'Code' )
   {
-    return 100;
+    if( sortByCode( a, b ) === 0 )
+    {
+      if( sortOrder[ 1 ] === 'RW' )
+      {
+        if( sortByRW( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='Working' )
+          {
+            const result = sortByWorking( a, b ) === 0 ? sortByDeps( a, b ) : sortByWorking( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='Deps' )
+          {
+            const result = sortByDeps( a, b ) === 0 ? sortByWorking( a, b ) : sortByDeps( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByRW( a, b );
+        }
+      }
+      else if( sortOrder[ 1 ] === 'Deps' )
+      {
+        if( sortByDeps( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='RW' )
+          {
+            const result = sortByRW( a, b ) === 0 ? sortByWorking( a, b ) : sortByRW( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='Working' )
+          {
+            const result = sortByWorking( a, b ) === 0 ? sortByRW( a, b ) : sortByWorking( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByDeps( a, b );
+        }
+      }
+      else if( sortOrder[ 1 ] === 'Working' )
+      {
+        if( sortByWorking( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='Deps' )
+          {
+            const result = sortByDeps( a, b ) === 0 ? sortByRW( a, b ) : sortByDeps( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='RW' )
+          {
+            const result = sortByRW( a, b ) === 0 ? sortByDeps( a, b ) : sortByRW( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByWorking( a, b );
+        }
+      }
+    }
+    else
+    {
+      return sortByCode( a, b );
+    }
+  }
+  else if( sortOrder[ 0 ] === 'RW' )
+  {
+
+  }
+  else if( sortOrder[ 0 ]=== 'Deps' )
+  {
+
   }
 
 }
