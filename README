@@ -2,20 +2,27 @@
 
 Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.
 
-### Modules to read/write/convert/compress images
+### Modules to read images
 
-| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |
+| **N** | **Read** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1431 |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1083 |
-| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | jpg, png, gif | open | yes | Native binding | C | - | + | 79 |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png, tiff | open | yes | Pure | JavaScript | + | + | 21 |
-| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | jpg, png | open | yes | Pure | JavaScript | + | + | 5 |
-| [**capa_image_lib**](https://gitlab.com/Capa_Album/capa_image_lib) | jpg, png | jpg, png | open | yes | Native binding | C++ | - | + | 0 |
-| [**compressor**](https://github.com/fengyuanchen/compressorjs) | jpg, png | jpg, png | open | yes | Pure | JavaScript | + | - | 0 |
-| [**imgsquash**](https://github.com/eashish93/imgsquash) | jpg, png | jpg, png | open | Integrated GUI | Pure | JavaScript | + | + | - |
-| [**pngjs**](https://github.com/arian/pngjs) | png | png | open | yes | Pure | JavaScript | - | + | - |
-| [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1121 |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1431 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1083 | Working |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | JavaScript | + | + | 21 | Working |
+| [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1121 | Working |
+| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
+| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | JavaScript | + | + | 5 | Broken |
+
+### Modules to write images
+
+| **N** | **Write** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
+| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1431 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1083 | Working |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | JavaScript | + | + | 21 | Working |
+| [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1121 | Working |
+| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
+| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | JavaScript | + | + | 5 | Broken |
 
 ### Format support comparison
 
@@ -58,7 +65,6 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**web-dsp**](https://github.com/shamadee/web-dsp) | open | yes | Native-binding | C++ | + | - | 0 |
 | [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2) | open | Integrated GUI | Pure | JavaScript | + | - | - |
 | [**img2css**](https://github.com/javierbyte/img2css) | open | Integrated GUI | Pure | JavaScript | + | - | - |
-
 
 **Columns' definitions**
 * *N* - Name of the module

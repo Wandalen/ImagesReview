@@ -2,6 +2,8 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 
 const { 'Modules to read/write/convert/compress images' : rwTableObj } = readYML( '../data/ReadWriteConvertCompressImg.yml' );
+const { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
+const { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
 
 const { 'Modules to process images' : processTableObj } = readYML( '../data/ProcessImg.yml' );
 
@@ -15,8 +17,11 @@ const { Resources : resources } = readYML( '../data/Resources.yml' );
 
 let header1 = '# Awesome image!\n\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
 let header2 = ' process images of different formats.\n'
-let final = `${header1}${header2}\n${tableObjToMd( 1, rwTableObj )}\n${readMd( `${__dirname}/../doc/RW.md` )}\n\n${tableObjToMd( 2, processTableObj )}\n
-${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )}`;
+// let final = `${header1}${header2}\n${tableObjToMd( 1, rwTableObj )}\n\n${tableObjToMd( 1, rTable )}${readMd( `${__dirname}/../doc/RW.md` )}\n\n${tableObjToMd( 2, processTableObj )}\n
+// ${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )}`;
+
+let final = `${header1}${header2}\n${tableObjToMd( 'read', rTable )}\n${tableObjToMd( 'write', wTable )}\n${readMd( `${__dirname}/../doc/RW.md` )}
+\n${tableObjToMd( 'process', processTableObj )}\n${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )}`;
 
 // Writing to file
 writeMd( '../README.md', final );
@@ -63,17 +68,30 @@ function tableObjToMd( table, obj )
 {
   let temp = '';
 
-  if( table === 1 )
+  if( table === 'read' || table === 'write' )
   {
-    temp = '### Modules to read/write/convert/compress images\n\n| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n';
+    // temp = '### Modules to read/write/convert/compress images\n\n| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n';
+
+    // obj.forEach( ( el ) =>
+    // {
+    //   temp += `| [**${ el.N.name }**](${ el.N.link }) | ${el.R.join( ', ' )} | ${el.R.join( ', ' )} | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } |\n`;
+    // } );
+    temp = `### Modules to ${table === 'read' ? 'read': 'write'} images\n\n| **N** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
 
     obj.forEach( ( el ) =>
     {
-      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${el.R.join( ', ' )} | ${el.R.join( ', ' )} | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } |\n`;
+      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${table === 'read' ? el.Read.join( ', ' ) : el.Write.join( ', ' ) } | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } | ${el.Working} |\n`;
     } );
+  }
+  else if( table === 'compress' )
+  {
 
   }
-  else if( table === 2 )
+  else if( table === 'convert' )
+  {
+
+  }
+  else if( table === 'process' )
   {
     temp ='### Modules to process images\n\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n';
 

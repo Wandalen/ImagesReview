@@ -63,6 +63,7 @@ Modules to write images:
     B.s: '-'
     N.s: +
     Deps: 1121
+    Working: Working
   - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'
