@@ -18,14 +18,14 @@ compTable.sort( sortTable ).reverse();
 console.log();
 
 rTable = { 'Modules to read images' : rTable };
-wTable = { 'Modules to read images' : wTable };
-convTable = { 'Modules to read images' : convTable };
-compTable = { 'Modules to read images' : compTable };
+wTable = { 'Modules to write images' : wTable };
+convTable = { 'Modules to convert images' : convTable };
+compTable = { 'Modules to compress images' : compTable };
 
-_.fileProvider.fileWrite( { filePath : abs( '../data/TESTReadImg.yml' ), data : rTable, encoding : 'yaml' } );
-_.fileProvider.fileWrite( { filePath : abs( '../data/TESTWriteImg.yml' ), data : wTable, encoding : 'yaml' } );
-_.fileProvider.fileWrite( { filePath : abs( '../data/TESTConvertImg.yml' ), data : convTable, encoding : 'yaml' } );
-_.fileProvider.fileWrite( { filePath : abs( '../data/TESTCompressReadImg.yml' ), data : compTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : rTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : wTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : convTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compTable, encoding : 'yaml' } );
 
 function sortByWorking( a, b )
 {
@@ -250,7 +250,6 @@ function sortTable( a, b )
       return sortByWorking( a, b );
     }
   }
-
   else if( sortOrder[ 0 ] === 'Code' )
   {
     if( sortByCode( a, b ) === 0 )
@@ -323,11 +322,11 @@ function sortTable( a, b )
   }
   else if( sortOrder[ 0 ] === 'RW' )
   {
-    if( sortByCode( a, b ) === 0 )
+    if( sortByRW( a, b ) === 0 )
     {
-      if( sortOrder[ 1 ] === 'RW' )
+      if( sortOrder[ 1 ] === 'Code' )
       {
-        if( sortByRW( a, b ) === 0 )
+        if( sortByCode( a, b ) === 0 )
         {
           if( sortOrder[ 2 ] ==='Working' )
           {
@@ -342,21 +341,21 @@ function sortTable( a, b )
         }
         else
         {
-          return sortByRW( a, b );
+          return sortByCode( a, b );
         }
       }
       else if( sortOrder[ 1 ] === 'Deps' )
       {
         if( sortByDeps( a, b ) === 0 )
         {
-          if( sortOrder[ 2 ] ==='RW' )
+          if( sortOrder[ 2 ] ==='Code' )
           {
-            const result = sortByRW( a, b ) === 0 ? sortByWorking( a, b ) : sortByRW( a, b )
+            const result = sortByCode( a, b ) === 0 ? sortByWorking( a, b ) : sortByCode( a, b )
             return result;
           }
           else if( sortOrder[ 2 ] ==='Working' )
           {
-            const result = sortByWorking( a, b ) === 0 ? sortByRW( a, b ) : sortByWorking( a, b )
+            const result = sortByWorking( a, b ) === 0 ? sortByCode( a, b ) : sortByWorking( a, b )
             return result;
           }
         }
@@ -371,12 +370,12 @@ function sortTable( a, b )
         {
           if( sortOrder[ 2 ] ==='Deps' )
           {
-            const result = sortByDeps( a, b ) === 0 ? sortByRW( a, b ) : sortByDeps( a, b )
+            const result = sortByDeps( a, b ) === 0 ? sortByCode( a, b ) : sortByDeps( a, b )
             return result;
           }
-          else if( sortOrder[ 2 ] ==='RW' )
+          else if( sortOrder[ 2 ] ==='Code' )
           {
-            const result = sortByRW( a, b ) === 0 ? sortByDeps( a, b ) : sortByRW( a, b )
+            const result = sortByCode( a, b ) === 0 ? sortByDeps( a, b ) : sortByCode( a, b )
             return result;
           }
         }
@@ -393,9 +392,74 @@ function sortTable( a, b )
   }
   else if( sortOrder[ 0 ]=== 'Deps' )
   {
-
+    if( sortByDeps( a, b ) === 0 )
+    {
+      if( sortOrder[ 1 ] === 'Code' )
+      {
+        if( sortByCode( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='Working' )
+          {
+            const result = sortByWorking( a, b ) === 0 ? sortByRW( a, b ) : sortByWorking( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='RW' )
+          {
+            const result = sortByRW( a, b ) === 0 ? sortByWorking( a, b ) : sortByRW( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByCode( a, b );
+        }
+      }
+      else if( sortOrder[ 1 ] === 'RW' )
+      {
+        if( sortByRW( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='Code' )
+          {
+            const result = sortByCode( a, b ) === 0 ? sortByWorking( a, b ) : sortByCode( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='Working' )
+          {
+            const result = sortByWorking( a, b ) === 0 ? sortByCode( a, b ) : sortByWorking( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByRW( a, b );
+        }
+      }
+      else if( sortOrder[ 1 ] === 'Working' )
+      {
+        if( sortByWorking( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='RW' )
+          {
+            const result = sortByRW( a, b ) === 0 ? sortByCode( a, b ) : sortByRW( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='Code' )
+          {
+            const result = sortByCode( a, b ) === 0 ? sortByRW( a, b ) : sortByCode( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByWorking( a, b );
+        }
+      }
+    }
+    else
+    {
+      return sortByDeps( a, b );
+    }
   }
-
 }
 
 // function sortTable( a, b, table )
