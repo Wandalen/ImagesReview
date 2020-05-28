@@ -1,6 +1,6 @@
 # Awesome image!
 
-Curated overview of awesome Javascript projects to read / write / convert / compress /  process images of different formats.
+Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.
 
 ### Modules to read/write/convert/compress images
 
