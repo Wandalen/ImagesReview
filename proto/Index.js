@@ -21,6 +21,7 @@ ${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )
 // Writing to file
 writeMd( '../README.md', final );
 
+// CREATE README file from README.md
 _.fileProvider.fileWrite( abs( '../README' ), _.fileProvider.fileRead( {
   filePath : abs( '../README.md' ),
 } ) );
