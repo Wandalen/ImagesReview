@@ -80,24 +80,6 @@ Modules to read/write/convert/compress images:
     N.s: +
     Deps: 21
   - 'N':
-      name: imagetracerjs
-      link: 'https://github.com/jankovicsandras/imagetracerjs'
-    R:
-      - jpg
-      - png
-      - webp
-      - gif
-      - bmp
-    W:
-      - svg
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 5
-  - 'N':
       name: image-conversion
       link: 'https://github.com/WangYuLue/image-conversion'
     R:
@@ -177,6 +159,20 @@ Modules to read/write/convert/compress images:
     I: Pure
     PL: JavaScript
     B.s: +
+    N.s: +
+    Deps: '-'
+  - 'N':
+      name: pngjs
+      link: 'https://github.com/arian/pngjs'
+    R:
+      - png
+    W:
+      '-'
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: "-"
     N.s: +
     Deps: '-'
   - 'N':
