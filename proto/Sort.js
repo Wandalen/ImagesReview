@@ -28,7 +28,7 @@ _.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : c
 _.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compTable, encoding : 'yaml' } );
 
 function sortByWorking( a, b )
-{
+{ // Sort by whether code is working out of the box
   if( a.Working === 'Working' && b.Working === 'Broken' )
   {
     return 1;
@@ -57,21 +57,6 @@ function sortByCode ( a, b )
   else
   {
     return 0;
-    // if( Array.isArray( funcArr ) )
-    // {
-    //   if( funcArr.length === 2 )
-    //   {
-    //     funcArr[ 0 ]( a, b, [ funcArr[ 1 ] ] );
-    //   }
-    //   else if( funcArr.length === 1 )
-    //   {
-    //     funcArr[ 0 ]( a, b )
-    //   }
-    // }
-    // else
-    // {
-    //   return 0;
-    // }
   }
 }
 
@@ -109,21 +94,6 @@ function sortByRW( a, b )
   else
   {
     return 0;
-    // if( Array.isArray( funcArr ) )
-    // {
-    //   if( funcArr.length === 2 )
-    //   {
-    //     funcArr[ 0 ]( a, b, [ funcArr[ 1 ] ] );
-    //   }
-    //   else if( funcArr.length === 1 )
-    //   {
-    //     funcArr[ 0 ]( a, b )
-    //   }
-    // }
-    // else
-    // {
-    //   return 0;
-    // }
   }
 }
 
@@ -160,21 +130,6 @@ function sortByDeps( a, b )
   else
   {
     return 0;
-    // if( Array.isArray( funcArr ) )
-    // {
-    //   if( funcArr.length === 2 )
-    //   {
-    //     funcArr[ 0 ]( a, b, [ funcArr[ 1 ] ] );
-    //   }
-    //   else if( funcArr.length === 1 )
-    //   {
-    //     funcArr[ 0 ]( a, b )
-    //   }
-    // }
-    // else
-    // {
-    //   return 0;
-    // }
   }
 }
 
@@ -461,108 +416,3 @@ function sortTable( a, b )
     }
   }
 }
-
-// function sortTable( a, b, table )
-// {
-//   if( table==='read' )
-//   {
-
-//   }
-
-
-// Sort Code -> R+W -> Deps
-// if( sortOrder[ 0 ] === 'Code' )
-// {
-//   if( sortOrder[ 1 ] === 'RW' )
-//   {
-//     sortByCode( a, b, [ sortByRW, sortByDeps ] );
-//   }
-//   else if( sortOrder[ 1 ] === 'Deps' )
-//   {
-//     sortByCode( a, b, [ sortByDeps, sortByRW ] );
-//   }
-// }
-// else if( sortOrder[ 0 ] === 'RW' )
-// {
-//   if( sortOrder[ 1 ] === 'Code' )
-//   {
-//     sortByRW( a, b, [ sortByCode, sortByDeps ] );
-//   }
-//   else if( sortOrder[ 1 ] === 'Deps' )
-//   {
-//     sortByRW( a, b, [ sortByDeps, sortByCode ] );
-//   }
-// }
-// else if( sortOrder[ 0 ] === 'Deps' )
-// {
-//   if( sortOrder[ 1 ] === 'Code' )
-//   {
-//     sortByDeps( a, b, [ sortByCode, sortByRW ] );
-//   }
-//   else if( sortOrder[ 1 ] === 'RW' )
-//   {
-//     sortByDeps( a, b, [ sortByRW, sortByCode ] );
-//   }
-// }
-
-
-// 1. Sort by open/closed code
-// if( a.Code === 'open' && b.Code === 'closed' )
-// {
-//   return 1;
-// }
-// else if( a.Code === 'closed' && b.Code === 'open' )
-// {
-//   return -1;
-// }
-// else
-// // 2. Sort by the amount of formats to read/write
-// {
-//   let aTotal = a.R.length + a.W.length;
-//   let bTotal = b.R.length + b.W.length;
-
-//   if( aTotal > bTotal )
-//   {
-//     return 1;
-//   }
-//   else if( aTotal < bTotal )
-//   {
-//     return -1
-//   }
-//   else
-//   // 3. Sort the amount of dependents
-//   {
-//     let aDep, bDep;
-
-//     if( a.Deps === '-' )
-//     {
-//       aDep = -1;
-//     }
-//     if( b.Deps === '-' )
-//     {
-//       bDep = -1;
-//     }
-//     if( a.Deps !== '-' )
-//     {
-//       aDep = +a.Deps;
-//     }
-//     if( b.Deps !== '-' )
-//     {
-//       bDep = +b.Deps;
-//     }
-
-//     if( aDep > bDep )
-//     {
-//       return 1;
-//     }
-//     else if( aDep < bDep )
-//     {
-//       return -1;
-//     }
-//     else
-//     {
-//       return 0;
-//     }
-//   }
-// }
-// }
