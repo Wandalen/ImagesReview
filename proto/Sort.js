@@ -6,16 +6,26 @@ let { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
 let { 'Modules to convert images' : convTable } = readYML( '../data/ConvertImg.yml' );
 let { 'Modules to compress images' : compTable } = readYML( '../data/CompressImg.yml' );
-let { 'Modules to process images' : procTable } = readYML( '../data/ProcessImg.yml' );
+// let { 'Modules to process images' : procTable } = readYML( '../data/ProcessImg.yml' );
 let sortOrder = [ 'Working', 'Code', 'RW', 'Deps' ];
 // const sortOrder = [ 'Working', 'Code', 'RW', 'Deps' ];
 
-// let { 'Modules to read/write/convert/compress images' : rwTableArr } = readYML( '../data/ReadWriteConvertCompressImg.yml' );
 rTable.sort( sortTable ).reverse();
-console.log( rTable );
+wTable.sort( sortTable ).reverse();
+convTable.sort( sortTable ).reverse();
+compTable.sort( sortTable ).reverse();
+
+console.log();
+
 rTable = { 'Modules to read images' : rTable };
+wTable = { 'Modules to read images' : wTable };
+convTable = { 'Modules to read images' : convTable };
+compTable = { 'Modules to read images' : compTable };
 
 _.fileProvider.fileWrite( { filePath : abs( '../data/TESTReadImg.yml' ), data : rTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/TESTWriteImg.yml' ), data : wTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/TESTConvertImg.yml' ), data : convTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/TESTCompressReadImg.yml' ), data : compTable, encoding : 'yaml' } );
 
 function sortByWorking( a, b )
 {
@@ -68,8 +78,6 @@ function sortByCode ( a, b )
 function sortByRW( a, b )
 {
   // Sort by R.length + W.length
-  // let aTotal = a.R.length + a.W.length;
-  // let bTotal = b.R.length + b.W.length;
   let aTotal, bTotal;
 
   // Identify read/write table
@@ -242,7 +250,7 @@ function sortTable( a, b )
       return sortByWorking( a, b );
     }
   }
-  // Case when possible
+
   else if( sortOrder[ 0 ] === 'Code' )
   {
     if( sortByCode( a, b ) === 0 )
@@ -315,7 +323,73 @@ function sortTable( a, b )
   }
   else if( sortOrder[ 0 ] === 'RW' )
   {
-
+    if( sortByCode( a, b ) === 0 )
+    {
+      if( sortOrder[ 1 ] === 'RW' )
+      {
+        if( sortByRW( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='Working' )
+          {
+            const result = sortByWorking( a, b ) === 0 ? sortByDeps( a, b ) : sortByWorking( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='Deps' )
+          {
+            const result = sortByDeps( a, b ) === 0 ? sortByWorking( a, b ) : sortByDeps( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByRW( a, b );
+        }
+      }
+      else if( sortOrder[ 1 ] === 'Deps' )
+      {
+        if( sortByDeps( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='RW' )
+          {
+            const result = sortByRW( a, b ) === 0 ? sortByWorking( a, b ) : sortByRW( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='Working' )
+          {
+            const result = sortByWorking( a, b ) === 0 ? sortByRW( a, b ) : sortByWorking( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByDeps( a, b );
+        }
+      }
+      else if( sortOrder[ 1 ] === 'Working' )
+      {
+        if( sortByWorking( a, b ) === 0 )
+        {
+          if( sortOrder[ 2 ] ==='Deps' )
+          {
+            const result = sortByDeps( a, b ) === 0 ? sortByRW( a, b ) : sortByDeps( a, b )
+            return result;
+          }
+          else if( sortOrder[ 2 ] ==='RW' )
+          {
+            const result = sortByRW( a, b ) === 0 ? sortByDeps( a, b ) : sortByRW( a, b )
+            return result;
+          }
+        }
+        else
+        {
+          return sortByWorking( a, b );
+        }
+      }
+    }
+    else
+    {
+      return sortByRW( a, b );
+    }
   }
   else if( sortOrder[ 0 ]=== 'Deps' )
   {
