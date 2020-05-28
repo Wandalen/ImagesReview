@@ -80,24 +80,6 @@ Modules to read/write/convert/compress images:
     N.s: +
     Deps: 21
   - 'N':
-      name: image-conversion
-      link: 'https://github.com/WangYuLue/image-conversion'
-    R:
-      - jpg
-      - png
-      - gif
-    W:
-      - jpg
-      - png
-      - gif
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: TypeScript
-    B.s: +
-    N.s: +
-    Deps: 2
-  - 'N':
       name: caman
       link: 'https://github.com/meltingice/CamanJS/'
     R:

@@ -15,7 +15,7 @@ const { Resources : resources } = readYML( '../data/Resources.yml' );
 
 let header1 = '# Awesome image!\n\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
 let header2 = ' process images of different formats.\n'
-let final = `${header1}${header2}\n${tableObjToMd( 1, rwTableObj )}\n${tableObjToMd( 2, processTableObj )}\n
+let final = `${header1}${header2}\n${tableObjToMd( 1, rwTableObj )}\n${readMd( `${__dirname}/../doc/RW.md` )}\n\n${tableObjToMd( 2, processTableObj )}\n
 ${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )}`;
 
 // Writing to file
@@ -31,6 +31,15 @@ function abs()
 }
 
 exports.abs = abs;
+
+function readMd( path )
+{
+  const data = _.fileProvider.fileRead( {
+    filePath : abs( path ),
+  } );
+
+  return data;
+}
 
 function readYML( yml )
 {

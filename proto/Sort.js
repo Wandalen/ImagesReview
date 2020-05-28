@@ -4,7 +4,7 @@ require( 'wFiles' );
 const { readYML, abs } = require( './Index' );
 const sortOrder = [ 'Code', 'RW', 'Deps' ];
 
-//SEEMS LIKE <RW> ALWAYS SECOND
+// SEEMS LIKE <RW> ALWAYS SECOND
 // const sortOrder = [ 'Code', 'Deps', 'RW' ];
 
 let { 'Modules to read/write/convert/compress images' : rwTableArr } = readYML( '../data/ReadWriteConvertCompressImg.yml' );
