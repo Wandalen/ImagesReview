@@ -1,4 +1,4 @@
-Modules to read/write/convert/compress images:
+Modules to convert images:
   - 'N':
       name: sharp
       link: 'https://github.com/lovell/sharp'
@@ -21,6 +21,7 @@ Modules to read/write/convert/compress images:
     B.s: '-'
     N.s: +
     Deps: 1431
+    Working: Working
   - 'N':
       name: jimp
       link: 'https://github.com/oliver-moran/jimp/tree/master/packages/jimp'
@@ -43,24 +44,7 @@ Modules to read/write/convert/compress images:
     B.s: +
     N.s: +
     Deps: 1083
-  - 'N':
-      name: lwip
-      link: 'https://github.com/EyalAr/lwip'
-    R:
-      - jpg
-      - png
-      - gif
-    W:
-      - jpg
-      - png
-      - gif
-    Code: open
-    Modular: 'yes'
-    I: Native binding
-    PL: C
-    B.s: '-'
-    N.s: +
-    Deps: 79
+    Working: Working
   - 'N':
       name: image-js
       link: 'https://github.com/image-js/image-js'
@@ -79,24 +63,7 @@ Modules to read/write/convert/compress images:
     B.s: +
     N.s: +
     Deps: 21
-  - 'N':
-      name: imagetracerjs
-      link: 'https://github.com/jankovicsandras/imagetracerjs'
-    R:
-      - jpg
-      - png
-      - webp
-      - gif
-      - bmp
-    W:
-      - svg
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 5
+    Working: Working
   - 'N':
       name: image-conversion
       link: 'https://github.com/WangYuLue/image-conversion'
@@ -113,17 +80,16 @@ Modules to read/write/convert/compress images:
     I: Pure
     PL: TypeScript
     B.s: +
-    N.s: +
+    N.s: '-'
     Deps: 2
+    Working: Working
   - 'N':
-      name: caman
-      link: 'https://github.com/meltingice/CamanJS/'
+      name: imagetracerjs
+      link: 'https://github.com/jankovicsandras/imagetracerjs'
     R:
-      - jpg
-      - png
+      - '-'
     W:
-      - jpg
-      - png
+      - svg
     Code: open
     Modular: 'yes'
     I: Pure
@@ -131,54 +97,7 @@ Modules to read/write/convert/compress images:
     B.s: +
     N.s: +
     Deps: 5
-  - 'N':
-      name: capa_image_lib
-      link: 'https://gitlab.com/Capa_Album/capa_image_lib'
-    R:
-      - jpg
-      - png
-    W:
-      - jpg
-      - png
-    Code: open
-    Modular: 'yes'
-    I: Native binding
-    PL: C++
-    B.s: '-'
-    N.s: +
-    Deps: 0
-  - 'N':
-      name: compressor
-      link: 'https://github.com/fengyuanchen/compressorjs'
-    R:
-      - jpg
-      - png
-    W:
-      - jpg
-      - png
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: '-'
-    Deps: 0
-  - 'N':
-      name: imgsquash
-      link: 'https://github.com/eashish93/imgsquash'
-    R:
-      - jpg
-      - png
-    W:
-      - jpg
-      - png
-    Code: open
-    Modular: Integrated GUI
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: '-'
+    Working: Working
   - 'N':
       name: gm
       link: 'https://github.com/aheckmann/gm'
@@ -201,3 +120,40 @@ Modules to read/write/convert/compress images:
     B.s: '-'
     N.s: +
     Deps: 1121
+    Working: Working
+  - 'N':
+      name: lwip
+      link: 'https://github.com/EyalAr/lwip'
+    R:
+      - jpg
+      - png
+      - gif
+    W:
+      - jpg
+      - png
+      - gif
+    Code: open
+    Modular: 'yes'
+    I: Native binding
+    PL: C
+    B.s: '-'
+    N.s: +
+    Deps: 79
+    Working: Broken
+  - 'N':
+      name: caman
+      link: 'https://github.com/meltingice/CamanJS/'
+    R:
+      - jpg
+      - png
+    W:
+      - jpg
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 5
+    Working: Broken
