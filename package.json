@@ -13,9 +13,18 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "caman": "^4.1.2",
+    "canvas": "^2.6.1",
+    "compressorjs": "^1.0.6",
+    "gm": "^1.23.1",
+    "image-conversion": "^2.1.1",
+    "image-js": "^0.21.9",
+    "jimp": "^0.12.1",
+    "sharp": "^0.25.3",
     "wFiles": "alpha",
     "wTools": "alpha",
-    "wTesting": "alpha"
+    "wTesting": "alpha",
+    "wnpmtools": "alpha"
   },
   "keywords": [
     "images",
