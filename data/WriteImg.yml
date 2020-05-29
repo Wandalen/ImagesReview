@@ -38,7 +38,6 @@ Modules to write images:
     Write:
       - jpg
       - png
-      - tiff
     Code: open
     Modular: 'yes'
     I: Pure
