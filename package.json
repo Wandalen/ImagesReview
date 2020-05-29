@@ -2,7 +2,7 @@
   "name": "OverviewImage",
   "version": "1.0.0",
   "description": "Curated review of awesome Javascript projects to read / write / convert / compress / process images of different formats.",
-  "main": "Index.js",
+  "main": "proto/Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,21 +13,29 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "caman": "^4.1.2",
-    "canvas": "^2.6.1",
-    "compressorjs": "^1.0.6",
-    "gm": "^1.23.1",
-    "image-conversion": "^2.1.1",
-    "image-js": "^0.21.9",
-    "jimp": "^0.12.1",
-    "sharp": "^0.25.3",
+    "caman": "=4.1.2",
+    "canvas": "=2.6.1",
+    "compressorjs": "=1.0.6",
+    "eslint": "=7.1.0",
+    "gm": "=1.23.1",
+    "image-conversion": "=2.1.1",
+    "image-js": "=0.21.9",
+    "jimp": "=0.12.1",
+    "sharp": "=0.25.3",
     "wFiles": "alpha",
+    "wTesting": "alpha",
     "wTools": "alpha",
     "wnpmtools": "alpha"
   },
   "keywords": [
     "images",
-    "imagesOverview",
-    "imagesProcessing"
+    "image projects overview",
+    "image processing",
+    "image read",
+    "image write",
+    "image convert",
+    "image converter",
+    "image compress",
+    "image compressor"
   ]
 }
