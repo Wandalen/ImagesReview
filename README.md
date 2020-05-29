@@ -110,7 +110,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 **Sorting Algorithm** (descending order of significance)
 1. Sort by Working (Working > Closed)
 2. Sort by Code (Open > Closed)
-3. Sort by the sum of reading and writing formats (For the tables "Modules to read/write/convert/compress images") or sum of B.s and N.S (For the table "Modules to process images")
+3. Sort by the amount of Read or Write formats (For the tables "Modules to read images" or "Modules to write images" respectively) or by the sum of reading and writing formats (For the tables "Modules to convert images" and "Modules to compress images") or by the sum of B.s and N.S (For the table "Modules to process images")
 4. Sort by the amount of dependents
 
 ### Resources:
