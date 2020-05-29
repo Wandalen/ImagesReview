@@ -6,16 +6,13 @@ let { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
 let { 'Modules to convert images' : convTable } = readYML( '../data/ConvertImg.yml' );
 let { 'Modules to compress images' : compTable } = readYML( '../data/CompressImg.yml' );
-// let { 'Modules to process images' : procTable } = readYML( '../data/ProcessImg.yml' );
+
 let sortOrder = [ 'Working', 'Code', 'RW', 'Deps' ];
-// const sortOrder = [ 'Working', 'Code', 'RW', 'Deps' ];
 
 rTable.sort( sortTable ).reverse();
 wTable.sort( sortTable ).reverse();
 convTable.sort( sortTable ).reverse();
 compTable.sort( sortTable ).reverse();
-
-console.log();
 
 rTable = { 'Modules to read images' : rTable };
 wTable = { 'Modules to write images' : wTable };
