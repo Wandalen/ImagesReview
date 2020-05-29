@@ -60,5 +60,3 @@ function updateDeps( newData, oldTable )
     } )
   } )
 }
-
-_.npm.dependantsRetrieve( 'sharp' ).then( ( data ) => console.log( data ) )

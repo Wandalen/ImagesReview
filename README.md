@@ -6,7 +6,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 | **N** | **Read** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1431 | Working |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1436 | Working |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1086 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1123 | Working |
