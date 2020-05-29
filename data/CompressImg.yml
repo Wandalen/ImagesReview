@@ -20,7 +20,7 @@ Modules to compress images:
     PL: JavaScript
     B.s: '-'
     N.s: +
-    Deps: 1431
+    Deps: 1436
     Working: Working
   - 'N':
       name: jimp
@@ -43,7 +43,7 @@ Modules to compress images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 1083
+    Deps: 1086
     Working: Working
   - 'N':
       name: image-js
@@ -133,7 +133,7 @@ Modules to compress images:
     PL: C
     B.s: '-'
     N.s: +
-    Deps: 1121
+    Deps: 1123
     Working: Working
   - 'N':
       name: lwip

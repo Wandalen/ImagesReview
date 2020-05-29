@@ -1,46 +1,62 @@
 const _ = require( 'wTools' );
 require( 'wFiles' );
-const wNpm = require( 'wnpmtools' );
-
+require( 'wnpmtools' );
 const { readYML, abs } = require( './Index' );
 
-let { 'Modules to read/write/convert/compress images' : tableYML } = readYML( '../data/ReadWriteConvertCompressImg.yml' );
-let moduleNames = tableYML.filter( ( el ) => el.Deps !== '-' ).map( ( el ) => el.N.name );
+let { 'Modules to read images' : rYML } = readYML( '../data/ReadImg.yml' );
+let { 'Modules to write images' : wYML } = readYML( '../data/WriteImg.yml' );
+let { 'Modules to convert images' : convYML } = readYML( '../data/ConvertImg.yml' );
+let { 'Modules to compress images' : compYML } = readYML( '../data/CompressImg.yml' );
 
-udpateDeps( moduleNames );
+let rModuleNames = rYML.filter( ( el ) => el.Deps !== '-' ).map( ( el ) => el.N.name );
+let wModuleNames = wYML.filter( ( el ) => el.Deps !== '-' ).map( ( el ) => el.N.name );
+let convModuleNames = convYML.filter( ( el ) => el.Deps !== '-' ).map( ( el ) => el.N.name );
+let compModuleNames = compYML.filter( ( el ) => el.Deps !== '-' ).map( ( el ) => el.N.name );
 
-function getDeps( name )
+let rDeps =  _.npm.dependantsRetrieve( { remotePath : rModuleNames, sync : 1 } )
+rDeps = rModuleNames.map( ( el, i ) =>
 {
-  return wNpm.npm.dependantsRetrieve( name );
-}
-
-function createNameDepsObj( arr )
+  return { name : el, deps : rDeps[ i ] }
+} )
+let wDeps =  _.npm.dependantsRetrieve( { remotePath : wModuleNames, sync : 1 } )
+wDeps = wModuleNames.map( ( el, i ) =>
 {
-  let results = arr.map( async ( el ) =>
+  return { name : el, deps : wDeps[ i ] }
+} )
+let convDeps =  _.npm.dependantsRetrieve( { remotePath : convModuleNames, sync : 1 } )
+convDeps = convModuleNames.map( ( el, i ) =>
+{
+  return { name : el, deps : convDeps[ i ] }
+} )
+let compDeps =  _.npm.dependantsRetrieve( { remotePath : compModuleNames, sync : 1 } )
+compDeps = compModuleNames.map( ( el, i ) =>
+{
+  return { name : el, deps : compDeps[ i ] }
+} )
+
+updateDeps( rDeps, rYML );
+rYML = { 'Modules to read images' : rYML }
+_.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : rYML, encoding : 'yaml' } );
+updateDeps( wDeps, wYML );
+wYML = { 'Modules to write images' : wYML }
+_.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : wYML, encoding : 'yaml' } );
+updateDeps( convDeps, convYML );
+convYML = { 'Modules to convert images' : convYML }
+_.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : convYML, encoding : 'yaml' } );
+updateDeps( compDeps, compYML );
+compYML = { 'Modules to compress images' : compYML };
+_.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compYML, encoding : 'yaml' } );
+
+function updateDeps( newData, oldTable )
+{
+  newData.forEach( ( s, i ) =>
   {
-    return { name : el, deps : await getDeps( el ) }
-  } )
-
-  return results;
-}
-
-function udpateDeps( arr )
-{
-  Promise.all( createNameDepsObj( arr ) ).then( ( data ) =>
-  {
-    data.forEach( ( s, i ) =>
+    oldTable.forEach( ( l, i ) =>
     {
-      tableYML.forEach( ( l, i ) =>
-      {
         if( l.N.name === s.name )
         {
-          tableYML[ i ].Deps = s.deps;
+          oldTable[ i ].Deps = s.deps;
         }
-      } )
     } )
-
-    tableYML = { 'Modules to read/write/convert/compress images' :  tableYML }
-
-    _.fileProvider.fileWrite( { filePath : abs( '../data/readWriteConvertCompressImg.yml' ), data : tableYML, encoding : 'yaml' } );
   } )
 }
