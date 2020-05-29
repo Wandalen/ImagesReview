@@ -50,19 +50,6 @@ Modules to read images:
     Deps: 21
     Working: Working
   - 'N':
-      name: pngjs
-      link: 'https://github.com/arian/pngjs'
-    Read:
-      - png
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: '-'
-    N.s: +
-    Deps: '-'
-    Working: Working
-  - 'N':
       name: gm
       link: 'https://github.com/aheckmann/gm'
     Read:

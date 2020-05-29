@@ -26,9 +26,9 @@ ${tableObjToMd( 'process', processTableObj )}\n${readMd( `${__dirname}/../doc/RW
 writeMd( '../README.md', final );
 
 // CREATE README file from README.md
-_.fileProvider.fileWrite( abs( '../README' ), _.fileProvider.fileRead( {
-  filePath : abs( '../README.md' ),
-} ) );
+// _.fileProvider.fileWrite( abs( '../README' ), _.fileProvider.fileRead( {
+//   filePath : abs( '../README.md' ),
+// } ) );
 
 function abs()
 {
