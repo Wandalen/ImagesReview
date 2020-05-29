@@ -4,7 +4,7 @@
   "description": "Curated review of awesome Javascript projects to read / write / convert / compress / process images of different formats.",
   "main": "proto/Index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "wtest .run 'proto/**'"
   },
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
   "contributors": [
