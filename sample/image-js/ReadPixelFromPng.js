@@ -1,6 +1,4 @@
 const { Image } = require( 'image-js' );
 
-const { extractPix } = require( './ReadPixel' );
-
-extractPix( `${__dirname}/../../data/images/Image.png` );
+Image.load( `${__dirname}/../../data/images/Image.png` ).then( ( img ) => console.log( 'rgb(' + img.data.slice( 0, 3 ) + ')' ) )
 // OUTPUT: rgb(255,0,0)

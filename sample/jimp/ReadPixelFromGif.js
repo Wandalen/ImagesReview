@@ -1,7 +1,8 @@
 const Jimp = require( 'jimp' );
 
-const { extractPix } = require( './ReadPixel' );
-
-extractPix( `${__dirname}/../../data/images/Image.gif` );
+Jimp.read( `${__dirname}/../../data/images/Image.gif` ).then( ( img ) =>
+{
+  console.log( 'rgb(' + img.bitmap.data.toJSON().data.slice( 0, 3 ) + ')' );
+} );
 // OUTPUT: rgb(255,0,0)
 

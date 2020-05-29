@@ -20,7 +20,7 @@ Modules to convert images:
     PL: JavaScript
     B.s: '-'
     N.s: +
-    Deps: 1431
+    Deps: 1436
     Working: Working
   - 'N':
       name: jimp
@@ -43,26 +43,7 @@ Modules to convert images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 1083
-    Working: Working
-  - 'N':
-      name: image-js
-      link: 'https://github.com/image-js/image-js'
-    R:
-      - jpg
-      - png
-      - tiff
-    W:
-      - jpg
-      - png
-      - tiff
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 21
+    Deps: 1086
     Working: Working
   - 'N':
       name: image-conversion
@@ -82,6 +63,24 @@ Modules to convert images:
     B.s: +
     N.s: '-'
     Deps: 2
+    Working: Working
+  - 'N':
+      name: image-js
+      link: 'https://github.com/image-js/image-js'
+    R:
+      - jpg
+      - png
+      - tiff
+    W:
+      - jpg
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 21
     Working: Working
   - 'N':
       name: imagetracerjs
@@ -119,7 +118,7 @@ Modules to convert images:
     PL: C
     B.s: '-'
     N.s: +
-    Deps: 1121
+    Deps: 1123
     Working: Working
   - 'N':
       name: lwip

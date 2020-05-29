@@ -15,7 +15,7 @@ Modules to read images:
     PL: JavaScript
     B.s: '-'
     N.s: +
-    Deps: 1431
+    Deps: 1436
     Working: Working
   - 'N':
       name: jimp
@@ -32,7 +32,7 @@ Modules to read images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 1083
+    Deps: 1086
     Working: Working
   - 'N':
       name: image-js
@@ -50,6 +50,19 @@ Modules to read images:
     Deps: 21
     Working: Working
   - 'N':
+      name: pngjs
+      link: 'https://github.com/arian/pngjs'
+    Read:
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: '-'
+    N.s: +
+    Deps: '-'
+    Working: Working
+  - 'N':
       name: gm
       link: 'https://github.com/aheckmann/gm'
     Read:
@@ -64,7 +77,7 @@ Modules to read images:
     PL: C
     B.s: '-'
     N.s: +
-    Deps: 1121
+    Deps: 1123
     Working: Working
   - 'N':
       name: lwip

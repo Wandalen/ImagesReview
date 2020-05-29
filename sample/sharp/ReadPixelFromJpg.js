@@ -1,6 +1,6 @@
 const sharp = require( 'sharp' );
 
-const { extractPix } = require( './ReadPixel' );
-
-extractPix( `${__dirname}/../../data/images/Image.jpg` );
+sharp( `${__dirname}/../../data/images/Image.jpg` ).raw()
+.toBuffer( { resolveWithObject : true } )
+.then( ( { data } ) => console.log( 'rgb(' + data.toJSON().data.slice( 0, 3 ) + ')' ) );
 // OUTPUT: rgb(249,0,0)

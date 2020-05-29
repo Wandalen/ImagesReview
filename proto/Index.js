@@ -1,7 +1,6 @@
 const _ = require( 'wTools' );
 require( 'wFiles' );
 
-
 const { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 const { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
 const { 'Modules to convert images' : convTable } = readYML( '../data/ConvertImg.yml' );
