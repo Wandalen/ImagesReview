@@ -55,7 +55,6 @@ Modules to compress images:
     W:
       - jpg
       - png
-      - tiff
     Code: open
     Modular: 'yes'
     I: Pure

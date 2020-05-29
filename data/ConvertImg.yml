@@ -46,25 +46,6 @@ Modules to convert images:
     Deps: 1086
     Working: Working
   - 'N':
-      name: image-js
-      link: 'https://github.com/image-js/image-js'
-    R:
-      - jpg
-      - png
-      - tiff
-    W:
-      - jpg
-      - png
-      - tiff
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 21
-    Working: Working
-  - 'N':
       name: image-conversion
       link: 'https://github.com/WangYuLue/image-conversion'
     R:
@@ -82,6 +63,24 @@ Modules to convert images:
     B.s: +
     N.s: '-'
     Deps: 2
+    Working: Working
+  - 'N':
+      name: image-js
+      link: 'https://github.com/image-js/image-js'
+    R:
+      - jpg
+      - png
+      - tiff
+    W:
+      - jpg
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 21
     Working: Working
   - 'N':
       name: imagetracerjs
