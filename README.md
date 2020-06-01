@@ -4,7 +4,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Modules to read images
 
-| **N** | **Read** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
+| **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
@@ -15,7 +15,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Modules to write images
 
-| **N** | **Write** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
+| **Name** | **Write** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
@@ -26,7 +26,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Modules to convert images
 
-| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
+| **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
@@ -39,7 +39,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Modules to compress images
 
-| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
+| **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
@@ -53,7 +53,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Modules to process images
 
-| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**| **Working** |
+| **Name** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps**| **Working** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | open | yes | Pure | JavaScript | + | + | 1087 | Working |
 | [**imagemin**](https://github.com/imagemin/imagemin) | open | yes | Pure | JavaScript | + | + | 688 | Working |
@@ -79,7 +79,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Format support comparison
 
-| **N** | **jpg** | **png** | **webp** | **tiff** | **gif** | **svg** | **bmp**|
+| **Name** | **jpg** | **png** | **webp** | **tiff** | **gif** | **svg** | **bmp**|
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | [R](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/libvips/cplusplus/vips-operators.cpp#L1607) [W](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/pipeline.cc#L696) | [R](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/libvips/cplusplus/vips-operators.cpp#L2298) [W](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/pipeline.cc#L721) | [R](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/libvips/cplusplus/vips-operators.cpp#L3283) [W](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/pipeline.cc#L739) | [R](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/libvips/cplusplus/vips-operators.cpp#L3160) [W](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/pipeline.cc#L756) | [R](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/libvips/cplusplus/vips-operators.cpp#L1197) | [R](https://github.com/lovell/sharp/blob/25b964e3dfe8766e082e364d76f6705b341cce44/src/libvips/cplusplus/vips-operators.cpp#L3041) | - |
 | [**Jimp**](https://github.com/oliver-moran/jimp) | [R](https://github.com/oliver-moran/jimp/blob/942e635564e36fc243767531b4f8be036afa40b5/packages/test-utils/src/jgd.js#L40) [W](https://github.com/oliver-moran/jimp/blob/942e635564e36fc243767531b4f8be036afa40b5/packages/test-utils/src/jgd.js#L52) | [R](https://github.com/lukeapage/pngjs/blob/bdcc2763516ebf06a4b13dbe6fde6878ec802258/lib/parser.js#L6) [W](https://github.com/lukeapage/pngjs/blob/bdcc2763516ebf06a4b13dbe6fde6878ec802258/lib/packer.js#L9) | - | [R](https://github.com/photopea/UTIF.js/blob/2c498bbc192eaeb58e368ea84c9559a369004703/UTIF.js#L102) [W](https://github.com/photopea/UTIF.js/blob/2c498bbc192eaeb58e368ea84c9559a369004703/UTIF.js#L47) | [R](https://github.com/deanm/omggif/blob/0ec9069a525ec66223eadda3d62059d3685fd3b0/omggif.js#L366) [W](https://github.com/deanm/omggif/blob/0ec9069a525ec66223eadda3d62059d3685fd3b0/omggif.js#L29) | - | [R](https://github.com/shaozilee/bmp-js/blob/db2c466ca1869ddc09e4b2143404eb03ecd490db/lib/decoder.js#L8) [W](https://github.com/shaozilee/bmp-js/blob/db2c466ca1869ddc09e4b2143404eb03ecd490db/lib/encoder.js#L9) |
