@@ -59,24 +59,24 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**imagemin**](https://github.com/imagemin/imagemin) | open | yes | Pure | JavaScript | + | + | 688 | Working |
 | [**resemblejs**](https://github.com/rsmbl/Resemble.js) | open | yes | Pure | JavaScript | + | + | 50 | Working |
 | [**pica**](https://github.com/nodeca/pica) | open | yes | Pure | JavaScript | + | + | 48 | Working |
+| [**upng-js**](https://github.com/photopea/UPNG.js) | open | yes | Pure | JavaScript | + | + | 30 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**smartcrop**](https://github.com/jwagner/smartcrop.js) | open | Integrated GUI | Pure | JavaScript | + | + | 19 | Working |
 | [**tui-image-editor**](https://github.com/nhn/tui.image-editor) | open | yes | Pure | JavaScript | + | + | 15 | Working |
 | [**merge-images**](https://github.com/lukechilds/merge-images) | open | yes | Pure | JavaScript | + | + | 11 | Working |
-| [**caman**](https://github.com/meltingice/CamanJS/) | open | yes | Pure | JavaScript | + | + | 5 | Broken |
 | [**@toast-ui/react-image-editor**](https://github.com/nhn/toast-ui.react-image-editor) | open | Integrated GUI | Pure | JavaScript | + | + | 2 | Working |
-| [**upng-js**](https://github.com/photopea/UPNG.js) | open | yes | Pure | JavaScript | + | + | 30 | Working |
 | [**marvinj**](https://github.com/gabrielarchanjo/marvinj) | open | yes | Pure | JavaScript | + | + | 0 | Working |
 | [**sharp**](https://github.com/lovell/sharp) | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
 | [**cropperjs**](https://github.com/fengyuanchen/cropperjs) | open | Integrated GUI | Pure | JavaScript | + | - | 280 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | open | yes | Native binding | C | - | + | 79 | Working |
 | [**pngjs-image**](https://github.com/YahooArchive/pngjs-image) | open | yes | Pure | JavaScript | - | + | 27 | Working |
-| [**glfx-es6**](https://github.com/evanw/glfx.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
-| [**lena.js**](https://github.com/davidsonfellipe/lena.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
 | [**web-dsp**](https://github.com/shamadee/web-dsp) | open | yes | Native-binding | C++ | + | - | 0 | Working |
-| [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
+| [**lena.js**](https://github.com/davidsonfellipe/lena.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
+| [**glfx-es6**](https://github.com/evanw/glfx.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
 | [**img2css**](https://github.com/javierbyte/img2css) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
+| [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
 | [**gm**](https://github.com/aheckmann/gm) | closed | yes | CUI adapter | C | - | + | 1123 | Working |
+| [**caman**](https://github.com/meltingice/CamanJS/) | open | yes | Pure | JavaScript | + | + | 5 | Broken |
 
 ### Format support comparison
 
