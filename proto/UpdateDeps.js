@@ -2,7 +2,7 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 require( 'wnpmtools' );
 const { readYML, abs } = require( './Index' );
-const TYPES = [ 'read', 'write', 'convert', 'compress', 'process' ];
+// const TYPES = [ 'read', 'write', 'convert', 'compress', 'process' ];
 
 let { 'Modules to read images' : rYML } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wYML } = readYML( '../data/WriteImg.yml' );
@@ -10,11 +10,11 @@ let { 'Modules to convert images' : convYML } = readYML( '../data/ConvertImg.yml
 let { 'Modules to compress images' : compYML } = readYML( '../data/CompressImg.yml' );
 let { 'Modules to process images' : procYML } = readYML( '../data/ProcessImg.yml' );
 
-updateTable( rYML, 'read' );
-updateTable( wYML, 'write' );
-updateTable( convYML, 'convert' );
-updateTable( compYML, 'compress' );
-updateTable( procYML, 'process' );
+updateTable( rYML, 'Read' );
+updateTable( wYML, 'Write' );
+updateTable( convYML, 'Convert' );
+updateTable( compYML, 'Compress' );
+updateTable( procYML, 'Process' );
 
 function updateDeps( newData, oldTable )
 {
@@ -40,34 +40,8 @@ function updateTable( table, name )
   } )
   updateDeps( deps, table );
 
-  if( name===TYPES[ 0 ] )
-  {
-    updateTable( table );
-    table = { 'Modules to read images' : table }
-    _.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : table, encoding : 'yaml' } );
-  }
-  else if( name===TYPES[ 1 ] )
-  {
-    updateTable( table );
-    table = { 'Modules to write images' : table }
-    _.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : table, encoding : 'yaml' } );
-  }
-  else if( name===TYPES[ 2 ] )
-  {
-    updateTable( table );
-    table = { 'Modules to convert images' : table }
-    _.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : table, encoding : 'yaml' } );
-  }
-  else if( name===TYPES[ 3 ] )
-  {
-    updateTable( table );
-    table = { 'Modules to compress images' : table }
-    _.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : table, encoding : 'yaml' } );
-  }
-  else if( name===TYPES[ 4 ] )
-  {
-    updateTable( table );
-    table = { 'Modules to process images' : table }
-    _.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImg.yml' ), data : table, encoding : 'yaml' } );
-  }
+  let tName = `Modules to ${name.toLowerCase()} images`;
+  table = { [ tName ] : table };
+
+  _.fileProvider.fileWrite( { filePath : abs( `../data/${name}Img.yml` ), data : table, encoding : 'yaml' } );
 }

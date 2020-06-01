@@ -9,6 +9,7 @@ let { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
 let { 'Modules to convert images' : convTable } = readYML( '../data/ConvertImg.yml' );
 let { 'Modules to compress images' : compTable } = readYML( '../data/CompressImg.yml' );
+let { 'Modules to process images' : procTable } = readYML( '../data/ProcessImg.yml' );
 
 rTable.sort( sortTable ).reverse();
 wTable.sort( sortTable ).reverse();
@@ -60,11 +61,13 @@ function sortByCode ( a, b )
 
 function sortByRW( a, b )
 {
-  // Sort by R.length + W.length
+  // Sort by R.length + W.length or B.s + N.s
   let aTotal, bTotal;
+  if( !a.Read || !a.Write || !a.R )
+  {
 
-  // Identify read/write table
-  if( a.Read )
+  } // Identify read/write table
+  else if( a.Read )
   {
     aTotal = a.Read.length;
     bTotal = b.Read.length;
