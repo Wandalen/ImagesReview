@@ -10,4 +10,4 @@ let buf = Buffer.from( {
 } );
 
 new Jimp( { data : buf, width : 2, height : 2 } )
-.write( `${__dirname}/../../data/images/WrittenPixels.png`, ( err ) => console.log( err ) )
+.write( `${__dirname}/../../data/images/WrittenPixelsJimp.png`, ( err ) => console.log( err ) )
