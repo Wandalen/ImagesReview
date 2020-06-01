@@ -29,7 +29,7 @@ _.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : rTab
 _.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : wTable, encoding : 'yaml' } );
 _.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : convTable, encoding : 'yaml' } );
 _.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compTable, encoding : 'yaml' } );
-_.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImgTest.yml' ), data : procTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImg.yml' ), data : procTable, encoding : 'yaml' } );
 
 function sortByWorking( a, b )
 { // Sort by whether code is working out of the box
@@ -68,15 +68,16 @@ function sortByRW( a, b )
 {
   // Sort by R.length + W.length or B.s + N.s
   let aTotal, bTotal;
+
   if( !a.Read && !a.Write && !a.R )
   {
     aTotal = 0;
     bTotal = 0;
-    aTotal = a[ 'B.s' ] === '+' ? ++aTotal : aTotal;
-    aTotal = a[ 'N.s' ] === '+' ? ++aTotal : aTotal;
+    aTotal = a[ 'B.s' ] === '+' ? 1 : 0;
+    aTotal = a[ 'N.s' ] === '+' ? 2 : aTotal;
     // console.log( a[ 'B.s' ] );
-    bTotal = b[ 'B.s' ] === '+' ? ++aTotal : aTotal;
-    bTotal = b[ 'N.s' ] === '+' ? ++aTotal : aTotal;
+    bTotal = b[ 'B.s' ] === '+' ? aTotal+1 : aTotal;
+    bTotal = b[ 'N.s' ] === '+' ? aTotal+1 : aTotal;
   } // Identify read/write table
   else if( a.Read )
   {
