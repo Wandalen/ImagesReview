@@ -33,19 +33,19 @@ function sortByDeps( a, b )
   // Sort by the amount of dependents
   let aDep, bDep;
 
-  if( a.Deps === '-' )
+  if( !isFinite( a.Deps ) )
   {
     aDep = -1;
   }
-  if( b.Deps === '-' )
+  if( !isFinite( a.Deps ) )
   {
     bDep = -1;
   }
-  if( a.Deps !== '-' )
+  if( isFinite( a.Deps ) )
   {
     aDep = +a.Deps;
   }
-  if( b.Deps !== '-' )
+  if( isFinite( a.Deps ) )
   {
     bDep = +b.Deps;
   }
