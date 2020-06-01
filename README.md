@@ -70,11 +70,11 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**cropperjs**](https://github.com/fengyuanchen/cropperjs) | open | Integrated GUI | Pure | JavaScript | + | - | 280 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | open | yes | Native binding | C | - | + | 79 | Working |
 | [**pngjs-image**](https://github.com/YahooArchive/pngjs-image) | open | yes | Pure | JavaScript | - | + | 27 | Working |
-| [**web-dsp**](https://github.com/shamadee/web-dsp) | open | yes | Native-binding | C++ | + | - | 0 | Working |
-| [**lena.js**](https://github.com/davidsonfellipe/lena.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
 | [**glfx-es6**](https://github.com/evanw/glfx.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
-| [**img2css**](https://github.com/javierbyte/img2css) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
+| [**lena.js**](https://github.com/davidsonfellipe/lena.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
+| [**web-dsp**](https://github.com/shamadee/web-dsp) | open | yes | Native-binding | C++ | + | - | 0 | Working |
 | [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
+| [**img2css**](https://github.com/javierbyte/img2css) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
 | [**gm**](https://github.com/aheckmann/gm) | closed | yes | CUI adapter | C | - | + | 1123 | Working |
 | [**caman**](https://github.com/meltingice/CamanJS/) | open | yes | Pure | JavaScript | + | + | 5 | Broken |
 
