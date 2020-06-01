@@ -86,11 +86,11 @@ function tableObjToMd( table, obj )
   }
   else if( table === 'process' )
   {
-    temp ='### Modules to process images\n\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n';
+    temp ='### Modules to process images\n\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**| **Working** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n';
 
     obj.forEach( ( el ) =>
     {
-      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } |\n`;
+      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } | ${el.Working} |\n`;
     } );
   }
 
