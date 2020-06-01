@@ -17,8 +17,6 @@ convTable.sort( sortTable ).reverse();
 compTable.sort( sortTable ).reverse();
 procTable.sort( sortTable ).reverse();
 
-console.log( procTable );
-
 rTable = { 'Modules to read images' : rTable };
 wTable = { 'Modules to write images' : wTable };
 convTable = { 'Modules to convert images' : convTable };
@@ -68,16 +66,17 @@ function sortByRW( a, b )
 {
   // Sort by R.length + W.length or B.s + N.s
   let aTotal, bTotal;
-
+  // Identify process table
   if( !a.Read && !a.Write && !a.R )
   {
     aTotal = 0;
     bTotal = 0;
-    aTotal = a[ 'B.s' ] === '+' ? 1 : 0;
-    aTotal = a[ 'N.s' ] === '+' ? 2 : aTotal;
-    // console.log( a[ 'B.s' ] );
-    bTotal = b[ 'B.s' ] === '+' ? aTotal+1 : aTotal;
-    bTotal = b[ 'N.s' ] === '+' ? aTotal+1 : aTotal;
+
+    aTotal = a[ 'B.s' ] === '+' ? aTotal+1 : aTotal
+    aTotal = a[ 'N.s' ] === '+' ? aTotal+1 : aTotal;
+
+    bTotal = b[ 'B.s' ] === '+' ? bTotal+1 : bTotal;
+    bTotal = b[ 'N.s' ] === '+' ? bTotal+1 : bTotal;
   } // Identify read/write table
   else if( a.Read )
   {
