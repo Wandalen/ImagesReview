@@ -165,12 +165,12 @@ Modules to process images:
     Deps: 27
     Working: Working
   - 'N':
-      name: glfx-es6
-      link: 'https://github.com/evanw/glfx.js'
+      name: web-dsp
+      link: 'https://github.com/shamadee/web-dsp'
     Code: open
     Modular: 'yes'
-    I: Pure
-    PL: JavaScript
+    I: Native-binding
+    PL: C++
     B.s: +
     N.s: '-'
     Deps: 0
@@ -187,19 +187,19 @@ Modules to process images:
     Deps: 0
     Working: Working
   - 'N':
-      name: web-dsp
-      link: 'https://github.com/shamadee/web-dsp'
+      name: glfx-es6
+      link: 'https://github.com/evanw/glfx.js'
     Code: open
     Modular: 'yes'
-    I: Native-binding
-    PL: C++
+    I: Pure
+    PL: JavaScript
     B.s: +
     N.s: '-'
     Deps: 0
     Working: Working
   - 'N':
-      name: Filtrr2
-      link: 'https://github.com/alexmic/filtrr/tree/master/filtrr2'
+      name: img2css
+      link: 'https://github.com/javierbyte/img2css'
     Code: open
     Modular: Integrated GUI
     I: Pure
@@ -209,8 +209,8 @@ Modules to process images:
     Deps: '-'
     Working: Working
   - 'N':
-      name: img2css
-      link: 'https://github.com/javierbyte/img2css'
+      name: Filtrr2
+      link: 'https://github.com/alexmic/filtrr/tree/master/filtrr2'
     Code: open
     Modular: Integrated GUI
     I: Pure

@@ -47,6 +47,19 @@ Modules to write images:
     Deps: 21
     Working: Working
   - 'N':
+      name: jpeg-js
+      link: 'https://github.com/eugeneware/jpeg-js'
+    Write:
+      - jpg
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 170
+    Working: Working
+  - 'N':
       name: gm
       link: 'https://github.com/aheckmann/gm'
     Write:

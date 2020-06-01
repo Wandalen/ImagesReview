@@ -50,6 +50,32 @@ Modules to read images:
     Deps: 21
     Working: Working
   - 'N':
+      name: jpeg-js
+      link: 'https://github.com/eugeneware/jpeg-js'
+    Read:
+      - jpg
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 170
+    Working: Working
+  - 'N':
+      name: png.js
+      link: 'https://github.com/arian/pngjs'
+    Read:
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 11
+    Working: Working
+  - 'N':
       name: gm
       link: 'https://github.com/aheckmann/gm'
     Read:
