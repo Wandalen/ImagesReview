@@ -15,19 +15,21 @@ rTable.sort( sortTable ).reverse();
 wTable.sort( sortTable ).reverse();
 convTable.sort( sortTable ).reverse();
 compTable.sort( sortTable ).reverse();
-// procTable.sort( sortTable ).reverse();
+procTable.sort( sortTable ).reverse();
+
+console.log( procTable );
 
 rTable = { 'Modules to read images' : rTable };
 wTable = { 'Modules to write images' : wTable };
 convTable = { 'Modules to convert images' : convTable };
 compTable = { 'Modules to compress images' : compTable };
-// procTable = { 'Modules to process images' : procTable };
+procTable = { 'Modules to process images' : procTable };
 
 _.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : rTable, encoding : 'yaml' } );
 _.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : wTable, encoding : 'yaml' } );
 _.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : convTable, encoding : 'yaml' } );
 _.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compTable, encoding : 'yaml' } );
-// _.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImgTest.yml' ), data : procTable, encoding : 'yaml' } );
+_.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImgTest.yml' ), data : procTable, encoding : 'yaml' } );
 
 function sortByWorking( a, b )
 { // Sort by whether code is working out of the box
@@ -66,17 +68,17 @@ function sortByRW( a, b )
 {
   // Sort by R.length + W.length or B.s + N.s
   let aTotal, bTotal;
-  // if( !a.Read || !a.Write || !a.R )
-  // {
-  //   aTotal = 0;
-  //   bTotal = 0;
-  //   aTotal = a[ 'B.s' ] === '+' ? aTotal++ : aTotal;
-  //   aTotal = a[ 'N.s' ] === '+' ? aTotal++ : aTotal;
-
-  //   bTotal = b[ 'B.s' ] === '+' ? aTotal++ : aTotal;
-  //   bTotal = b[ 'N.s' ] === '+' ? aTotal++ : aTotal;
-  // } // Identify read/write table
-  if( a.Read )
+  if( !a.Read && !a.Write && !a.R )
+  {
+    aTotal = 0;
+    bTotal = 0;
+    aTotal = a[ 'B.s' ] === '+' ? ++aTotal : aTotal;
+    aTotal = a[ 'N.s' ] === '+' ? ++aTotal : aTotal;
+    // console.log( a[ 'B.s' ] );
+    bTotal = b[ 'B.s' ] === '+' ? ++aTotal : aTotal;
+    bTotal = b[ 'N.s' ] === '+' ? ++aTotal : aTotal;
+  } // Identify read/write table
+  else if( a.Read )
   {
     aTotal = a.Read.length;
     bTotal = b.Read.length;

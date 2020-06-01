@@ -230,3 +230,20 @@ Modules to process images:
     N.s: '-'
     Deps: '-'
     Working: Working
+  - 'N':
+      name: gm
+      link: 'https://github.com/aheckmann/gm'
+    Read:
+      - jpg
+      - png
+      - gif
+      - pdf
+      - webp
+    Code: closed
+    Modular: 'yes'
+    I: CUI adapter
+    PL: C
+    B.s: '-'
+    N.s: +
+    Deps: 1123
+    Working: Working
