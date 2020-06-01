@@ -2,28 +2,19 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 require( 'wnpmtools' );
 const { readYML, abs } = require( './Index' );
+const TYPES = [ 'read', 'write', 'convert', 'compress', 'process' ];
 
 let { 'Modules to read images' : rYML } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wYML } = readYML( '../data/WriteImg.yml' );
 let { 'Modules to convert images' : convYML } = readYML( '../data/ConvertImg.yml' );
 let { 'Modules to compress images' : compYML } = readYML( '../data/CompressImg.yml' );
+let { 'Modules to process images' : procYML } = readYML( '../data/ProcessImg.yml' );
 
-const TYPES = [ 'read', 'write', 'convert', 'compress', 'process' ]
 updateTable( rYML, 'read' );
-// rYML = { 'Modules to read images' : rYML }
-// _.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : rYML, encoding : 'yaml' } );
-
 updateTable( wYML, 'write' );
-// wYML = { 'Modules to write images' : wYML }
-// _.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : wYML, encoding : 'yaml' } );
-
 updateTable( convYML, 'convert' );
-// convYML = { 'Modules to convert images' : convYML }
-// _.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : convYML, encoding : 'yaml' } );
-
 updateTable( compYML, 'compress' );
-// compYML = { 'Modules to compress images' : compYML }
-// _.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compYML, encoding : 'yaml' } );
+updateTable( procYML, 'process' );
 
 function updateDeps( newData, oldTable )
 {
@@ -49,28 +40,34 @@ function updateTable( table, name )
   } )
   updateDeps( deps, table );
 
-  if( name==='read' )
+  if( name===TYPES[ 0 ] )
   {
     updateTable( table );
     table = { 'Modules to read images' : table }
     _.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : table, encoding : 'yaml' } );
   }
-  else if( name==='write' )
+  else if( name===TYPES[ 1 ] )
   {
     updateTable( table );
     table = { 'Modules to write images' : table }
     _.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : table, encoding : 'yaml' } );
   }
-  else if( name==='convert' )
+  else if( name===TYPES[ 2 ] )
   {
     updateTable( table );
     table = { 'Modules to convert images' : table }
     _.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : table, encoding : 'yaml' } );
   }
-  else if( name==='compress' )
+  else if( name===TYPES[ 3 ] )
   {
     updateTable( table );
-    table = { 'Modules to read images' : table }
+    table = { 'Modules to compress images' : table }
     _.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : table, encoding : 'yaml' } );
+  }
+  else if( name===TYPES[ 4 ] )
+  {
+    updateTable( table );
+    table = { 'Modules to process images' : table }
+    _.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImg.yml' ), data : table, encoding : 'yaml' } );
   }
 }
