@@ -2,6 +2,7 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 
 let sortOrder = [ 'Working', 'Code', 'RW', 'Deps' ];
+// const
 
 const { readYML, abs } = require( './Index' );
 let { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );

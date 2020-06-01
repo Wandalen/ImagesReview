@@ -6,8 +6,8 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 | **N** | **Read** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1436 | Working |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1086 | Working |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1123 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
@@ -17,8 +17,8 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 | **N** | **Write** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1086 | Working |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1436 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1123 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
@@ -28,8 +28,8 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 | **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1436 | Working |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1086 | Working |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | jpg, png, gif | jpg, png, gif | open | yes | Pure | TypeScript | + | - | 2 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | - | svg | open | yes | Pure | JavaScript | + | + | 5 | Working |
@@ -41,8 +41,8 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 | **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1436 | Working |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1086 | Working |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**imgsquash**](https://github.com/eashish93/imgsquash) | jpg, png | jpg, png | open | Integrated GUI | Pure | JavaScript | + | + | - | Working |
 | [**compressor**](https://github.com/fengyuanchen/compressorjs) | - | jpg, png | open | yes | Pure | JavaScript | + | - | 0 | Working |
@@ -107,7 +107,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 * *Working* - Does this module works out of the box(Working) or require additional settings(Broken)
 
 **Sorting Algorithm** (descending order of significance)
-1. Sort by Working (Working > Closed)
+1. Sort by Working (Working > Broken)
 2. Sort by Code (Open > Closed)
 3. Sort by the amount of Read or Write formats (For the tables "Modules to read images" or "Modules to write images" respectively) or by the sum of reading and writing formats (For the tables "Modules to convert images" and "Modules to compress images") or by the sum of B.s and N.S (For the table "Modules to process images")
 4. Sort by the amount of dependents

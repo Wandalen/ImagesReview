@@ -20,7 +20,7 @@
   - Working: "Does this module works out of the box(Working) or require additional settings(Broken)"
 
 "Sorting Algorithm (descending order significance)": 
-  - Sort by Working (Working > Closed)
+  - Sort by Working (Working > Broken)
   - Sort by Code (Open > Closed)
   - Sort by the amount of Read or Write formats (For the tables "Modules to read images" or "Modules to write images" respectively) or by the sum of reading and writing formats (For the tables "Modules to convert images" and "Modules to compress images") or by the sum of B.s and N.S (For the table "Modules to process images")
   - Sort by the amount of dependents
