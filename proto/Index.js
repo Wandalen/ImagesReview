@@ -26,9 +26,9 @@ ${tableObjToMd( 'process', processTableObj )}\n${readMd( `${__dirname}/../doc/RW
 writeMd( '../README.md', final );
 
 // CREATE README file from README.md
-_.fileProvider.fileWrite( abs( '../README' ), _.fileProvider.fileRead( {
-  filePath : abs( '../README.md' ),
-} ) );
+// _.fileProvider.fileWrite( abs( '../README' ), _.fileProvider.fileRead( {
+//   filePath : abs( '../README.md' ),
+// } ) );
 
 function abs()
 {
@@ -69,7 +69,7 @@ function tableObjToMd( table, obj )
 
   if( table === 'read' || table === 'write' )
   {
-    temp = `### Modules to ${table === 'read' ? 'read': 'write'} images\n\n| **N** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
+    temp = `### Modules to ${table === 'read' ? 'read': 'write'} images\n\n| **Name** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
 
     obj.forEach( ( el ) =>
     {
@@ -78,7 +78,7 @@ function tableObjToMd( table, obj )
   }
   else if( table === 'compress' || table === 'convert' )
   {
-    temp = `### Modules to ${table === 'compress' ? 'compress': 'convert'} images\n\n| **N** | **R** | **W** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
+    temp = `### Modules to ${table === 'compress' ? 'compress': 'convert'} images\n\n| **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
     obj.forEach( ( el ) =>
     {
       temp += `| [**${ el.N.name }**](${ el.N.link }) | ${el.R[ 0 ] === '-'? '-': el.R.join( ', ' )} | ${el.W[ 0 ] === '-'? '-': el.W.join( ', ' )} | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } | ${el.Working} |\n`;
@@ -86,11 +86,11 @@ function tableObjToMd( table, obj )
   }
   else if( table === 'process' )
   {
-    temp ='### Modules to process images\n\n| **N** | **Code** | **Modular** | **I** | **PL** | **B.s** | **N.s** | **Deps**|\n| --- | --- | --- | --- | --- | --- | --- | --- |\n';
+    temp ='### Modules to process images\n\n| **Name** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps**| **Working** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n';
 
     obj.forEach( ( el ) =>
     {
-      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } |\n`;
+      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } | ${el.Working} |\n`;
     } );
   }
 
@@ -105,7 +105,7 @@ function colsDefsToMd( cols )
   {
     let [ keyVal ] = Object.entries( el );
 
-    if( keyVal[ 0 ]==='I' )
+    if( keyVal[ 0 ]==='Interface' )
     {
       temp += `* *${ keyVal[ 0 ] }*:\n`
 

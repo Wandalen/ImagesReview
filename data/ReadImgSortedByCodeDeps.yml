@@ -35,6 +35,21 @@ Modules to read images:
     Deps: 1087
     Working: Working
   - 'N':
+      name: lwip
+      link: 'https://github.com/EyalAr/lwip'
+    Read:
+      - jpg
+      - png
+      - gif
+    Code: open
+    Modular: 'yes'
+    I: Native binding
+    PL: C
+    B.s: '-'
+    N.s: +
+    Deps: 79
+    Working: Broken
+  - 'N':
       name: image-js
       link: 'https://github.com/image-js/image-js'
     Read:
@@ -49,6 +64,20 @@ Modules to read images:
     N.s: +
     Deps: 21
     Working: Working
+  - 'N':
+      name: caman
+      link: 'https://github.com/meltingice/CamanJS/'
+    Read:
+      - jpg
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 5
+    Working: Broken
   - 'N':
       name: gm
       link: 'https://github.com/aheckmann/gm'
@@ -66,32 +95,3 @@ Modules to read images:
     N.s: +
     Deps: 1123
     Working: Working
-  - 'N':
-      name: lwip
-      link: 'https://github.com/EyalAr/lwip'
-    Read:
-      - jpg
-      - png
-      - gif
-    Code: open
-    Modular: 'yes'
-    I: Native binding
-    PL: C
-    B.s: '-'
-    N.s: +
-    Deps: 79
-    Working: Broken
-  - 'N':
-      name: caman
-      link: 'https://github.com/meltingice/CamanJS/'
-    Read:
-      - jpg
-      - png
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 5
-    Working: Broken
