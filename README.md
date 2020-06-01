@@ -92,8 +92,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**caman**](https://github.com/meltingice/CamanJS/) | [R](https://github.com/Automattic/node-canvas/blob/9cd9aa37fd8755f40dbbbc6ce1a0fb06ceefb87b/src/Image.cc#L1065) W | [R](https://github.com/Automattic/node-canvas/blob/9cd9aa37fd8755f40dbbbc6ce1a0fb06ceefb87b/src/Canvas.cc#L246) W | - | - | - | - | - |
 | [**capa_image_lib**](https://gitlab.com/Capa_Album/capa_image_lib) | R W | R W | - | - | - | - | - |
 | [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | R W | - | - | - | - | - | - |
-| [**pngjs**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
-| [**png.js**](https://github.com/arian/pngjs) | - | R | - | - | - | - | - |
+| [**png.js**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
 | [**gm**](https://github.com/aheckmann/gm) | R W  | R W  | R W  | - | R W | - | - |
 
 
