@@ -105,7 +105,7 @@ function colsDefsToMd( cols )
   {
     let [ keyVal ] = Object.entries( el );
 
-    if( keyVal[ 0 ]==='I' )
+    if( keyVal[ 0 ]==='Interface' )
     {
       temp += `* *${ keyVal[ 0 ] }*:\n`
 

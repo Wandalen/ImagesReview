@@ -91,16 +91,16 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**gm**](https://github.com/aheckmann/gm) | R W  | R W  | R W  | - | R W | - | - |
 
 **Columns' definitions**
-* *N* - Name of the module
+* *Name* - Name of the module
 * *R* - Reading formats
 * *W* - Writing formats
 * *Code* - Is the module's source code open or closed
 * *Modular* - Is it modular (extendable entity) or integrated GUI (enclosed system provided as is)
-* *I*:
+* *Interface*:
 	* Pure - Written completely in JavaScript
 	* Native Binding -  wrapper library that bridges two programming languages. It provides glue code specifically made to allow JavaScript to use a foreign code written in C, C++, etc.
 	* CUI adapter - wrapper library that transformes JS instructions into shell commands of another library or framework (typically written in a lower level code)
-* *PL* - Programming language in which module is written
+* *Language* - Programming language in which module is written
 * *B.s* - Does the module support the browser
 * *N.s* - Does the module support Node.js
 * *Deps* - The amount of dependents of this module
