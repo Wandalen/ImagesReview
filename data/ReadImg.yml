@@ -50,6 +50,19 @@ Modules to read images:
     Deps: 21
     Working: Working
   - 'N':
+      name: pngjs
+      link: 'https://github.com/lukeapage/pngjs'
+    Read:
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 575
+    Working: Working
+  - 'N':
       name: jpeg-js
       link: 'https://github.com/eugeneware/jpeg-js'
     Read:
@@ -63,6 +76,19 @@ Modules to read images:
     Deps: 170
     Working: Working
   - 'N':
+      name: png-js
+      link: 'https://github.com/foliojs/png.js'
+    Read:
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 75
+    Working: Working
+  - 'N':
       name: png.js
       link: 'https://github.com/arian/pngjs'
     Read:
@@ -74,6 +100,19 @@ Modules to read images:
     B.s: +
     N.s: +
     Deps: 11
+    Working: Working
+  - 'N':
+      name: jpeg-lossless-decoder-js
+      link: 'https://github.com/rii-mango/JPEGLosslessDecoderJS'
+    Read:
+      - jpg
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 7
     Working: Working
   - 'N':
       name: gm

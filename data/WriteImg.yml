@@ -47,6 +47,19 @@ Modules to write images:
     Deps: 21
     Working: Working
   - 'N':
+      name: pngjs
+      link: 'https://github.com/lukeapage/pngjs'
+    Write:
+      - png
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 575
+    Working: Working
+  - 'N':
       name: jpeg-js
       link: 'https://github.com/eugeneware/jpeg-js'
     Write:
