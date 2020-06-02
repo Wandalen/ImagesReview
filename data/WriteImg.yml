@@ -30,7 +30,7 @@ Modules to write images:
     PL: JavaScript
     B.s: '-'
     N.s: +
-    Deps: 1441
+    Deps: 1442
     Working: Working
   - 'N':
       name: image-js
@@ -57,7 +57,7 @@ Modules to write images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 575
+    Deps: 576
     Working: Working
   - 'N':
       name: jpeg-js*

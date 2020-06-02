@@ -2,7 +2,6 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 require( 'wnpmtools' );
 const { readYML, abs } = require( './Index' );
-// const TYPES = [ 'read', 'write', 'convert', 'compress', 'process' ];
 
 let { 'Modules to read images' : rYML } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wYML } = readYML( '../data/WriteImg.yml' );
@@ -18,15 +17,15 @@ updateTable( procYML, 'Process' );
 
 function updateDeps( newData, oldTable )
 {
-  newData.forEach( ( s, i ) =>
+  oldTable.forEach( ( el, i ) =>
   {
-    oldTable.forEach( ( l, i ) =>
+    let item = newData.find( ( item, i ) =>
     {
-        if( l.N.name === s.name )
-        {
-          oldTable[ i ].Deps = s.deps;
-        }
+      let name = el.N.name.includes( '*' ) ? el.N.name.slice( 0, el.N.name.length - 1 ) : el.N.name
+      return name===item.name
     } )
+
+    oldTable[ i ].Deps = item !== undefined && isFinite( item.deps ) ? item.deps : oldTable[ i ].Deps;
   } )
 }
 

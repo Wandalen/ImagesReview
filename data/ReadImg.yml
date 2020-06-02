@@ -15,7 +15,7 @@ Modules to read images:
     PL: C++
     B.s: '-'
     N.s: +
-    Deps: 1441
+    Deps: 1442
     Working: Working
   - 'N':
       name: jimp
@@ -50,19 +50,6 @@ Modules to read images:
     Deps: 21
     Working: Working
   - 'N':
-      name: utif*
-      link: 'https://github.com/photopea/UTIF.js'
-    Read:
-      - gif
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: .nan
-    Working: Working
-  - 'N':
       name: pngjs*
       link: 'https://github.com/lukeapage/pngjs'
     Read:
@@ -73,7 +60,7 @@ Modules to read images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 575
+    Deps: 576
     Working: Working
   - 'N':
       name: jpeg-js*
@@ -126,6 +113,19 @@ Modules to read images:
     B.s: +
     N.s: +
     Deps: 39
+    Working: Working
+  - 'N':
+      name: utif*
+      link: 'https://github.com/photopea/UTIF.js'
+    Read:
+      - gif
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: 29
     Working: Working
   - 'N':
       name: png.js*

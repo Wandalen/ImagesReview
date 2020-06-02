@@ -20,7 +20,7 @@ Modules to convert images:
     PL: JavaScript
     B.s: '-'
     N.s: +
-    Deps: 1441
+    Deps: 1442
     Working: Working
   - 'N':
       name: jimp
