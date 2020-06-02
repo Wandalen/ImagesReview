@@ -12,7 +12,7 @@
 | [**pngjs**](https://github.com/lukeapage/pngjs) | - | R W | -  | - | - | - | - |
 | [**node-libpng**](https://github.com/Prior99/node-libpng) | - | R W | -  | - | - | - | - |
 | [**bmp-js**](https://github.com/shaozilee/bmp-js) | - | -  | -  | - | - | - | R W |
-| [**omggif**](https://github.com/deanm/omggif) | - | -  | -  | - | R W  | - | - |
+| [**omggif**](https://github.com/deanm/omggif) | - | -  | -  | - | [R](https://github.com/deanm/omggif/blob/0ec9069a525ec66223eadda3d62059d3685fd3b0/omggif.js#L366) [W](https://github.com/deanm/omggif/blob/0ec9069a525ec66223eadda3d62059d3685fd3b0/omggif.js#L29)  | - | - |
 | [**utif**](https://github.com/photopea/UTIF.js) | - | -  | - | R W | -  | - | - |
 | [**png.js**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
 | [**png-js**](https://github.com/foliojs/png.js) | - | R | -  | - | - | - | - |
