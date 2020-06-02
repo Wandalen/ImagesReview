@@ -9,4 +9,4 @@ let buf = Buffer.from( {
   ]
 } );
 
-gm( 2, 2 ).write( `${__dirname}/../../data/images/WrittenPixelsGm.png`, ( err ) => console.log( err ) )
+// gm( 2, 2, buf ).write( `${__dirname}/../../data/images/WrittenPixelsGm.png`, ( err ) => console.log( err ) )
