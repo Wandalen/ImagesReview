@@ -43,7 +43,7 @@ Modules to compress images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 1087
+    Deps: 1088
     Working: Working
   - 'N':
       name: image-js

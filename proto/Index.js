@@ -4,7 +4,6 @@ require( 'wFiles' );
 // TO DO:
 // https://github.com/dy/image-pixels
 // https://github.com/dy/image-decode
-// https://github.com/deanm/omggif
 
 const { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 const { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );

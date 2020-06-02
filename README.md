@@ -7,13 +7,17 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1088 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**pngjs**](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 575 | Working |
 | [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working |
 | [**png-js**](https://github.com/foliojs/png.js) | png | open | yes | Pure | JavaScript | + | + | 75 | Working |
+| [**omggif**](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 62 | Working |
+| [**bmp-js**](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working |
+| [**utif**](https://github.com/photopea/UTIF.js) | gif | open | yes | Pure | JavaScript | + | + | 29 | Working |
 | [**png.js**](https://github.com/arian/pngjs) | png | open | yes | Pure | JavaScript | + | + | 11 | Working |
 | [**jpeg-lossless-decoder-js**](https://github.com/rii-mango/JPEGLosslessDecoderJS) | jpg | open | yes | Pure | JavaScript | + | + | 7 | Working |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | png | open | yes | Pure | JavaScript | + | + | 2 | Working |
 | [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1123 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
 | [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | JavaScript | + | + | 5 | Broken |
@@ -22,11 +26,15 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 | **Name** | **Write** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1088 | Working |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**pngjs**](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 575 | Working |
 | [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working |
+| [**omggif**](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 62 | Working |
+| [**bmp-js**](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | png | open | yes | Pure | JavaScript | + | + | 2 | Working |
+| [**libjpeg**](https://github.com/pkrumins/node-jpeg) | png | open | yes | Native binding | C++ | + | + | 0 | Working |
 | [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1123 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
 | [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | JavaScript | + | + | 5 | Broken |
@@ -36,7 +44,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1088 | Working |
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | jpg, png, gif | jpg, png, gif | open | yes | Pure | TypeScript | + | - | 2 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | - | svg | open | yes | Pure | JavaScript | + | + | 5 | Working |
@@ -49,7 +57,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1087 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1088 | Working |
 | [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
 | [**imgsquash**](https://github.com/eashish93/imgsquash) | jpg, png | jpg, png | open | Integrated GUI | Pure | JavaScript | + | + | - | Working |
 | [**compressor**](https://github.com/fengyuanchen/compressorjs) | - | jpg, png | open | yes | Pure | JavaScript | + | - | 0 | Working |
@@ -62,8 +70,8 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 | **Name** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps**| **Working** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | open | yes | Pure | JavaScript | + | + | 1087 | Working |
-| [**imagemin**](https://github.com/imagemin/imagemin) | open | yes | Pure | JavaScript | + | + | 688 | Working |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | open | yes | Pure | JavaScript | + | + | 1088 | Working |
+| [**imagemin**](https://github.com/imagemin/imagemin) | open | yes | Pure | JavaScript | + | + | 689 | Working |
 | [**resemblejs**](https://github.com/rsmbl/Resemble.js) | open | yes | Pure | JavaScript | + | + | 50 | Working |
 | [**pica**](https://github.com/nodeca/pica) | open | yes | Pure | JavaScript | + | + | 48 | Working |
 | [**upng-js**](https://github.com/photopea/UPNG.js) | open | yes | Pure | JavaScript | + | + | 30 | Working |
@@ -74,14 +82,14 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**@toast-ui/react-image-editor**](https://github.com/nhn/toast-ui.react-image-editor) | open | Integrated GUI | Pure | JavaScript | + | + | 2 | Working |
 | [**marvinj**](https://github.com/gabrielarchanjo/marvinj) | open | yes | Pure | JavaScript | + | + | 0 | Working |
 | [**sharp**](https://github.com/lovell/sharp) | open | yes | Native binding | JavaScript | - | + | 1441 | Working |
-| [**cropperjs**](https://github.com/fengyuanchen/cropperjs) | open | Integrated GUI | Pure | JavaScript | + | - | 280 | Working |
+| [**cropperjs**](https://github.com/fengyuanchen/cropperjs) | open | Integrated GUI | Pure | JavaScript | + | - | 281 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | open | yes | Native binding | C | - | + | 79 | Working |
 | [**pngjs-image**](https://github.com/YahooArchive/pngjs-image) | open | yes | Pure | JavaScript | - | + | 27 | Working |
-| [**glfx-es6**](https://github.com/evanw/glfx.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
-| [**lena.js**](https://github.com/davidsonfellipe/lena.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
 | [**web-dsp**](https://github.com/shamadee/web-dsp) | open | yes | Native-binding | C++ | + | - | 0 | Working |
-| [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
+| [**lena.js**](https://github.com/davidsonfellipe/lena.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
+| [**glfx-es6**](https://github.com/evanw/glfx.js) | open | yes | Pure | JavaScript | + | - | 0 | Working |
 | [**img2css**](https://github.com/javierbyte/img2css) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
+| [**Filtrr2**](https://github.com/alexmic/filtrr/tree/master/filtrr2) | open | Integrated GUI | Pure | JavaScript | + | - | - | Working |
 | [**gm**](https://github.com/aheckmann/gm) | closed | yes | CUI adapter | C | - | + | 1123 | Working |
 | [**caman**](https://github.com/meltingice/CamanJS/) | open | yes | Pure | JavaScript | + | + | 5 | Broken |
 
