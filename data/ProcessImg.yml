@@ -126,7 +126,7 @@ Modules to process images:
     Code: open
     Modular: 'yes'
     I: Native binding
-    PL: JavaScript
+    PL: C++
     B.s: '-'
     N.s: +
     Deps: 1442
