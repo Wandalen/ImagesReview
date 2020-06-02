@@ -12,7 +12,7 @@ Modules to read images:
     Code: open
     Modular: 'yes'
     I: Native binding
-    PL: JavaScript
+    PL: C++
     B.s: '-'
     N.s: +
     Deps: 1441
@@ -50,7 +50,20 @@ Modules to read images:
     Deps: 21
     Working: Working
   - 'N':
-      name: pngjs
+      name: utif*
+      link: 'https://github.com/photopea/UTIF.js'
+    Read:
+      - gif
+    Code: open
+    Modular: 'yes'
+    I: Pure
+    PL: JavaScript
+    B.s: +
+    N.s: +
+    Deps: .nan
+    Working: Working
+  - 'N':
+      name: pngjs*
       link: 'https://github.com/lukeapage/pngjs'
     Read:
       - png
@@ -63,7 +76,7 @@ Modules to read images:
     Deps: 575
     Working: Working
   - 'N':
-      name: jpeg-js
+      name: jpeg-js*
       link: 'https://github.com/eugeneware/jpeg-js'
     Read:
       - jpg
@@ -76,7 +89,7 @@ Modules to read images:
     Deps: 170
     Working: Working
   - 'N':
-      name: png-js
+      name: png-js*
       link: 'https://github.com/foliojs/png.js'
     Read:
       - png
@@ -89,7 +102,7 @@ Modules to read images:
     Deps: 75
     Working: Working
   - 'N':
-      name: omggif
+      name: omggif*
       link: 'https://github.com/deanm/omggif'
     Read:
       - gif
@@ -102,7 +115,7 @@ Modules to read images:
     Deps: 62
     Working: Working
   - 'N':
-      name: bmp-js
+      name: bmp-js*
       link: 'https://github.com/shaozilee/bmp-js'
     Read:
       - bmp
@@ -115,20 +128,7 @@ Modules to read images:
     Deps: 39
     Working: Working
   - 'N':
-      name: utif
-      link: 'https://github.com/photopea/UTIF.js'
-    Read:
-      - gif
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 29
-    Working: Working
-  - 'N':
-      name: png.js
+      name: png.js*
       link: 'https://github.com/arian/pngjs'
     Read:
       - png
@@ -141,7 +141,7 @@ Modules to read images:
     Deps: 11
     Working: Working
   - 'N':
-      name: jpeg-lossless-decoder-js
+      name: jpeg-lossless-decoder-js*
       link: 'https://github.com/rii-mango/JPEGLosslessDecoderJS'
     Read:
       - jpg
@@ -154,14 +154,14 @@ Modules to read images:
     Deps: 7
     Working: Working
   - 'N':
-      name: node-libpng
+      name: node-libpng*
       link: 'https://github.com/Prior99/node-libpng'
     Read:
       - png
     Code: open
-    Modular: 'yes'
+    Modular: Native binding
     I: Pure
-    PL: JavaScript
+    PL: C++
     B.s: +
     N.s: +
     Deps: 2

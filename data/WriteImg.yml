@@ -47,7 +47,7 @@ Modules to write images:
     Deps: 21
     Working: Working
   - 'N':
-      name: pngjs
+      name: pngjs*
       link: 'https://github.com/lukeapage/pngjs'
     Write:
       - png
@@ -60,7 +60,7 @@ Modules to write images:
     Deps: 575
     Working: Working
   - 'N':
-      name: jpeg-js
+      name: jpeg-js*
       link: 'https://github.com/eugeneware/jpeg-js'
     Write:
       - jpg
@@ -73,7 +73,7 @@ Modules to write images:
     Deps: 170
     Working: Working
   - 'N':
-      name: omggif
+      name: omggif*
       link: 'https://github.com/deanm/omggif'
     Write:
       - gif
@@ -86,7 +86,7 @@ Modules to write images:
     Deps: 62
     Working: Working
   - 'N':
-      name: bmp-js
+      name: bmp-js*
       link: 'https://github.com/shaozilee/bmp-js'
     Write:
       - bmp
@@ -99,20 +99,20 @@ Modules to write images:
     Deps: 39
     Working: Working
   - 'N':
-      name: node-libpng
+      name: node-libpng*
       link: 'https://github.com/Prior99/node-libpng'
     Write:
       - png
     Code: open
     Modular: 'yes'
-    I: Pure
-    PL: JavaScript
+    I: Native binding
+    PL: C++
     B.s: +
     N.s: +
     Deps: 2
     Working: Working
   - 'N':
-      name: libjpeg
+      name: libjpeg*
       link: 'https://github.com/pkrumins/node-jpeg'
     Write:
       - png

@@ -32,7 +32,7 @@ function updateDeps( newData, oldTable )
 
 function updateTable( table, name )
 {
-  let ModuleNames = table.filter( ( el ) => el.Deps !== '-' ).map( ( el ) => el.N.name );
+  let ModuleNames = table.filter( ( el ) => el.Deps !== '-' ).map( ( el ) => el.N.name.includes( '*' ) ? el.N.name.slice( 0, el.N.name.length - 1 ) : el.N.name );
   let deps =  _.npm.dependantsRetrieve( { remotePath : ModuleNames, sync : 1 } )
   deps = ModuleNames.map( ( el, i ) =>
   {
