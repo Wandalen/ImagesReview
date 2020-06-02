@@ -165,7 +165,7 @@ Modules to write images:
     Code: open
     Modular: 'yes'
     I: Pure
-    PL: JavaScript
+    PL: CoffeeScript
     B.s: +
     N.s: +
     Deps: 5
