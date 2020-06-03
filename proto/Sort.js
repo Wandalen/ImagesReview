@@ -1,105 +1,47 @@
 const _ = require( 'wTools' );
 require( 'wFiles' );
-
-let sortOrder = [ 'Working', 'Code', 'RW', 'Deps' ];
-// const
-
 const { readYML, abs } = require( './Index' );
+
+let sortOrder = [ { name : 'Working', type : 'string' }, { name : 'Code', type : 'string' }, { name : 'RW', type : 'number' }, { name : 'Deps', type : 'number' } ]
+
 let { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
 let { 'Modules to convert images' : convTable } = readYML( '../data/ConvertImg.yml' );
 let { 'Modules to compress images' : compTable } = readYML( '../data/CompressImg.yml' );
 let { 'Modules to process images' : procTable } = readYML( '../data/ProcessImg.yml' );
 
-rTable.sort( sortTable ).reverse();
-wTable.sort( sortTable ).reverse();
-convTable.sort( sortTable ).reverse();
-compTable.sort( sortTable ).reverse();
-procTable.sort( sortTable ).reverse();
+sortAndWrite( rTable, 'Read' );
+sortAndWrite( wTable, 'Write' );
+sortAndWrite( convTable, 'Convert' );
+sortAndWrite( compTable, 'Compress' );
+sortAndWrite( procTable, 'Process' );
 
-rTable = { 'Modules to read images' : rTable };
-wTable = { 'Modules to write images' : wTable };
-convTable = { 'Modules to convert images' : convTable };
-compTable = { 'Modules to compress images' : compTable };
-procTable = { 'Modules to process images' : procTable };
+// rTable.sort( sortTable ).reverse();
+// wTable.sort( sortTable ).reverse();
+// convTable.sort( sortTable ).reverse();
+// compTable.sort( sortTable ).reverse();
+// procTable.sort( sortTable ).reverse();
 
-_.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : rTable, encoding : 'yaml' } );
-_.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : wTable, encoding : 'yaml' } );
-_.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : convTable, encoding : 'yaml' } );
-_.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compTable, encoding : 'yaml' } );
-_.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImg.yml' ), data : procTable, encoding : 'yaml' } );
+// rTable = { 'Modules to read images' : rTable };
+// wTable = { 'Modules to write images' : wTable };
+// convTable = { 'Modules to convert images' : convTable };
+// compTable = { 'Modules to compress images' : compTable };
+// procTable = { 'Modules to process images' : procTable };
 
-function sortByWorking( a, b )
-{ // Sort by whether code is working out of the box
-  if( a.Working === 'Working' && b.Working === 'Broken' )
-  {
-    return 1;
-  }
-  else if( a.Working === 'Broken' && b.Working === 'Working' )
-  {
-    return -1;
-  }
-  else
-  {
-    return 0;
-  }
-}
+// _.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : rTable, encoding : 'yaml' } );
+// _.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : wTable, encoding : 'yaml' } );
+// _.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : convTable, encoding : 'yaml' } );
+// _.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compTable, encoding : 'yaml' } );
+// _.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImg.yml' ), data : procTable, encoding : 'yaml' } );
 
-function sortByCode ( a, b )
+// Sorts by Code, Working
+function sortByString( s1, s2 )
 {
-// 1. Sort by open/closed code
-  if( a.Code === 'open' && b.Code === 'closed' )
+  if( s1>s2 )
   {
     return 1;
   }
-  else if( a.Code === 'closed' && b.Code === 'open' )
-  {
-    return -1;
-  }
-  else
-  {
-    return 0;
-  }
-}
-
-function sortByRW( a, b )
-{
-  // Sort by R.length + W.length or B.s + N.s
-  let aTotal, bTotal;
-  // Identify process table
-  if( !a.Read && !a.Write && !a.R )
-  {
-    aTotal = 0;
-    bTotal = 0;
-
-    aTotal = a[ 'B.s' ] === '+' ? aTotal+1 : aTotal
-    aTotal = a[ 'N.s' ] === '+' ? aTotal+1 : aTotal;
-
-    bTotal = b[ 'B.s' ] === '+' ? bTotal+1 : bTotal;
-    bTotal = b[ 'N.s' ] === '+' ? bTotal+1 : bTotal;
-  } // Identify read/write table
-  else if( a.Read )
-  {
-    aTotal = a.Read.length;
-    bTotal = b.Read.length;
-  }
-  else if( a.Write )
-  {
-    aTotal = a.Write.length;
-    bTotal = b.Write.length;
-  }
-  // Identify convert/compress table
-  else
-  {
-    aTotal = ( a.R[ 0 ]==='-'? 0: a.R.length ) + ( a.W[ 0 ]==='-'? 0: a.W.length );
-    bTotal = ( b.R[ 0 ]==='-'? 0: b.R.length ) + ( b.W[ 0 ]==='-'? 0: b.W.length )
-  }
-
-  if( aTotal > bTotal )
-  {
-    return 1;
-  }
-  else if( aTotal < bTotal )
+  else if( s1<s2 )
   {
     return -1
   }
@@ -109,33 +51,21 @@ function sortByRW( a, b )
   }
 }
 
-function sortByDeps( a, b )
+// Sorts by Deps, 'RW'
+function sortByNumber( n1, n2 )
 {
-  // Sort by the amount of dependents
-  let aDep, bDep;
+  let n1Sum, n2Sum
 
-  if( a.Deps === '-' )
-  {
-    aDep = -1;
-  }
-  if( b.Deps === '-' )
-  {
-    bDep = -1;
-  }
-  if( a.Deps !== '-' )
-  {
-    aDep = +a.Deps;
-  }
-  if( b.Deps !== '-' )
-  {
-    bDep = +b.Deps;
-  }
+  if( !isFinite( n1 ) ) n1Sum = -1;
+  if( !isFinite( n2 ) ) n2Sum = -1;
+  if( isFinite( n1 ) ) n1Sum = +n1;
+  if( isFinite( n2 ) ) n2Sum = +n2;
 
-  if( aDep > bDep )
+  if( n1Sum > n2Sum )
   {
     return 1;
   }
-  else if( aDep < bDep )
+  else if( n1Sum < n2Sum )
   {
     return -1;
   }
@@ -145,286 +75,75 @@ function sortByDeps( a, b )
   }
 }
 
+function handleRW( a, b )
+{
+  let val1 = 0;
+  let val2 = 0;
+
+  // read table - 'Read'
+  if( a.Read )
+  {
+    val1 = +a.Read.length
+    val2 = +b.Read.length
+  }
+  // write table - 'Write'
+  else if( a.Write )
+  {
+    val1 = +a.Write.length
+    val2 = +b.Write.length
+  }
+  // convert/compress tables - 'R' + 'W'
+  else if( a.R )
+  {
+    val1 = ( a.R[ 0 ]==='-'? 0 : a.R.length ) + ( a.W[ 0 ]==='-'? 0 : a.W.length );
+    val2 = ( b.R[ 0 ]==='-'? 0 : b.R.length ) + ( b.W[ 0 ]==='-'? 0 : b.W.length );
+  }
+  // process table - 'B.s' + 'N.s'
+  else if( !a.Read && !a.Write && !a.R )
+  {
+    val1 = a[ 'B.s' ] === '+' ? val1+1 : val1
+    val1 = a[ 'N.s' ] === '+' ? val1+1 : val1;
+
+    val2 = b[ 'B.s' ] === '+' ? val2+1 : val2;
+    val2 = b[ 'N.s' ] === '+' ? val2+1 : val2;
+  }
+
+  return [ val1, val2 ];
+}
+
 function sortTable( a, b )
 {
-  if( sortOrder[ 0 ] === 'Working' )
+  for( let i = 0; i < sortOrder.length; i++ )
   {
-    if( sortByWorking( a, b ) === 0 )
+    let val1, val2;
+
+    if( sortOrder[ i ].name === 'RW' )
     {
-      if( sortOrder[ 1 ] === 'Code' )
-      {
-        if( sortByCode( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='RW' )
-          {
-            const result = sortByRW( a, b ) === 0 ? sortByDeps( a, b ) : sortByRW( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Deps' )
-          {
-            const result = sortByDeps( a, b ) === 0 ? sortByRW( a, b ) : sortByDeps( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByCode( a, b );
-        }
-      }
-      else if( sortOrder[ 1 ] === 'RW' )
-      {
-        if( sortByRW( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Code' )
-          {
-            const result = sortByCode( a, b ) === 0 ? sortByDeps( a, b ) : sortByCode( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Deps' )
-          {
-            const result = sortByDeps( a, b ) === 0 ? sortByCode( a, b ) : sortByDeps( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByRW( a, b );
-        }
-      }
-      else if( sortOrder[ 1 ] === 'Deps' )
-      {
-        if( sortByDeps( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Code' )
-          {
-            const result = sortByCode( a, b ) === 0 ? sortByRW( a, b ) : sortByCode( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='RW' )
-          {
-            const result = sortByRW( a, b ) === 0 ? sortByCode( a, b ) : sortByRW( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByDeps( a, b );
-        }
-      }
+      [ val1, val2 ] = handleRW( a, b );
     }
     else
     {
-      return sortByWorking( a, b );
+      val1 = a[ sortOrder[ i ].name ];
+      val2 = b[ sortOrder[ i ].name ];
     }
+
+    if( sortOrder[ i ].type === 'string' )
+    {
+      if( sortByString( val1, val2 ) === 0 )continue;
+      return sortByString( val1, val2 )
+    }
+
+    if( sortByNumber( val1, val2 ) === 0 )continue;
+    return sortByNumber( val1, val2 )
   }
-  else if( sortOrder[ 0 ] === 'Code' )
-  {
-    if( sortByCode( a, b ) === 0 )
-    {
-      if( sortOrder[ 1 ] === 'RW' )
-      {
-        if( sortByRW( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Working' )
-          {
-            const result = sortByWorking( a, b ) === 0 ? sortByDeps( a, b ) : sortByWorking( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Deps' )
-          {
-            const result = sortByDeps( a, b ) === 0 ? sortByWorking( a, b ) : sortByDeps( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByRW( a, b );
-        }
-      }
-      else if( sortOrder[ 1 ] === 'Deps' )
-      {
-        if( sortByDeps( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='RW' )
-          {
-            const result = sortByRW( a, b ) === 0 ? sortByWorking( a, b ) : sortByRW( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Working' )
-          {
-            const result = sortByWorking( a, b ) === 0 ? sortByRW( a, b ) : sortByWorking( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByDeps( a, b );
-        }
-      }
-      else if( sortOrder[ 1 ] === 'Working' )
-      {
-        if( sortByWorking( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Deps' )
-          {
-            const result = sortByDeps( a, b ) === 0 ? sortByRW( a, b ) : sortByDeps( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='RW' )
-          {
-            const result = sortByRW( a, b ) === 0 ? sortByDeps( a, b ) : sortByRW( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByWorking( a, b );
-        }
-      }
-    }
-    else
-    {
-      return sortByCode( a, b );
-    }
-  }
-  else if( sortOrder[ 0 ] === 'RW' )
-  {
-    if( sortByRW( a, b ) === 0 )
-    {
-      if( sortOrder[ 1 ] === 'Code' )
-      {
-        if( sortByCode( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Working' )
-          {
-            const result = sortByWorking( a, b ) === 0 ? sortByDeps( a, b ) : sortByWorking( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Deps' )
-          {
-            const result = sortByDeps( a, b ) === 0 ? sortByWorking( a, b ) : sortByDeps( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByCode( a, b );
-        }
-      }
-      else if( sortOrder[ 1 ] === 'Deps' )
-      {
-        if( sortByDeps( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Code' )
-          {
-            const result = sortByCode( a, b ) === 0 ? sortByWorking( a, b ) : sortByCode( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Working' )
-          {
-            const result = sortByWorking( a, b ) === 0 ? sortByCode( a, b ) : sortByWorking( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByDeps( a, b );
-        }
-      }
-      else if( sortOrder[ 1 ] === 'Working' )
-      {
-        if( sortByWorking( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Deps' )
-          {
-            const result = sortByDeps( a, b ) === 0 ? sortByCode( a, b ) : sortByDeps( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Code' )
-          {
-            const result = sortByCode( a, b ) === 0 ? sortByDeps( a, b ) : sortByCode( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByWorking( a, b );
-        }
-      }
-    }
-    else
-    {
-      return sortByRW( a, b );
-    }
-  }
-  else if( sortOrder[ 0 ]=== 'Deps' )
-  {
-    if( sortByDeps( a, b ) === 0 )
-    {
-      if( sortOrder[ 1 ] === 'Code' )
-      {
-        if( sortByCode( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Working' )
-          {
-            const result = sortByWorking( a, b ) === 0 ? sortByRW( a, b ) : sortByWorking( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='RW' )
-          {
-            const result = sortByRW( a, b ) === 0 ? sortByWorking( a, b ) : sortByRW( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByCode( a, b );
-        }
-      }
-      else if( sortOrder[ 1 ] === 'RW' )
-      {
-        if( sortByRW( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='Code' )
-          {
-            const result = sortByCode( a, b ) === 0 ? sortByWorking( a, b ) : sortByCode( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Working' )
-          {
-            const result = sortByWorking( a, b ) === 0 ? sortByCode( a, b ) : sortByWorking( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByRW( a, b );
-        }
-      }
-      else if( sortOrder[ 1 ] === 'Working' )
-      {
-        if( sortByWorking( a, b ) === 0 )
-        {
-          if( sortOrder[ 2 ] ==='RW' )
-          {
-            const result = sortByRW( a, b ) === 0 ? sortByCode( a, b ) : sortByRW( a, b )
-            return result;
-          }
-          else if( sortOrder[ 2 ] ==='Code' )
-          {
-            const result = sortByCode( a, b ) === 0 ? sortByRW( a, b ) : sortByCode( a, b )
-            return result;
-          }
-        }
-        else
-        {
-          return sortByWorking( a, b );
-        }
-      }
-    }
-    else
-    {
-      return sortByDeps( a, b );
-    }
-  }
+
+  return 0;
+}
+
+function sortAndWrite( table, name )
+{
+  table.sort( sortTable ).reverse();
+  let tName = `Modules to ${name.toLowerCase()} images`;
+  table = { [ tName ] : table };
+  _.fileProvider.fileWrite( { filePath : abs( `../data/${name}Img.yml` ), data : table, encoding : 'yaml' } );
 }

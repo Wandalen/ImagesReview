@@ -49,7 +49,6 @@ function sortByNumber( n1, n2 )
   {
     return 0;
   }
-
 }
 
 function sortTable( a, b )
