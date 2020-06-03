@@ -137,7 +137,7 @@ function sortTable( a, b )
     return sortByNumber( val1, val2 )
   }
 
-  return 0;
+  return sortByString( a.N.name, b.N.name );
 }
 
 function sortAndWrite( table, name )
