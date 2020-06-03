@@ -12,24 +12,6 @@ console.log( rTable );
 rTable = { 'Modules to read images' : rTable };
 _.fileProvider.fileWrite( { filePath : abs( '../data/ReadImgSortedByCodeDeps.yml' ), data : rTable, encoding : 'yaml' } );
 
-
-// function sortByCode ( a, b )
-// {
-// // 1. Sort by open/closed code
-//   if( a.Code > b.Code )
-//   {
-//     return 1;
-//   }
-//   else if( a.Code < b.Code )
-//   {
-//     return -1;
-//   }
-//   else
-//   {
-//     return 0;
-//   }
-// }
-
 function sortByString( s1, s2 )
 {
   if( s1>s2 )
@@ -70,57 +52,20 @@ function sortByNumber( n1, n2 )
 
 }
 
-// function sortByDeps( a, b )
-// {
-//   // Sort by the amount of dependents
-//   let aDep, bDep;
-
-//   if( !isFinite( a.Deps ) )
-//   {
-//     aDep = -1;
-//   }
-//   if( !isFinite( a.Deps ) )
-//   {
-//     bDep = -1;
-//   }
-//   if( isFinite( a.Deps ) )
-//   {
-//     aDep = +a.Deps;
-//   }
-//   if( isFinite( a.Deps ) )
-//   {
-//     bDep = +b.Deps;
-//   }
-
-//   if( aDep > bDep )
-//   {
-//     return 1;
-//   }
-//   else if( aDep < bDep )
-//   {
-//     return -1;
-//   }
-//   else
-//   {
-//     return 0;
-//   }
-// }
-
 function sortTable( a, b )
 {
-  // if( sortByCode( a, b ) === 0 )
-  // {
-  //   return sortByDeps( a, b )
-  // }
-  // else
-  // {
-  //   return sortByCode( a, b )
-  // }
   for( let i = 0; i < sortOrder.length; i++ )
   {
-    if( sortOrder[ i ].type==='string' )
-    {
+    let val1 = a[ sortOrder[ i ].name ];
+    let val2 = b[ sortOrder[ i ].name ];
 
+    if( sortOrder[ i ].type === 'string' )
+    {
+      if( sortByString( val1, val2 ) === 0 )continue;
+      return sortByString( val1, val2 )
     }
+
+    if( sortByNumber( val1, val2 ) === 0 )continue;
+    return sortByNumber( val1, val2 )
   }
 }
