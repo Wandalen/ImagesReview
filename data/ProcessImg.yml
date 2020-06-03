@@ -126,10 +126,10 @@ Modules to process images:
     Code: open
     Modular: 'yes'
     I: Native binding
-    PL: JavaScript
+    PL: C++
     B.s: '-'
     N.s: +
-    Deps: 1441
+    Deps: 1442
     Working: Working
   - 'N':
       name: cropperjs
@@ -140,7 +140,7 @@ Modules to process images:
     PL: JavaScript
     B.s: +
     N.s: '-'
-    Deps: 281
+    Deps: 282
     Working: Working
   - 'N':
       name: lwip
@@ -242,7 +242,7 @@ Modules to process images:
     Code: open
     Modular: 'yes'
     I: Pure
-    PL: JavaScript
+    PL: CoffeeScript
     B.s: +
     N.s: +
     Deps: 5
