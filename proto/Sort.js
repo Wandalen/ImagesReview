@@ -16,24 +16,6 @@ sortAndWrite( convTable, 'Convert' );
 sortAndWrite( compTable, 'Compress' );
 sortAndWrite( procTable, 'Process' );
 
-// rTable.sort( sortTable ).reverse();
-// wTable.sort( sortTable ).reverse();
-// convTable.sort( sortTable ).reverse();
-// compTable.sort( sortTable ).reverse();
-// procTable.sort( sortTable ).reverse();
-
-// rTable = { 'Modules to read images' : rTable };
-// wTable = { 'Modules to write images' : wTable };
-// convTable = { 'Modules to convert images' : convTable };
-// compTable = { 'Modules to compress images' : compTable };
-// procTable = { 'Modules to process images' : procTable };
-
-// _.fileProvider.fileWrite( { filePath : abs( '../data/ReadImg.yml' ), data : rTable, encoding : 'yaml' } );
-// _.fileProvider.fileWrite( { filePath : abs( '../data/WriteImg.yml' ), data : wTable, encoding : 'yaml' } );
-// _.fileProvider.fileWrite( { filePath : abs( '../data/ConvertImg.yml' ), data : convTable, encoding : 'yaml' } );
-// _.fileProvider.fileWrite( { filePath : abs( '../data/CompressImg.yml' ), data : compTable, encoding : 'yaml' } );
-// _.fileProvider.fileWrite( { filePath : abs( '../data/ProcessImg.yml' ), data : procTable, encoding : 'yaml' } );
-
 // Sorts by Code, Working
 function sortByString( s1, s2 )
 {
