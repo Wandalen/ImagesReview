@@ -100,8 +100,6 @@ function samples( test )
   return ready;
 }
 
-samples.timeOut = 60000;
-
 //
 
 function eslint( test )
@@ -118,7 +116,6 @@ function eslint( test )
     execPath : eslint,
     mode : 'fork',
     currentPath : rootPath,
-    // stdio : 'ignore',
     args : [ '-c', '.eslintrc.yml', '--ext', '.js,.s,.ss', '--ignore-pattern', '*.html', '--ignore-pattern', '*.txt' ],
     throwingExitCode : 0
   } )
@@ -160,15 +157,14 @@ function eslint( test )
 var Self =
 {
 
-  name : 'Overview.Image.Integration',
-  routineTimeOut : 300000,
+  name : 'Integration',
+  routineTimeOut : 500000,
   silencing : 1,
-  enabled : 1,
 
   tests :
   {
     samples,
-    eslint
+    eslint,
   },
 
 }

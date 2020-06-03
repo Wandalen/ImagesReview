@@ -1,4 +1,4 @@
-# Awesome image!
+# Awesome image projects! [![Status](https://github.com/Wandalen/OverviewImage/workflows/Test/badge.svg)](https://github.com/Wandalen/OverviewImage/actions?query=workflow%3ATest)
 
 Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.
 
