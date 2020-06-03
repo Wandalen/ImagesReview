@@ -19,7 +19,7 @@ const
 
 const { Resources : resources } = readYML( '../data/Resources.yml' );
 
-let header1 = '# Awesome image!\n\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
+let header1 = '# Awesome image projects! [![Status](https://github.com/Wandalen/OverviewImage/workflows/Test/badge.svg)](https://github.com/Wandalen/OverviewImage/actions?query=workflow%3ATest)\n\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
 let header2 = ' process images of different formats.\n'
 
 let final = `${header1}${header2}\n${tableObjToMd( 'read', rTable )}\n${tableObjToMd( 'write', wTable )}
