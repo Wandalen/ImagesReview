@@ -23,7 +23,7 @@ let path = fileProvider.path;
 
 function samples( test )
 {
-  // let context = this;
+  let context = this;
   let ready = new _.Consequence().take( null );
 
   let sampleDir = path.join( __dirname, '../sample' );
