@@ -42,4 +42,4 @@ const input  =
 
 console.log( buf )
 
-sharp( buf ).toFile( `${__dirname}/../../data/images/WrittenPixelsSharp.png`, ( err ) => console.log( err ) );
+// sharp( buf ).toFile( `${__dirname}/../../data/images/WrittenPixelsSharp.png`, ( err ) => console.log( err ) );
