@@ -2,8 +2,8 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 
 // TO DO:
-// https://github.com/dy/image-pixels
-// https://github.com/dy/image-decode
+// 4 (1/2/4/16 Bit) *  2 (alpha channel/not) *  2 (greyscale/not) * 2 (interlaced/not) * 2 (2x2/5x5) = 64
+
 
 const { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 const { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
