@@ -8,7 +8,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | C++ | - | + | 1442 | Working |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1088 | Working |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | JavaScript | + | + | 21 | Working |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | TypeScript | + | + | 21 | Working |
 | [**pngjs***](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 576 | Working |
 | [**jpeg-js***](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working |
 | [**png-js***](https://github.com/foliojs/png.js) | png | open | yes | Pure | JavaScript | + | + | 75 | Working |
@@ -28,7 +28,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1088 | Working |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | C++ | - | + | 1442 | Working |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png | open | yes | Pure | TypeScript | + | + | 21 | Working |
 | [**pngjs***](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 576 | Working |
 | [**jpeg-js***](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working |
 | [**omggif***](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 62 | Working |
@@ -46,7 +46,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | C++ | - | + | 1442 | Working |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1088 | Working |
 | [**image-conversion**](https://github.com/WangYuLue/image-conversion) | jpg, png, gif | jpg, png, gif | open | yes | Pure | TypeScript | + | - | 2 | Working |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png | open | yes | Pure | TypeScript | + | + | 21 | Working |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | - | svg | open | yes | Pure | JavaScript | + | + | 5 | Working |
 | [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1123 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
@@ -58,7 +58,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | jpg, png, webp, tiff | open | yes | Native binding | C++ | - | + | 1442 | Working |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1088 | Working |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png | open | yes | Pure | JavaScript | + | + | 21 | Working |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | jpg, png | open | yes | Pure | TypeScript | + | + | 21 | Working |
 | [**imgsquash**](https://github.com/eashish93/imgsquash) | jpg, png | jpg, png | open | Integrated GUI | Pure | JavaScript | + | + | - | Working |
 | [**compressor**](https://github.com/fengyuanchen/compressorjs) | - | jpg, png | open | yes | Pure | JavaScript | + | - | 0 | Working |
 | [**imagetracerjs**](https://github.com/jankovicsandras/imagetracerjs) | - | svg | open | yes | Pure | JavaScript | + | + | 5 | Working |
@@ -75,7 +75,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**resemblejs**](https://github.com/rsmbl/Resemble.js) | open | yes | Pure | JavaScript | + | + | 50 | Working |
 | [**pica**](https://github.com/nodeca/pica) | open | yes | Pure | JavaScript | + | + | 48 | Working |
 | [**upng-js**](https://github.com/photopea/UPNG.js) | open | yes | Pure | JavaScript | + | + | 30 | Working |
-| [**image-js**](https://github.com/image-js/image-js) | open | yes | Pure | JavaScript | + | + | 21 | Working |
+| [**image-js**](https://github.com/image-js/image-js) | open | yes | Pure | TypeScript | + | + | 21 | Working |
 | [**smartcrop**](https://github.com/jwagner/smartcrop.js) | open | Integrated GUI | Pure | JavaScript | + | + | 19 | Working |
 | [**tui-image-editor**](https://github.com/nhn/tui.image-editor) | open | yes | Pure | JavaScript | + | + | 15 | Working |
 | [**merge-images**](https://github.com/lukechilds/merge-images) | open | yes | Pure | JavaScript | + | + | 11 | Working |
