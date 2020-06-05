@@ -52,3 +52,4 @@ let sum = sum16bit + sum1_2_4bit
 ### References:
 * [The Computer Graphics Manual. Page: 970](https://books.google.com.ua/books?id=DX4YstV76c4C&pg=PA970&lpg=PA970&dq=difference+between+1+2+4+bit+png&source=bl&ots=ZuEyDxGKhk&sig=ACfU3U0sZQpqMmeJ-ib7zDSUHH40GqqHag&hl=ru&sa=X&ved=2ahUKEwjojNizu-rpAhVtwqYKHZQLCRAQ6AEwF3oECAUQAQ#v=onepage&q=difference%20between%201%202%204%20bit%20png&f=false)
 * [Web Design in a Nutshell: A Desktop Quick Reference. Page: 554](https://books.google.com.ua/books?id=QndQfp5YWCEC&pg=PA554&lpg=PA554&dq=difference+between+1+2+4+bit+png&source=bl&ots=O_NDHvaMUw&sig=ACfU3U1nTpeZu_V5jjGBIv_FIWS4SQAnUg&hl=ru&sa=X&ved=2ahUKEwjojNizu-rpAhVtwqYKHZQLCRAQ6AEwFXoECAoQAQ#v=onepage&q=difference%20between%201%202%204%20bit%20png&f=false)
+* [w3.org: Allowed combinations of colour type and bit depth](https://www.w3.org/TR/PNG/#11IHDR)
