@@ -2,7 +2,8 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 const { readYML, abs } = require( './Index' );
 
-const sortOrder = [ { name : 'Code', type : 'string', order : 1 }, { name : 'Deps', type : 'number', order : 2 } ]
+// const sortOrder = [ '>Code', '<Deps' ];
+const sortOrder = [ { name : 'Code', type : 'string', order : 1 }, { name : 'Deps', type : 'number', order : 2 } ];
 
 let { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 
@@ -60,9 +61,17 @@ function sortTable( a, b )
 
     if( sortOrder[ i ].type === 'string' )
     {
-      if( sortByString( val1, val2 ) === 0 )continue;
-      return sortByString( val1, val2 )
+      let result = sortByString( val1, val2 );
+      if( result === 0 )
+      continue;
+      return result;
     }
+
+    // if( sortOrder[ i ].type === 'string' )
+    // {
+    //   if( sortByString( val1, val2 ) === 0 )continue;
+    //   return sortByString( val1, val2 )
+    // }
 
     if( sortByNumber( val1, val2 ) === 0 )continue;
     return sortByNumber( val1, val2 )
