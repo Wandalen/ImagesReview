@@ -19,6 +19,26 @@ let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * 
 ```
 **Sum = 64**
 
+### The amount of images(refactored):
+```javascript
+let nbits = [ 1,2,4,16 ]
+let npixels = [ ‘2x2’, ‘4x5’ ]; 
+let interlaced = [ true, false ];
+let hasAlpha = [ true, false ];
+let hasColors = [ true, false ]
+let sum16bits =  1 * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
+let sum1_2_4bits = (nbits.length - 1) * interlaced.length * npixels.length
+let sum = sum16bit + sum1_2_4bit
+/* 
+ * 1/2/4 bits images can only be in Grayscale and with/without interlacing.
+ *
+ * sum16bits = 1 * 2 * 2 * 2 * 2 = 16
+ * sum1_2_4bits = 3 * 2 * 2 = 12
+ * sum = 16 + 12 = 28
+ */
+```
+**Sum = 28**
+
 ### Image filename:
 
 **Pixels-'size'-'description'.png**
@@ -28,3 +48,7 @@ let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * 
 * 'description' - all information about the image through the dashes (nbits, npixels, interlaced, hasAlpha, hasColors)
 
 *Example:* Pixels-2x2-nbits16-interlacedTrue-hasAlphaTrue-hasColorsTrue.png
+
+### References:
+* [The Computer Graphics Manual. Page: 970](https://books.google.com.ua/books?id=DX4YstV76c4C&pg=PA970&lpg=PA970&dq=difference+between+1+2+4+bit+png&source=bl&ots=ZuEyDxGKhk&sig=ACfU3U0sZQpqMmeJ-ib7zDSUHH40GqqHag&hl=ru&sa=X&ved=2ahUKEwjojNizu-rpAhVtwqYKHZQLCRAQ6AEwF3oECAUQAQ#v=onepage&q=difference%20between%201%202%204%20bit%20png&f=false)
+* [Web Design in a Nutshell: A Desktop Quick Reference. Page: 554](https://books.google.com.ua/books?id=QndQfp5YWCEC&pg=PA554&lpg=PA554&dq=difference+between+1+2+4+bit+png&source=bl&ots=O_NDHvaMUw&sig=ACfU3U1nTpeZu_V5jjGBIv_FIWS4SQAnUg&hl=ru&sa=X&ved=2ahUKEwjojNizu-rpAhVtwqYKHZQLCRAQ6AEwFXoECAoQAQ#v=onepage&q=difference%20between%201%202%204%20bit%20png&f=false)
