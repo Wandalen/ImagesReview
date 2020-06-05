@@ -2,8 +2,8 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 
 // TO DO:
-// https://github.com/dy/image-pixels
-// https://github.com/dy/image-decode
+// 4 (1/2/4/16 Bit) *  2 (alpha channel/not) *  2 (greyscale/not) * 2 (interlaced/not) * 2 (2x2/5x5) = 64
+
 
 const { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 const { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
@@ -19,7 +19,7 @@ const
 
 const { Resources : resources } = readYML( '../data/Resources.yml' );
 
-let header1 = '# Awesome image!\n\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
+let header1 = '# Awesome image projects! [![Status](https://github.com/Wandalen/OverviewImage/workflows/Test/badge.svg)](https://github.com/Wandalen/OverviewImage/actions?query=workflow%3ATest)\n\nCurated overview of awesome Javascript projects to read / write / convert / compress /'
 let header2 = ' process images of different formats.\n'
 
 let final = `${header1}${header2}\n${tableObjToMd( 'read', rTable )}\n${tableObjToMd( 'write', wTable )}

@@ -44,7 +44,7 @@ Modules to read images:
     Code: open
     Modular: 'yes'
     I: Pure
-    PL: JavaScript
+    PL: TypeScript
     B.s: +
     N.s: +
     Deps: 21
