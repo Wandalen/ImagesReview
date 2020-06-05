@@ -21,25 +21,25 @@ let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * 
 
 ### The amount of images(refactored):
 ```javascript
-let nbits = [ 1,2,4,16 ]
+let nbits = [ 1, 2, 4, 8, 16 ]
 let npixels = [ ‘2x2’, ‘4x5’ ]; 
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
 let hasColors = [ true, false ]
-let sum16bits =  1 * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
-let sum1bits = 1 * npixels.length * interlaced.length * (hasColors.length - 1) 
-let sum2_4bits = (nbits.length - 2) * npixels.length * interlaced.length  * hasColors.length
-let sum = sum16bit + sum1_2_4bit
+let sum1bits = 1 * npixels.length * interlaced.length * (hasColors.length - 1);
+let sum2_4bits = (nbits.length - 3) * npixels.length * interlaced.length  * hasColors.length;
+let sum8_16bits =  (nbits.length - 3) * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
+let sum = sum1bits + sum2_4bits + sum8_16bits;
 /* 
  * 1 bits images can only be in Grayscale and with/without interlacing.
  * 2/4 bits images can only be in Color/Grayscale and with/without interlacing.
- * sum16bits = 1 * 2 * 2 * 2 * 2 = 16
  * sum1bits = 1 * 2 * 2 * 1 = 4
  * sum2_4bits = 2 * 2 * 2 * 2 = 16
- * sum = 16 + 4 + 16 = 36 images
+ * sum8_16bits = 2 * 2 * 2 * 2 * 2 = 32
+ * sum = 4 + 16 + 32 = 52 images
  */
 ```
-**Sum = 36**
+**Sum = 52**
 
 ### Image filename:
 
