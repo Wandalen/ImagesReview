@@ -27,17 +27,19 @@ let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
 let hasColors = [ true, false ]
 let sum16bits =  1 * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
-let sum1_2_4bits = (nbits.length - 1) * interlaced.length * npixels.length
+let sum1bits = 1 * npixels.length * interlaced.length * (hasColors.length - 1) 
+let sum2_4bits = (nbits.length - 2) * npixels.length * interlaced.length  * hasColors.length
 let sum = sum16bit + sum1_2_4bit
 /* 
- * 1/2/4 bits images can only be in Grayscale and with/without interlacing.
- *
+ * 1 bits images can only be in Grayscale and with/without interlacing.
+ * 2/4 bits images can only be in Color/Grayscale and with/without interlacing.
  * sum16bits = 1 * 2 * 2 * 2 * 2 = 16
- * sum1_2_4bits = 3 * 2 * 2 = 12
- * sum = 16 + 12 = 28
+ * sum1bits = 1 * 2 * 2 * 1 = 4
+ * sum2_4bits = 2 * 2 * 2 * 2 = 16
+ * sum = 16 + 4 + 16 = 36 images
  */
 ```
-**Sum = 28**
+**Sum = 36**
 
 ### Image filename:
 
