@@ -21,10 +21,10 @@ let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * 
 
 ### Image filename:
 
-**Pixels-<size>-.<description>.png**
+**Pixels-'size'-'description'.png**
 
 *Where:*
-* size - 2x2 or 4x5
-* description - all information of the image (nbits, npixels, interlaced, hasAlpha, hasColors)
+* 'size' - 2x2 or 4x5
+* 'description' - all information about the image through the dashes (nbits, npixels, interlaced, hasAlpha, hasColors)
 
 *Example:* Pixels-2x2-nbits16-interlacedTrue-hasAlphaTrue-hasColorsTrue.png
