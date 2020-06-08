@@ -2,7 +2,6 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 const { readYML, abs } = require( './Utils' );
 
-// let sortOrder = [ { name : 'Working', type : 'string' }, { name : 'Code', type : 'string' }, { name : 'RW', type : 'number' }, { name : 'Deps', type : 'number' } ]
 let types =
 {
   Working : 'string',
@@ -136,37 +135,6 @@ function sortTable( a, b )
 
   return sortByString( a.N.name, b.N.name );
 }
-
-
-// function sortTable( a, b )
-// {
-//   for( let i = 0; i < sortOrder.length; i++ )
-//   {
-//     let val1, val2;
-
-//     if( sortOrder[ i ].name === 'RW' )
-//     {
-//       [ val1, val2 ] = handleRW( a, b );
-//     }
-//     else
-//     {
-//       val1 = a[ sortOrder[ i ].name ];
-//       val2 = b[ sortOrder[ i ].name ];
-//     }
-
-//     if( sortOrder[ i ].type === 'string' )
-//     {
-//       let resultS = sortByString( val1, val2 );
-//       if( resultS === 0 )continue;
-//       return resultS;
-//     }
-//     let resultN = sortByNumber( val1, val2 )
-//     if( resultN )continue;
-//     return resultN
-//   }
-
-//   return sortByString( a.N.name, b.N.name );
-// }
 
 function sortAndWrite( table, name )
 {

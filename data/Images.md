@@ -9,11 +9,11 @@
 
 ### The amount of images:
 ```javascript
-let nbits = [ 1, 2, 4, 8, 16 ]
+let nbits = [ 1, 2, 4, 8, 16 ];
 let npixels = [ ‘2x2’, ‘4x5’ ]; 
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
-let hasColors = [ true, false ]
+let hasColors = [ true, false ];
 let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
 // 4 * 2 * 2 * 2 * 2 = 64 
 ```
@@ -21,11 +21,11 @@ let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * 
 
 ### The amount of images(refactored):
 ```javascript
-let nbits = [ 1, 2, 4, 8, 16 ]
+let nbits = [ 1, 2, 4, 8, 16 ];
 let npixels = [ ‘2x2’, ‘4x5’ ]; 
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
-let hasColors = [ true, false ]
+let hasColors = [ true, false ];
 let sum1bits = 1 * npixels.length * interlaced.length * (hasColors.length - 1);
 let sum2_4bits = (nbits.length - 3) * npixels.length * interlaced.length  * hasColors.length;
 let sum8_16bits =  (nbits.length - 3) * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
