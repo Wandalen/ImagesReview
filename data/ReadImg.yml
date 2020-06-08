@@ -15,7 +15,7 @@ Modules to read images:
     PL: C++
     B.s: '-'
     N.s: +
-    Deps: 1442
+    Deps: 1454
     Working: Working
   - 'N':
       name: jimp
@@ -32,7 +32,7 @@ Modules to read images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 1088
+    Deps: 1098
     Working: Working
   - 'N':
       name: image-js
@@ -60,7 +60,7 @@ Modules to read images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 576
+    Deps: 577
     Working: Working
   - 'N':
       name: jpeg-js*
@@ -99,7 +99,7 @@ Modules to read images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 62
+    Deps: 63
     Working: Working
   - 'N':
       name: bmp-js*
@@ -181,7 +181,7 @@ Modules to read images:
     PL: C
     B.s: '-'
     N.s: +
-    Deps: 1123
+    Deps: 1124
     Working: Working
   - 'N':
       name: lwip

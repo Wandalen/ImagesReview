@@ -12,8 +12,8 @@ fs.readFile(
       {
         if( err ) console.log( err );
 
-        console.log( 'rgb(' + png.pixels.toJSON().data.slice( 0, 3 ) + ')' )
+        console.log( 'rgb( ' + png.pixels.toJSON().data.slice( 0, 3 ) + ' )' )
       } );
   }
 );
-// OUTPUT: rgb(255,0,0)
+// log: rgb( 255,0,0 )

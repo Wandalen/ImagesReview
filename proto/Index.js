@@ -1,9 +1,7 @@
 const _ = require( 'wTools' );
 require( 'wFiles' );
-
+const { readYML, abs } = require( './Utils' )
 // TO DO:
-// 4 (1/2/4/16 Bit) *  2 (alpha channel/not) *  2 (greyscale/not) * 2 (interlaced/not) * 2 (2x2/5x5) = 64
-
 
 const { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 const { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
@@ -34,13 +32,6 @@ writeMd( '../README.md', final );
 //   filePath : abs( '../README.md' ),
 // } ) );
 
-function abs()
-{
-  return _.path.s.join( __dirname, ... arguments );
-}
-
-exports.abs = abs;
-
 function readMd( path )
 {
   const data = _.fileProvider.fileRead( {
@@ -50,17 +41,6 @@ function readMd( path )
   return data;
 }
 
-function readYML( yml )
-{
-  const data = _.fileProvider.fileRead( {
-    filePath : abs( yml ),
-    encoding : 'yaml',
-  } );
-
-  return data;
-}
-
-exports.readYML = readYML;
 
 function writeMd( md, data )
 {
