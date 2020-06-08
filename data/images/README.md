@@ -1,6 +1,7 @@
 # Description of the images
 
 ### Images:
+
 * Size: 2x2 and 4x5 pixels
 * Bits: 1, 2, 4, 8, 16
 * Interlaced: yes, no
@@ -8,29 +9,31 @@
 * Has alpha channel: yes, no
 
 ### The amount of images:
+
 ```javascript
 let nbits = [ 1, 2, 4, 8, 16 ];
-let npixels = [ ‘2x2’, ‘4x5’ ]; 
+let npixels = [ ‘2x2’, ‘4x5’ ];
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
 let hasColors = [ true, false ];
 let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
-// 4 * 2 * 2 * 2 * 2 = 64 
+// 4 * 2 * 2 * 2 * 2 = 64
 ```
 **Sum = 64**
 
-### The amount of images(refactored):
+### The amount of images:
+
 ```javascript
 let nbits = [ 1, 2, 4, 8, 16 ];
-let npixels = [ ‘2x2’, ‘4x5’ ]; 
+let npixels = [ ‘2x2’, ‘4x5’ ];
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
 let hasColors = [ true, false ];
-let sum1bits = 1 * npixels.length * interlaced.length * (hasColors.length - 1);
+let sum1bits = npixels.length * interlaced.length;
 let sum2_4bits = (nbits.length - 3) * npixels.length * interlaced.length  * hasColors.length;
 let sum8_16bits =  (nbits.length - 3) * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
 let sum = sum1bits + sum2_4bits + sum8_16bits;
-/* 
+/*
  * 1 bits images can only be in Grayscale and with/without interlacing.
  * 2/4 bits images can only be in Color/Grayscale and with/without interlacing.
  * sum1bits = 1 * 2 * 2 * 1 = 4
