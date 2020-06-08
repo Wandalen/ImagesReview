@@ -1,7 +1,7 @@
 const _ = require( 'wTools' );
 require( 'wFiles' );
 require( 'wnpmtools' );
-const { readYML, abs } = require( './Index' );
+const { readYML, abs } = require( './Utils' );
 
 let { 'Modules to read images' : rYML } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wYML } = readYML( '../data/WriteImg.yml' );

@@ -1,6 +1,6 @@
 const _ = require( 'wTools' );
 require( 'wFiles' );
-const { readYML, abs } = require( './Index' );
+const { readYML, abs } = require( './Utils' );
 
 // const sortOrder = [ '>Code', '<Deps' ];
 const sortOrder = [ { name : 'Code', type : 'string', order : 1 }, { name : 'Deps', type : 'number', order : 2 } ];
