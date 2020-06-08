@@ -2,14 +2,14 @@
 
 ### Images:
 * Size: 2x2 and 4x5 pixels
-* Bits: 1, 2, 4, 16
+* Bits: 1, 2, 4, 8, 16
 * Interlaced: yes, no
 * Has colors: yes, no(grayscale)
 * Has alpha channel: yes, no
 
 ### The amount of images:
 ```javascript
-let nbits = [ 1,2,4,16 ]
+let nbits = [ 1, 2, 4, 8, 16 ]
 let npixels = [ ‘2x2’, ‘4x5’ ]; 
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
@@ -47,9 +47,9 @@ let sum = sum1bits + sum2_4bits + sum8_16bits;
 
 *Where:*
 * 'size' - 2x2 or 4x5
-* 'description' - all information about the image through the dashes (nbits, npixels, interlaced, hasAlpha, hasColors)
+* 'description' - all information about the image through the dashes (depth, npixels, interlaced, hasAlpha - a, hasColors - rgb or g). 1 - true, 0 - fasle
 
-*Example:* Pixels-2x2-nbits16-interlacedTrue-hasAlphaTrue-hasColorsTrue.png
+*Example:* Pixels-2x2-depth16-interlaced1-rgba.png
 
 ### References:
 * [The Computer Graphics Manual. Page: 970](https://books.google.com.ua/books?id=DX4YstV76c4C&pg=PA970&lpg=PA970&dq=difference+between+1+2+4+bit+png&source=bl&ots=ZuEyDxGKhk&sig=ACfU3U0sZQpqMmeJ-ib7zDSUHH40GqqHag&hl=ru&sa=X&ved=2ahUKEwjojNizu-rpAhVtwqYKHZQLCRAQ6AEwF3oECAUQAQ#v=onepage&q=difference%20between%201%202%204%20bit%20png&f=false)
