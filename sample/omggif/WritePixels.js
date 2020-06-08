@@ -4,8 +4,9 @@ const omggif = require( 'omggif' );
 let buf = Buffer.from( {
   type : 'Buffer',
   data : [
-    255, 0, 0, 255, 0, 255,
-    0, 255, 0, 0, 255, 255,
+    255, 0, 0, 255,
+    0, 255, 0, 255,
+    0, 0, 255, 255,
     255, 255, 255, 255
   ]
 } );
