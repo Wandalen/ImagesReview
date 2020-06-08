@@ -8,7 +8,7 @@ Modules to process images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 1088
+    Deps: 1098
     Working: Working
   - 'N':
       name: imagemin
@@ -19,7 +19,7 @@ Modules to process images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 689
+    Deps: 693
     Working: Working
   - 'N':
       name: resemblejs
@@ -41,7 +41,7 @@ Modules to process images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 48
+    Deps: 47
     Working: Working
   - 'N':
       name: upng-js
@@ -52,7 +52,7 @@ Modules to process images:
     PL: JavaScript
     B.s: +
     N.s: +
-    Deps: 30
+    Deps: 29
     Working: Working
   - 'N':
       name: image-js
@@ -129,7 +129,7 @@ Modules to process images:
     PL: C++
     B.s: '-'
     N.s: +
-    Deps: 1442
+    Deps: 1454
     Working: Working
   - 'N':
       name: cropperjs
@@ -234,7 +234,7 @@ Modules to process images:
     PL: C
     B.s: '-'
     N.s: +
-    Deps: 1123
+    Deps: 1124
     Working: Working
   - 'N':
       name: caman

@@ -3,8 +3,9 @@ const gm = require( 'gm' ).subClass( { imageMagick : true } );
 let buf = Buffer.from( {
   type : 'Buffer',
   data : [
-    255, 0, 0, 255, 0, 255,
-    0, 255, 0, 0, 255, 255,
+    255, 0, 0, 255,
+    0, 255, 0, 255,
+    0, 0, 255, 255,
     255, 255, 255, 255
   ]
 } );

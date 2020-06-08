@@ -2,18 +2,18 @@
 
 ### Images:
 * Size: 2x2 and 4x5 pixels
-* Bits: 1, 2, 4, 16
+* Bits: 1, 2, 4, 8, 16
 * Interlaced: yes, no
 * Has colors: yes, no(grayscale)
 * Has alpha channel: yes, no
 
 ### The amount of images:
 ```javascript
-let nbits = [ 1,2,4,16 ]
+let nbits = [ 1, 2, 4, 8, 16 ];
 let npixels = [ ‘2x2’, ‘4x5’ ]; 
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
-let hasColors = [ true, false ]
+let hasColors = [ true, false ];
 let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
 // 4 * 2 * 2 * 2 * 2 = 64 
 ```
@@ -21,25 +21,25 @@ let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * 
 
 ### The amount of images(refactored):
 ```javascript
-let nbits = [ 1,2,4,16 ]
+let nbits = [ 1, 2, 4, 8, 16 ];
 let npixels = [ ‘2x2’, ‘4x5’ ]; 
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
-let hasColors = [ true, false ]
-let sum16bits =  1 * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
-let sum1bits = 1 * npixels.length * interlaced.length * (hasColors.length - 1) 
-let sum2_4bits = (nbits.length - 2) * npixels.length * interlaced.length  * hasColors.length
-let sum = sum16bit + sum1_2_4bit
+let hasColors = [ true, false ];
+let sum1bits = 1 * npixels.length * interlaced.length * (hasColors.length - 1);
+let sum2_4bits = (nbits.length - 3) * npixels.length * interlaced.length  * hasColors.length;
+let sum8_16bits =  (nbits.length - 3) * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
+let sum = sum1bits + sum2_4bits + sum8_16bits;
 /* 
  * 1 bits images can only be in Grayscale and with/without interlacing.
  * 2/4 bits images can only be in Color/Grayscale and with/without interlacing.
- * sum16bits = 1 * 2 * 2 * 2 * 2 = 16
  * sum1bits = 1 * 2 * 2 * 1 = 4
  * sum2_4bits = 2 * 2 * 2 * 2 = 16
- * sum = 16 + 4 + 16 = 36 images
+ * sum8_16bits = 2 * 2 * 2 * 2 * 2 = 32
+ * sum = 4 + 16 + 32 = 52 images
  */
 ```
-**Sum = 36**
+**Sum = 52**
 
 ### Image filename:
 
@@ -47,9 +47,9 @@ let sum = sum16bit + sum1_2_4bit
 
 *Where:*
 * 'size' - 2x2 or 4x5
-* 'description' - all information about the image through the dashes (nbits, npixels, interlaced, hasAlpha, hasColors)
+* 'description' - all information about the image through the dashes (npixels, depth, interlaced, hasAlpha - a, hasColors - rgb or g). 1 - true, 0 - false
 
-*Example:* Pixels-2x2-nbits16-interlacedTrue-hasAlphaTrue-hasColorsTrue.png
+*Example:* Pixels-2x2-depth16-interlaced1-rgba.png
 
 ### References:
 * [The Computer Graphics Manual. Page: 970](https://books.google.com.ua/books?id=DX4YstV76c4C&pg=PA970&lpg=PA970&dq=difference+between+1+2+4+bit+png&source=bl&ots=ZuEyDxGKhk&sig=ACfU3U0sZQpqMmeJ-ib7zDSUHH40GqqHag&hl=ru&sa=X&ved=2ahUKEwjojNizu-rpAhVtwqYKHZQLCRAQ6AEwF3oECAUQAQ#v=onepage&q=difference%20between%201%202%204%20bit%20png&f=false)
