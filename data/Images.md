@@ -47,7 +47,7 @@ let sum = sum1bits + sum2_4bits + sum8_16bits;
 
 *Where:*
 * 'size' - 2x2 or 4x5
-* 'description' - all information about the image through the dashes (depth, npixels, interlaced, hasAlpha - a, hasColors - rgb or g). 1 - true, 0 - fasle
+* 'description' - all information about the image through the dashes (npixels, depth, interlaced, hasAlpha - a, hasColors - rgb or g). 1 - true, 0 - false
 
 *Example:* Pixels-2x2-depth16-interlaced1-rgba.png
 
