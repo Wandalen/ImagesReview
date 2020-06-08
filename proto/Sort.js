@@ -2,7 +2,16 @@ const _ = require( 'wTools' );
 require( 'wFiles' );
 const { readYML, abs } = require( './Utils' );
 
-let sortOrder = [ { name : 'Working', type : 'string' }, { name : 'Code', type : 'string' }, { name : 'RW', type : 'number' }, { name : 'Deps', type : 'number' } ]
+// let sortOrder = [ { name : 'Working', type : 'string' }, { name : 'Code', type : 'string' }, { name : 'RW', type : 'number' }, { name : 'Deps', type : 'number' } ]
+let types =
+{
+  Working : 'string',
+  Code : 'string',
+  RW : 'number',
+  Deps : 'number'
+};
+
+let sortOrder = [ '>Working', '>Code', '>RW', '>Deps' ]
 
 let { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 let { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
@@ -98,29 +107,66 @@ function sortTable( a, b )
   for( let i = 0; i < sortOrder.length; i++ )
   {
     let val1, val2;
+    let name = sortOrder[ i ].slice( 1 );
+    let order  = sortOrder[ i ][ 0 ];
 
-    if( sortOrder[ i ].name === 'RW' )
+    if( name === 'RW' )
     {
       [ val1, val2 ] = handleRW( a, b );
     }
     else
     {
-      val1 = a[ sortOrder[ i ].name ];
-      val2 = b[ sortOrder[ i ].name ];
+      val1 = a[ name ];
+      val2 = b[ name ];
     }
 
-    if( sortOrder[ i ].type === 'string' )
+    if( types[ name ] === 'string' )
     {
-      if( sortByString( val1, val2 ) === 0 )continue;
-      return sortByString( val1, val2 )
+      let resultS = order === '>' ? sortByString( val1, val2 ) : sortByString( val2, val1 );
+      if( resultS === 0 )continue;
+      return resultS;
     }
-
-    if( sortByNumber( val1, val2 ) === 0 )continue;
-    return sortByNumber( val1, val2 )
+    else if( types[ name ] === 'number' )
+    {
+      let resultN = order === '>' ? sortByNumber( val1, val2 ) : sortByNumber( val2, val1 )
+      if( resultN === 0 )continue;
+      return resultN
+    }
   }
 
   return sortByString( a.N.name, b.N.name );
 }
+
+
+// function sortTable( a, b )
+// {
+//   for( let i = 0; i < sortOrder.length; i++ )
+//   {
+//     let val1, val2;
+
+//     if( sortOrder[ i ].name === 'RW' )
+//     {
+//       [ val1, val2 ] = handleRW( a, b );
+//     }
+//     else
+//     {
+//       val1 = a[ sortOrder[ i ].name ];
+//       val2 = b[ sortOrder[ i ].name ];
+//     }
+
+//     if( sortOrder[ i ].type === 'string' )
+//     {
+//       let resultS = sortByString( val1, val2 );
+//       if( resultS === 0 )continue;
+//       return resultS;
+//     }
+//     let resultN = sortByNumber( val1, val2 )
+//     if( resultN )continue;
+//     return resultN
+//   }
+
+//   return sortByString( a.N.name, b.N.name );
+// }
 
 function sortAndWrite( table, name )
 {
