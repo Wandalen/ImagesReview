@@ -16,6 +16,5 @@
 | [**utif***](https://github.com/photopea/UTIF.js) | - | -  | - | R W | -  | - | - |
 | [**png.js**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
 | [**png-js***](https://github.com/foliojs/png.js) | - | R | -  | - | - | - | - |
-| [**jpeg-lossless-decoder-js***](https://github.com/rii-mango/JPEGLosslessDecoderJS) | - | R  | -  | - | - | - | - |
 | [**libjpeg***](https://github.com/pkrumins/node-jpeg) | - | W  | -  | - | - | - | - |
 | [**gm**](https://github.com/aheckmann/gm) | R W  | R W  | R W  | - | R W | - | - |

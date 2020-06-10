@@ -16,7 +16,6 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**bmp-js***](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working |
 | [**utif***](https://github.com/photopea/UTIF.js) | gif | open | yes | Pure | JavaScript | + | + | 29 | Working |
 | [**png.js***](https://github.com/arian/pngjs) | png | open | yes | Pure | JavaScript | + | + | 11 | Working |
-| [**jpeg-lossless-decoder-js***](https://github.com/rii-mango/JPEGLosslessDecoderJS) | jpg | open | yes | Pure | JavaScript | + | + | 7 | Working |
 | [**node-libpng***](https://github.com/Prior99/node-libpng) | png | open | Native binding | Pure | C++ | + | + | 2 | Working |
 | [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1124 | Working |
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
@@ -111,7 +110,6 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**utif***](https://github.com/photopea/UTIF.js) | - | -  | - | R W | -  | - | - |
 | [**png.js**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
 | [**png-js***](https://github.com/foliojs/png.js) | - | R | -  | - | - | - | - |
-| [**jpeg-lossless-decoder-js***](https://github.com/rii-mango/JPEGLosslessDecoderJS) | - | R  | -  | - | - | - | - |
 | [**libjpeg***](https://github.com/pkrumins/node-jpeg) | - | W  | -  | - | - | - | - |
 | [**gm**](https://github.com/aheckmann/gm) | R W  | R W  | R W  | - | R W | - | - |
 
