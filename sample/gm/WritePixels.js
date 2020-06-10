@@ -17,9 +17,9 @@ let buf = Buffer.from( {
 // } );
 
 // gm( buf, 'image/png' ).write( `${__dirname}/../../data/images/WrittenPixelsGm.png`, ( err ) => console.log( err ) )
-gm( 2, 2, '#00ff55aa', '#f00' )
-// .fill( '#f00' )
-// .fill( '#00f' )
+gm( 2, 2, '#f00' )
+.fill( '#f00' )
+.fill( '#00f' )
 .write( `${__dirname}/../../data/images/WrittenPixelsGm.png`, function( err )
 {
     if( err )console.log( err );
