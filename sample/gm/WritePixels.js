@@ -10,4 +10,18 @@ let buf = Buffer.from( {
   ]
 } );
 
-gm( 2, 2, buf ).write( `${__dirname}/../../data/images/WrittenPixelsGm.png`, ( err ) => console.log( err ) )
+// gm( `${__dirname}/../../data/images/Image.png` ).identify( ( err, data ) =>
+// {
+//     if( err ) console.log( err );
+//     console.log( data )
+// } );
+
+// gm( buf, 'image/png' ).write( `${__dirname}/../../data/images/WrittenPixelsGm.png`, ( err ) => console.log( err ) )
+gm( 2, 2, '#00ff55aa', '#f00' )
+// .fill( '#f00' )
+// .fill( '#00f' )
+.write( `${__dirname}/../../data/images/WrittenPixelsGm.png`, function( err )
+{
+    if( err )console.log( err );
+    // console.log( this.outname + ' created  :: ' + arguments[ 3 ] )
+} )

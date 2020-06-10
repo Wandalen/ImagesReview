@@ -1,6 +1,6 @@
 const Jimp = require( 'jimp' );
 
-Jimp.read( `${__dirname}/../../data/images/WrittenPixelsUtif.tif` ).then( ( img ) =>
+Jimp.read( `${__dirname}/../../data/images/Image.tif` ).then( ( img ) =>
 {
   console.log( 'rgb( ' + img.bitmap.data.toJSON().data.slice( 0, 3 ) + ' )' );
 } );
