@@ -146,8 +146,7 @@ Modules to convert images:
       - jpg
       - png
     W:
-      - jpg
-      - png
+      - '-'
     Code: open
     Modular: 'yes'
     I: Pure

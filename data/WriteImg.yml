@@ -156,17 +156,3 @@ Modules to write images:
     N.s: +
     Deps: 79
     Working: Broken
-  - 'N':
-      name: caman
-      link: 'https://github.com/meltingice/CamanJS/'
-    Write:
-      - jpg
-      - png
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: CoffeeScript
-    B.s: +
-    N.s: +
-    Deps: 5
-    Working: Broken
