@@ -141,19 +141,6 @@ Modules to read images:
     Deps: 11
     Working: Working
   - 'N':
-      name: jpeg-lossless-decoder-js*
-      link: 'https://github.com/rii-mango/JPEGLosslessDecoderJS'
-    Read:
-      - jpg
-    Code: open
-    Modular: 'yes'
-    I: Pure
-    PL: JavaScript
-    B.s: +
-    N.s: +
-    Deps: 7
-    Working: Working
-  - 'N':
       name: node-libpng*
       link: 'https://github.com/Prior99/node-libpng'
     Read:

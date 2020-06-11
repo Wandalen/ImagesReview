@@ -25,24 +25,29 @@ let sum = nbits.length * npixels.length * interlaced.length * hasAlpha.length * 
 
 ```javascript
 let nbits = [ 1, 2, 4, 8, 16 ];
-let npixels = [ ‘2x2’, ‘4x5’ ];
+let npixels = [ '2x2', '4x5' ];
+let additionalPixels = [ '2048х2048', '4096х4096', '8192х8192' ]
 let interlaced = [ true, false ];
 let hasAlpha = [ true, false ];
+let palette = [true, false];
 let hasColors = [ true, false ];
 let sum1bits = npixels.length * interlaced.length;
 let sum2_4bits = (nbits.length - 3) * npixels.length * interlaced.length  * hasColors.length;
-let sum8_16bits =  (nbits.length - 3) * npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
-let sum = sum1bits + sum2_4bits + sum8_16bits;
+let sum8bits =  npixels.length * interlaced.length * hasAlpha.length * hasColors.length + ( ( palette.length - 1 ) * interlaced.length * npixels );
+let sum16bits = npixels.length * interlaced.length * hasAlpha.length * hasColors.length;
+let sum = sum1bits + sum2_4bits + sum8_16bits + additionalPixels.length;
 /*
  * 1 bits images can only be in Grayscale and with/without interlacing.
- * 2/4 bits images can only be in Color/Grayscale and with/without interlacing.
+ * 2/4 bits images can only be in Color(palette)/Grayscale and with/without interlacing.
+ * 8 bits images can be in Palette or RGB orGrayscale: Palette with/without interlacing, without alpha
  * sum1bits = 1 * 2 * 2 * 1 = 4
  * sum2_4bits = 2 * 2 * 2 * 2 = 16
- * sum8_16bits = 2 * 2 * 2 * 2 * 2 = 32
- * sum = 4 + 16 + 32 = 52 images
+ * sum8bits = 2 * 2 * 2 * 2 + 4 = 20
+ * sum16bits = 2 * 2 * 2 * 2 = 16
+ * sum = 4 + 16 + 20 + 16 + 3 = 59 images
  */
 ```
-**Sum = 52**
+**Sum = 59**
 
 ### Image filename:
 
