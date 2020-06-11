@@ -160,8 +160,7 @@ Modules to compress images:
       - jpg
       - png
     W:
-      - jpg
-      - png
+      - '-'
     Code: open
     Modular: 'yes'
     I: Pure
