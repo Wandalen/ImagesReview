@@ -137,7 +137,7 @@ function overviewToMd( ov )
   let temp = '### Projects description\n\n'
   ov.forEach( ( el ) =>
   {
-    temp+= `[**${el.Name}**](${el.Link}) - ${el.Description}\n`
+    temp+= `* [**${el.Name}**](${el.Link}) - ${el.Description}\n`
   } )
 
   return temp;
