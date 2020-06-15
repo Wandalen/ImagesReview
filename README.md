@@ -4,7 +4,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Projects to read images
 
-| **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Aggregative** |
+| **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | C++ | - | + | 1454 | Working | no |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working | yes |
@@ -22,7 +22,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Projects to write images
 
-| **Name** | **Write** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Aggregative** |
+| **Name** | **Write** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- |
 | [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working | yes |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | C++ | - | + | 1454 | Working | no |

@@ -53,7 +53,7 @@ function tableObjToMd( table, obj )
 
   if( table === 'read' || table === 'write' )
   {
-    temp = `### Projects to ${table === 'read' ? 'read': 'write'} images\n\n| **Name** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Aggregative** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- |\n`;
+    temp = `### Projects to ${table === 'read' ? 'read': 'write'} images\n\n| **Name** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- |\n`;
 
     obj.forEach( ( el ) =>
     {
