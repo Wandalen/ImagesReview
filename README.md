@@ -124,7 +124,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 * *N.s* - Does the project support Node.js
 * *Deps* - The amount of dependents of this project
 * *Working* - Does this project works out of the box(Working) or require additional settings(Broken)
-* *Aggregative* - Does this project implements algorithms of decoding/encoding(no) or uses other projects(yes)
+* *Agg* - Aggregative, does this project implements algorithms of decoding/encoding(no) or uses other projects(yes)
 
 **Sorting Algorithm** (descending order of significance)
 1. Sort by Working (Working > Broken)

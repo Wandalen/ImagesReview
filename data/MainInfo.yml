@@ -18,7 +18,7 @@
   - N.s: "Does the project support Node.js"
   - Deps: "The amount of dependents of this project"
   - Working: "Does this project works out of the box(Working) or require additional settings(Broken)"
-  - Aggregative: "Does this project implements algorithms of decoding/encoding(no) or uses other projects(yes)"
+  - Agg: "Aggregative, does this project implements algorithms of decoding/encoding(no) or uses other projects(yes)"
 
 "Sorting Algorithm (descending order significance)": 
   - Sort by Working (Working > Broken)
