@@ -16,6 +16,7 @@ Modules to write images:
     N.s: +
     Deps: 1098
     Working: Working
+    Aggregative: yes
   - 'N':
       name: sharp
       link: 'https://github.com/lovell/sharp'
@@ -32,6 +33,7 @@ Modules to write images:
     N.s: +
     Deps: 1454
     Working: Working
+    Aggregative: no    
   - 'N':
       name: image-js
       link: 'https://github.com/image-js/image-js'
@@ -46,6 +48,7 @@ Modules to write images:
     N.s: +
     Deps: 21
     Working: Working
+    Aggregative: yes
   - 'N':
       name: pngjs*
       link: 'https://github.com/lukeapage/pngjs'
@@ -59,6 +62,7 @@ Modules to write images:
     N.s: +
     Deps: 577
     Working: Working
+    Aggregative: no
   - 'N':
       name: jpeg-js*
       link: 'https://github.com/eugeneware/jpeg-js'
@@ -72,6 +76,7 @@ Modules to write images:
     N.s: +
     Deps: 170
     Working: Working
+    Aggregative: no
   - 'N':
       name: omggif*
       link: 'https://github.com/deanm/omggif'
@@ -85,6 +90,7 @@ Modules to write images:
     N.s: +
     Deps: 63
     Working: Working
+    Aggregative: no
   - 'N':
       name: bmp-js*
       link: 'https://github.com/shaozilee/bmp-js'
@@ -98,6 +104,7 @@ Modules to write images:
     N.s: +
     Deps: 39
     Working: Working
+    Aggregative: no
   - 'N':
       name: node-libpng*
       link: 'https://github.com/Prior99/node-libpng'
@@ -111,6 +118,7 @@ Modules to write images:
     N.s: +
     Deps: 2
     Working: Working
+    Aggregative: no
   - 'N':
       name: libjpeg*
       link: 'https://github.com/pkrumins/node-jpeg'
@@ -124,6 +132,7 @@ Modules to write images:
     N.s: +
     Deps: 0
     Working: Working
+    Aggregative: no
   - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'
@@ -139,3 +148,4 @@ Modules to write images:
     N.s: +
     Deps: 79
     Working: Broken
+    Aggregative: no
