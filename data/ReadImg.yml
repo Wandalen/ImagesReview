@@ -154,23 +154,6 @@ Modules to read images:
     Deps: 2
     Working: Working
   - 'N':
-      name: gm
-      link: 'https://github.com/aheckmann/gm'
-    Read:
-      - jpg
-      - png
-      - gif
-      - pdf
-      - webp
-    Code: closed
-    Modular: 'yes'
-    I: CUI adapter
-    PL: C
-    B.s: '-'
-    N.s: +
-    Deps: 1124
-    Working: Working
-  - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'
     Read:

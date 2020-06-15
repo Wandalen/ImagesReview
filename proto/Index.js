@@ -53,7 +53,7 @@ function tableObjToMd( table, obj )
 
   if( table === 'read' || table === 'write' )
   {
-    temp = `### Modules to ${table === 'read' ? 'read': 'write'} images\n\n| **Name** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
+    temp = `### Projects to ${table === 'read' ? 'read': 'write'} images\n\n| **Name** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
 
     obj.forEach( ( el ) =>
     {
@@ -62,7 +62,7 @@ function tableObjToMd( table, obj )
   }
   else if( table === 'compress' || table === 'convert' )
   {
-    temp = `### Modules to ${table === 'compress' ? 'compress': 'convert'} images\n\n| **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
+    temp = `### Projects to ${table === 'compress' ? 'compress': 'convert'} images\n\n| **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |\n| --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |\n`;
     obj.forEach( ( el ) =>
     {
       temp += `| [**${ el.N.name }**](${ el.N.link }) | ${el.R[ 0 ] === '-'? '-': el.R.join( ', ' )} | ${el.W[ 0 ] === '-'? '-': el.W.join( ', ' )} | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } | ${el.Working} |\n`;
@@ -70,7 +70,7 @@ function tableObjToMd( table, obj )
   }
   else if( table === 'process' )
   {
-    temp ='### Modules to process images\n\n| **Name** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps**| **Working** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n';
+    temp ='### Projects to process images\n\n| **Name** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps**| **Working** |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n';
 
     obj.forEach( ( el ) =>
     {
