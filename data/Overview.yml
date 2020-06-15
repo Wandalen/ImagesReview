@@ -1,0 +1,40 @@
+Projects description:
+  - Name: sharp
+    Link: 'https://github.com/lovell/sharp'
+    Description: High performance Node.js image processing, module to read, write, convert, compress, resize JPEG, PNG, WebP and TIFF images. Uses the libvips library.
+  - Name: jimp
+    Link: 'https://github.com/oliver-moran/jimp/tree/master/packages/jimp'
+    Description: An image processing library for Node written entirely in JavaScript, with zero native dependencies.
+  - Name: image-js
+    Link: 'https://github.com/image-js/image-js'
+    Description: Image processing and manipulation library that allows to manipulate easily images directly in the browser or in node.
+  - Name: pngjs
+    Link: 'https://github.com/lukeapage/pngjs'
+    Description: Simple PNG encoder/decoder for Node.js with no dependencies.
+  - Name: jpeg-js
+    Link: 'https://github.com/eugeneware/jpeg-js'
+    Description: A pure javascript JPEG encoder and decoder for node.js
+  - Name: png-js
+    Link: 'https://github.com/foliojs/png.js'
+    Description: A (animated) PNG decoder in JavaScript for the HTML5 canvas element and Node.js
+  - Name: omggif
+    Link: 'https://github.com/deanm/omggif'
+    Description: JavaScript implementation of a GIF 89a encoder and decoder
+  - Name: bmp-js
+    Link: 'https://github.com/shaozilee/bmp-js'
+    Description: A pure javascript BMP encoder and decoder for node.js
+  - Name: utif
+    Link: 'https://github.com/photopea/UTIF.js'
+    Description: A small, fast and advanced TIFF / EXIF (+ DNG, CR2, NEF and other TIFF-ish files) decoder and encoder.
+  - Name: png.js
+    Link: 'https://github.com/arian/pngjs'
+    Description: PNG.js is a PNG decoder fully written in JavaScript. It works in Node.js as well as in (modern) browsers.
+  - Name: node-libpng
+    Link: 'https://github.com/Prior99/node-libpng'
+    Description: Unofficial bindings for node to libpng.
+  - Name: lwip
+    Link: 'https://github.com/EyalAr/lwip'
+    Description: Light weight image processor for NodeJS with no external runtime dependencies.
+  - Name: caman
+    Link: 'https://github.com/meltingice/CamanJS/'
+    Description: Manipulating images using the HTML5 canvas and Javascript.

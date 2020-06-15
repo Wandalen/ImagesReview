@@ -15,4 +15,3 @@
 | [**utif***](https://github.com/photopea/UTIF.js) | - | -  | - | [R](https://github.com/photopea/UTIF.js/blob/9f38fb543a2272d402cab552b42779783e2bef34/UTIF.js#L97) [W](https://github.com/photopea/UTIF.js/blob/9f38fb543a2272d402cab552b42779783e2bef34/UTIF.js#L42) | -  | - | - |
 | [**png.js**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
 | [**png-js***](https://github.com/foliojs/png.js) | - | [R](https://github.com/foliojs/png.js/blob/977b857a11676c1e720e79ed8d9178a005a9abd6/png.js#L251) | -  | - | - | - | - |
-| [**gm**](https://github.com/aheckmann/gm) | R W  | R W  | R W  | - | R W | - | - |

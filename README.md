@@ -106,7 +106,22 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**utif***](https://github.com/photopea/UTIF.js) | - | -  | - | [R](https://github.com/photopea/UTIF.js/blob/9f38fb543a2272d402cab552b42779783e2bef34/UTIF.js#L97) [W](https://github.com/photopea/UTIF.js/blob/9f38fb543a2272d402cab552b42779783e2bef34/UTIF.js#L42) | -  | - | - |
 | [**png.js**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
 | [**png-js***](https://github.com/foliojs/png.js) | - | [R](https://github.com/foliojs/png.js/blob/977b857a11676c1e720e79ed8d9178a005a9abd6/png.js#L251) | -  | - | - | - | - |
-| [**gm**](https://github.com/aheckmann/gm) | R W  | R W  | R W  | - | R W | - | - |
+
+### Projects description
+
+[**sharp**](https://github.com/lovell/sharp) - High performance Node.js image processing, module to read, write, convert, compress, resize JPEG, PNG, WebP and TIFF images. Uses the libvips library.
+[**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) - An image processing library for Node written entirely in JavaScript, with zero native dependencies.
+[**image-js**](https://github.com/image-js/image-js) - Image processing and manipulation library that allows to manipulate easily images directly in the browser or in node.
+[**pngjs**](https://github.com/lukeapage/pngjs) - Simple PNG encoder/decoder for Node.js with no dependencies.
+[**jpeg-js**](https://github.com/eugeneware/jpeg-js) - A pure javascript JPEG encoder and decoder for node.js
+[**png-js**](https://github.com/foliojs/png.js) - A (animated) PNG decoder in JavaScript for the HTML5 canvas element and Node.js
+[**omggif**](https://github.com/deanm/omggif) - JavaScript implementation of a GIF 89a encoder and decoder
+[**bmp-js**](https://github.com/shaozilee/bmp-js) - A pure javascript BMP encoder and decoder for node.js
+[**utif**](https://github.com/photopea/UTIF.js) - A small, fast and advanced TIFF / EXIF (+ DNG, CR2, NEF and other TIFF-ish files) decoder and encoder.
+[**png.js**](https://github.com/arian/pngjs) - PNG.js is a PNG decoder fully written in JavaScript. It works in Node.js as well as in (modern) browsers.
+[**node-libpng**](https://github.com/Prior99/node-libpng) - Unofficial bindings for node to libpng.
+[**lwip**](https://github.com/EyalAr/lwip) - Light weight image processor for NodeJS with no external runtime dependencies.
+[**caman**](https://github.com/meltingice/CamanJS/) - Manipulating images using the HTML5 canvas and Javascript.
 
 
 **Columns' definitions**
