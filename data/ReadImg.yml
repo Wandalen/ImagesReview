@@ -53,7 +53,7 @@ Modules to read images:
     Working: Working
     Aggregative: yes
   - 'N':
-      name: pngjs*
+      name: pngjs
       link: 'https://github.com/lukeapage/pngjs'
     Read:
       - png
@@ -67,7 +67,7 @@ Modules to read images:
     Working: Working
     Aggregative: no
   - 'N':
-      name: jpeg-js*
+      name: jpeg-js
       link: 'https://github.com/eugeneware/jpeg-js'
     Read:
       - jpg
@@ -81,7 +81,7 @@ Modules to read images:
     Working: Working
     Aggregative: no
   - 'N':
-      name: png-js*
+      name: png-js
       link: 'https://github.com/foliojs/png.js'
     Read:
       - png
@@ -95,7 +95,7 @@ Modules to read images:
     Working: Working
     Aggregative: no
   - 'N':
-      name: omggif*
+      name: omggif
       link: 'https://github.com/deanm/omggif'
     Read:
       - gif
@@ -109,7 +109,7 @@ Modules to read images:
     Working: Working
     Aggregative: no
   - 'N':
-      name: bmp-js*
+      name: bmp-js
       link: 'https://github.com/shaozilee/bmp-js'
     Read:
       - bmp
@@ -123,7 +123,7 @@ Modules to read images:
     Working: Working
     Aggregative: no
   - 'N':
-      name: utif*
+      name: utif
       link: 'https://github.com/photopea/UTIF.js'
     Read:
       - gif
@@ -137,7 +137,7 @@ Modules to read images:
     Working: Working
     Aggregative: no
   - 'N':
-      name: png.js*
+      name: png.js
       link: 'https://github.com/arian/pngjs'
     Read:
       - png
@@ -151,7 +151,7 @@ Modules to read images:
     Working: Working
     Aggregative: no
   - 'N':
-      name: node-libpng*
+      name: node-libpng
       link: 'https://github.com/Prior99/node-libpng'
     Read:
       - png

@@ -31,4 +31,4 @@ let buf = Buffer.from( {
 } )
 
 sharp( buf )
-.toFile( `${__dirname}/../../data/images/WrittenPixelsSharp.png` )
+.toFile( `${__dirname}/../../data/image/WrittenPixelsSharp.png` )

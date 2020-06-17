@@ -20,4 +20,4 @@ const rawImageData =
 
 const jpegData = jpeg.encode( rawImageData, 50 );
 
-fs.writeFileSync( `${__dirname}/../../data/images/WrittenPixelsJpeg-js.jpg`, jpegData.data );
+fs.writeFileSync( `${__dirname}/../../data/image/WrittenPixelsJpeg-js.jpg`, jpegData.data );

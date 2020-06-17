@@ -12,4 +12,4 @@ let buf = Buffer.from( {
 } );
 
 let png = PNG.sync.write( { width : 2, height : 2, data : buf } );
-fs.writeFileSync( `${__dirname}/../../data/images/WrittenPixelsPngjs.png`, png );
+fs.writeFileSync( `${__dirname}/../../data/image/WrittenPixelsPngjs.png`, png );

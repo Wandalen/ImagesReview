@@ -10,4 +10,4 @@ let buf = Buffer.from( {
   ]
 } );
 
-writePngFileSync( `${__dirname}/../../data/images/WrittenPixelsNode-libpng.png`, buf, { width : 2, height : 2 } )
+writePngFileSync( `${__dirname}/../../data/image/WrittenPixelsNode-libpng.png`, buf, { width : 2, height : 2 } )

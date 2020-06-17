@@ -9,7 +9,7 @@ const { 'Modules to convert images' : convTable } = readYML( '../data/ConvertImg
 const { 'Modules to compress images' : compTable } = readYML( '../data/CompressImg.yml' );
 const { 'Modules to process images' : processTableObj } = readYML( '../data/ProcessImg.yml' );
 const { 'Projects description' : projDesc } = readYML( '../data/Overview.yml' );
-console.log( projDesc );
+
 const
   {
     'Columns\' definitions' : columnsDef,

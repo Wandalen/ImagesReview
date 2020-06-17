@@ -1,6 +1,6 @@
 const gm = require( 'gm' ).subClass( { imageMagick : true } );
 
-gm( `${__dirname}/../../data/images/Image.jpg` ).identify( ( err, data ) =>
+gm( `${__dirname}/../../data/image/Image.jpg` ).identify( ( err, data ) =>
 {
     if( err ) console.log( err );
     console.log( data.Histogram[ '1' ][ 2 ] )

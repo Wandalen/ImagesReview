@@ -11,4 +11,4 @@ let buf = Buffer.from( {
 } );
 
 let image = new Image( 2, 2, buf );
-image.save( `${__dirname}/../../data/images/WrittenPixelsImage-js.png` );
+image.save( `${__dirname}/../../data/image/WrittenPixelsImage-js.png` );

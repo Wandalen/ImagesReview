@@ -2,7 +2,7 @@ const fs = require( 'fs' );
 const PNGReader = require( 'png.js' )
 
 fs.readFile(
-  `${__dirname}/../../data/images/Image.png`,
+  `${__dirname}/../../data/image/Image.png`,
   function( err, bytes )
   {
       if( err ) console.log( err );
