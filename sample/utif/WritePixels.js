@@ -13,4 +13,4 @@ let buf = Buffer.from( {
 
 let ifds = UTIF.encodeImage( buf, 2, 2 )
 let outBuf = Buffer.from( ifds );
-fs.writeFileSync( `${__dirname}/../../data/images/WrittenPixelsUtif.tif`, outBuf )
+fs.writeFileSync( `${__dirname}/../../data/image/WrittenPixelsUtif1.tif`, outBuf )

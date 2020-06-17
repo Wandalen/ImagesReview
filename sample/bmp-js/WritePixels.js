@@ -11,7 +11,6 @@ let buf = Buffer.from( {
   ]
 } );
 
-
 const bmpData = {
   data : buf,
   width : 2,
