@@ -11,3 +11,4 @@ let buf = Buffer.from( {
 } );
 
 writePngFileSync( `${__dirname}/../../data/image/WrittenPixelsNode-libpng.png`, buf, { width : 2, height : 2 } )
+console.log( 'written!' );

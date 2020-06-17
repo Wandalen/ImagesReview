@@ -9,3 +9,4 @@ gf.addFrame( 0, 0, 2, 2,
 let data = buf.slice( 0, gf.end() );
 
 fs.writeFileSync( `${__dirname}/../../data/image/WrittenPixelsOmggif.gif`, data );
+console.log( 'written!' );

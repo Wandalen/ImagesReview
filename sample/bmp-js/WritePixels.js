@@ -19,3 +19,4 @@ const bmpData = {
 const rawData = bmp.encode( bmpData );
 
 fs.writeFileSync( `${__dirname}/../../data/image/WrittenPixelsBmp-js.bmp`, rawData.data );
+console.log( 'written!' );
