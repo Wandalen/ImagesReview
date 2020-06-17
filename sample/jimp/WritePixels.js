@@ -1,3 +1,5 @@
+const _ = require( 'wTools' );
+require( 'wFiles' );
 const Jimp = require( 'jimp' );
 
 let buf = Buffer.from( {
@@ -12,3 +14,4 @@ let buf = Buffer.from( {
 
 new Jimp( { data : buf, width : 2, height : 2 } )
 .write( `${__dirname}/../../data/image/WrittenPixelsJimp.png`, ( err ) => console.log( err ) )
+console.log( _.fileProvider.statRead( `${__dirname}/../../data/image/WrittenPixelsJimp.png` ).size );

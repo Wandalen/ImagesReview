@@ -1,3 +1,5 @@
+const _ = require( 'wTools' );
+require( 'wFiles' );
 const fs = require( 'fs' );
 const jpeg = require( 'jpeg-js' );
 
@@ -21,4 +23,4 @@ const rawImageData =
 const jpegData = jpeg.encode( rawImageData, 50 );
 
 fs.writeFileSync( `${__dirname}/../../data/image/WrittenPixelsJpeg-js.jpg`, jpegData.data );
-console.log( 'written!' );
+console.log( _.fileProvider.statRead( `${__dirname}/../../data/image/WrittenPixelsJpeg-js.jpg` ).size );

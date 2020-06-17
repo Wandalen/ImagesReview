@@ -1,3 +1,5 @@
+const _ = require( 'wTools' );
+require( 'wFiles' );
 const fs = require( 'fs' );
 const omggif = require( 'omggif' );
 
@@ -9,4 +11,4 @@ gf.addFrame( 0, 0, 2, 2,
 let data = buf.slice( 0, gf.end() );
 
 fs.writeFileSync( `${__dirname}/../../data/image/WrittenPixelsOmggif.gif`, data );
-console.log( 'written!' );
+console.log( _.fileProvider.statRead( `${__dirname}/../../data/image/WrittenPixelsOmggif.gif` ).size );

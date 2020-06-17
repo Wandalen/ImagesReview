@@ -1,3 +1,5 @@
+const _ = require( 'wTools' );
+require( 'wFiles' );
 const { writePngFileSync }  = require( 'node-libpng' );
 
 let buf = Buffer.from( {
@@ -11,4 +13,4 @@ let buf = Buffer.from( {
 } );
 
 writePngFileSync( `${__dirname}/../../data/image/WrittenPixelsNode-libpng.png`, buf, { width : 2, height : 2 } )
-console.log( 'written!' );
+console.log( _.fileProvider.statRead( `${__dirname}/../../data/image/WrittenPixelsNode-libpng.png` ).size );

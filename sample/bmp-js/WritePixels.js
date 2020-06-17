@@ -1,3 +1,5 @@
+const _ = require( 'wTools' );
+require( 'wFiles' );
 const bmp = require( 'bmp-js' );
 const fs = require( 'fs' );
 
@@ -19,4 +21,4 @@ const bmpData = {
 const rawData = bmp.encode( bmpData );
 
 fs.writeFileSync( `${__dirname}/../../data/image/WrittenPixelsBmp-js.bmp`, rawData.data );
-console.log( 'written!' );
+console.log( _.fileProvider.statRead( `${__dirname}/../../data/image/WrittenPixelsBmp-js.bmp` ).size );
