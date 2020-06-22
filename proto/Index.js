@@ -53,13 +53,22 @@ function tableObjToMd( table, obj )
 {
   let temp = '';
 
-  if( table === 'read' || table === 'write' )
+  if( table === 'read' )
+  {
+    temp = `### Projects to ${table === 'read' ? 'read': 'write'} images\n\n| **Name** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** | **Buffer** | **Stream** | **Sync** | **Async** | **Head** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n`;
+
+    obj.forEach( ( el ) =>
+    {
+      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${table === 'read' ? el.Read.join( ', ' ) : el.Write.join( ', ' ) } | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } | ${el.Working} | ${el.Aggregative} | ${ el.Buffer } | ${el.Stream} | ${el.Sync} | ${el.Async} | ${el.Head} |\n`;
+    } );
+  }
+  else if( table === 'write' )
   {
     temp = `### Projects to ${table === 'read' ? 'read': 'write'} images\n\n| **Name** | ${table === 'read' ? '**Read**': '**Write**'} | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** |\n| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- |\n`;
 
     obj.forEach( ( el ) =>
     {
-      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${table === 'read' ? el.Read.join( ', ' ) : el.Write.join( ', ' ) } | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } | ${el.Working} | ${el.Aggregative} |\n`;
+      temp += `| [**${ el.N.name }**](${ el.N.link }) | ${el.Write.join( ', ' ) } | ${ el.Code } | ${ el.Modular } | ${ el.I } | ${ el.PL } | ${ el[ 'B.s' ] } | ${ el[ 'N.s' ] } | ${ el.Deps } | ${el.Working} | ${el.Aggregative} |\n`;
     } );
   }
   else if( table === 'compress' || table === 'convert' )
