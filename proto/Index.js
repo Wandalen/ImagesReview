@@ -154,8 +154,7 @@ function overviewToMd( ov )
 
 function ReadImgMethodsToMd( met )
 {
-  console.log( met )
-  let temp = '### Readers\' methods comaprison\n\n| **Name** | **Buffer** | **Stream** | **Sync** | **Async** | **Head** |\n| --- | --- | --- | --- | --- | --- |\n'
+  let temp = '### Readers\' methods comparison\n\n| **Name** | **Buffer** | **Stream** | **Sync** | **Async** | **Head** |\n| --- | --- | --- | --- | --- | --- |\n'
   met.forEach( ( el ) =>
   {
     temp += `| [**${el.N.name}**](${el.N.link}) | ${el.B} | ${el.Str} | ${el.S} | ${el.A} | ${el.H} |\n`;
