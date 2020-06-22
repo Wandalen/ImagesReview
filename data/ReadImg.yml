@@ -18,11 +18,6 @@ Modules to read images:
     Deps: 1454
     Working: Working
     Aggregative: 'no'
-    B: +
-    Str: +
-    S: '-?'
-    A: +
-    H: +
   - 'N':
       name: jimp
       link: 'https://github.com/oliver-moran/jimp/tree/master/packages/jimp'
@@ -41,11 +36,6 @@ Modules to read images:
     Deps: 1098
     Working: Working
     Aggregative: 'yes'
-    B: ' '
-    S: ' '
-    Str: ' '
-    A: ' '
-    H: ' '
   - 'N':
       name: image-js
       link: 'https://github.com/image-js/image-js'
@@ -62,11 +52,6 @@ Modules to read images:
     Deps: 21
     Working: Working
     Aggregative: 'yes'
-    B: ' '
-    S: ' '
-    Str: ' '
-    A: ' '
-    H: ' '
   - 'N':
       name: pngjs
       link: 'https://github.com/lukeapage/pngjs'
@@ -81,11 +66,6 @@ Modules to read images:
     Deps: 577
     Working: Working
     Aggregative: 'no'
-    B: +
-    S: +
-    Str: +
-    A: +
-    H: '-'
   - 'N':
       name: jpeg-js
       link: 'https://github.com/eugeneware/jpeg-js'
@@ -100,11 +80,6 @@ Modules to read images:
     Deps: 170
     Working: Working
     Aggregative: 'no'
-    B: +
-    S: '-?'
-    Str: +
-    A: '-?'
-    H: '-?'
   - 'N':
       name: png-js
       link: 'https://github.com/foliojs/png.js'
@@ -119,11 +94,6 @@ Modules to read images:
     Deps: 75
     Working: Working
     Aggregative: 'no'
-    B: +
-    S: '-?'
-    Str: '-?'
-    A: +
-    H: '-?'
   - 'N':
       name: bmp-js
       link: 'https://github.com/shaozilee/bmp-js'
@@ -138,11 +108,6 @@ Modules to read images:
     Deps: 39
     Working: Working
     Aggregative: 'no'
-    B: +
-    S: '-?'
-    Str: +
-    A: '-?'
-    H: '-?'
   - 'N':
       name: utif
       link: 'https://github.com/photopea/UTIF.js'
@@ -157,11 +122,6 @@ Modules to read images:
     Deps: 29
     Working: Working
     Aggregative: 'no'
-    B: +
-    S: '-?'
-    Str: +
-    A: '-?'
-    H: +
   - 'N':
       name: png.js
       link: 'https://github.com/arian/pngjs'
@@ -176,11 +136,6 @@ Modules to read images:
     Deps: 11
     Working: Working
     Aggregative: 'no'
-    B: +
-    S: '-?'
-    Str: '-?'
-    A: +
-    H: +
   - 'N':
       name: node-libpng
       link: 'https://github.com/Prior99/node-libpng'
@@ -195,11 +150,6 @@ Modules to read images:
     Deps: 2
     Working: Working
     Aggregative: 'no'
-    B: +
-    S: '-?'
-    Str: +
-    A: + (if reading from a file)
-    H: '-?'
   - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'
@@ -216,11 +166,6 @@ Modules to read images:
     Deps: 79
     Working: Broken
     Aggregative: 'no'
-    B: ' '
-    S: ' '
-    Str: ' '
-    A: ' '
-    H: ' '
   - 'N':
       name: caman
       link: 'https://github.com/meltingice/CamanJS/'
@@ -236,11 +181,6 @@ Modules to read images:
     Deps: 5
     Working: Broken
     Aggregative: 'yes'
-    B: ' '
-    S: ' '
-    Str: ' '
-    A: ' '
-    H: ' '
   - 'N':
       name: omggif
       link: 'https://github.com/deanm/omggif'
@@ -255,8 +195,3 @@ Modules to read images:
     Deps: 63
     Working: Broken
     Aggregative: 'no'
-    B: ' '
-    S: ' '
-    Str: ' '
-    A: ' '
-    H: ' '
