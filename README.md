@@ -89,6 +89,19 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**gm**](https://github.com/aheckmann/gm) | closed | yes | CUI adapter | C | - | + | 1124 | Working |
 | [**caman**](https://github.com/meltingice/CamanJS/) | open | yes | Pure | CoffeeScript | + | + | 5 | Broken |
 
+### Readers' methods comaprison
+
+| **Name** | **Buffer** | **Stream** | **Sync** | **Async** | **Head** |
+| --- | --- | --- | --- | --- | --- |
+| [**sharp**](https://github.com/lovell/sharp) | + | + | - | + | + |
+| [**pngjs**](https://github.com/lukeapage/pngjs) | + | + | + | + | - |
+| [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | + | + | - | - | - |
+| [**png-js**](https://github.com/foliojs/png.js) | + | - | - | + | - |
+| [**bmp-js**](https://github.com/shaozilee/bmp-js) | + | + | - | - | - |
+| [**utif**](https://github.com/photopea/UTIF.js) | + | + | - | - | + |
+| [**png.js**](https://github.com/arian/pngjs) | + | - | - | + | + |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | + | + | - | + (if reading from a file) | - |
+
 ### Format support comparison
 
 | **Name** | **jpg** | **png** | **webp** | **tiff** | **gif** | **svg** | **bmp**|

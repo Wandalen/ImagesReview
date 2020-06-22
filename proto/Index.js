@@ -9,7 +9,7 @@ const { 'Modules to convert images' : convTable } = readYML( '../data/ConvertImg
 const { 'Modules to compress images' : compTable } = readYML( '../data/CompressImg.yml' );
 const { 'Modules to process images' : processTableObj } = readYML( '../data/ProcessImg.yml' );
 const { 'Projects description' : projDesc } = readYML( '../data/Overview.yml' );
-
+const { 'Methods' : methods } = readYML( '../data/ReadImgMethods.yml' );
 const
   {
     'Columns\' definitions' : columnsDef,
@@ -23,7 +23,7 @@ let header2 = ' process images of different formats.\n'
 
 let final = `${header1}${header2}\n${tableObjToMd( 'read', rTable )}\n${tableObjToMd( 'write', wTable )}
 ${tableObjToMd( 'convert', convTable )}\n${tableObjToMd( 'compress', compTable )}
-${tableObjToMd( 'process', processTableObj )}\n${readMd( `${__dirname}/../doc/RW.md` )}\n${overviewToMd( projDesc )}\n
+${tableObjToMd( 'process', processTableObj )}\n${ReadImgMethodsToMd( methods )}\n${readMd( `${__dirname}/../doc/RW.md` )}\n${overviewToMd( projDesc )}\n
 ${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )}`;
 
 // Writing to file
@@ -148,6 +148,18 @@ function overviewToMd( ov )
   {
     temp+= `* [**${el.Name}**](${el.Link}) - ${el.Description}\n`
   } )
+
+  return temp;
+}
+
+function ReadImgMethodsToMd( met )
+{
+  console.log( met )
+  let temp = '### Readers\' methods comaprison\n\n| **Name** | **Buffer** | **Stream** | **Sync** | **Async** | **Head** |\n| --- | --- | --- | --- | --- | --- |\n'
+  met.forEach( ( el ) =>
+  {
+    temp += `| [**${el.N.name}**](${el.N.link}) | ${el.B} | ${el.Str} | ${el.S} | ${el.A} | ${el.H} |\n`;
+  } );
 
   return temp;
 }
