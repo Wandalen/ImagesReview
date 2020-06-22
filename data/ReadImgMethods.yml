@@ -59,7 +59,7 @@ Methods:
       name: node-libpng
       link: 'https://github.com/Prior99/node-libpng'
     B: +
-    S: '-?'
-    Str: +
+    S: +
+    Str: '-?'
     A: + (if reading from a file)
     H: '-?'

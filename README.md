@@ -100,7 +100,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**bmp-js**](https://github.com/shaozilee/bmp-js) | + | + | -? | -? | -? |
 | [**utif**](https://github.com/photopea/UTIF.js) | + | + | -? | -? | + |
 | [**png.js**](https://github.com/arian/pngjs) | + | -? | -? | + | + |
-| [**node-libpng**](https://github.com/Prior99/node-libpng) | + | + | -? | + (if reading from a file) | -? |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | + | -? | + | + (if reading from a file) | -? |
 
 ### Format support comparison
 
