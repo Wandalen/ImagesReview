@@ -4,21 +4,21 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 
 ### Projects to read images
 
-| **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** | **B** | **Str** | **Sy** | **A** | **H** |
+| **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** | **B** | **Str** | **S** | **A** | **H** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | C++ | - | + | 1454 | Working | no | undefined | undefined | undefined | undefined | undefined |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working | yes | undefined | undefined |   | undefined | undefined |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | TypeScript | + | + | 21 | Working | yes | undefined | undefined |   | undefined | undefined |
-| [**pngjs**](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 577 | Working | no | undefined | undefined | + | undefined | undefined |
-| [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working | no | undefined | undefined | + | undefined | undefined |
-| [**png-js**](https://github.com/foliojs/png.js) | png | open | yes | Pure | JavaScript | + | + | 75 | Working | no | undefined | undefined | - | undefined | undefined |
-| [**bmp-js**](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working | no | undefined | undefined | + | undefined | undefined |
-| [**utif**](https://github.com/photopea/UTIF.js) | gif | open | yes | Pure | JavaScript | + | + | 29 | Working | no | undefined | undefined | + | undefined | undefined |
-| [**png.js**](https://github.com/arian/pngjs) | png | open | yes | Pure | JavaScript | + | + | 11 | Working | no | undefined | undefined | - | undefined | undefined |
-| [**node-libpng**](https://github.com/Prior99/node-libpng) | png | open | Native binding | Pure | C++ | + | + | 2 | Working | no | undefined | undefined | + | undefined | undefined |
-| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken | no | undefined | undefined |   | undefined | undefined |
-| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | CoffeeScript | + | + | 5 | Broken | yes | undefined | undefined |   | undefined | undefined |
-| [**omggif**](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 63 | Broken | no | undefined | undefined |   | undefined | undefined |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | C++ | - | + | 1454 | Working | no | + | + | - | + | + |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working | yes |   | undefined |   |   |   |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | TypeScript | + | + | 21 | Working | yes |   | undefined |   |   |   |
+| [**pngjs**](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 577 | Working | no | + | undefined | + | + | - |
+| [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working | no | + | undefined | - | - | - |
+| [**png-js**](https://github.com/foliojs/png.js) | png | open | yes | Pure | JavaScript | + | + | 75 | Working | no | + | undefined | - | + | - |
+| [**bmp-js**](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working | no | + | undefined | - | - | - |
+| [**utif**](https://github.com/photopea/UTIF.js) | gif | open | yes | Pure | JavaScript | + | + | 29 | Working | no | + | undefined | - | - | + |
+| [**png.js**](https://github.com/arian/pngjs) | png | open | yes | Pure | JavaScript | + | + | 11 | Working | no | + | undefined | - | + | + |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | png | open | Native binding | Pure | C++ | + | + | 2 | Working | no | + | undefined | - | + (if reading from a file) | - |
+| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken | no |   | undefined |   |   |   |
+| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | CoffeeScript | + | + | 5 | Broken | yes |   | undefined |   |   |   |
+| [**omggif**](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 63 | Broken | no |   | undefined |   |   |   |
 
 ### Projects to write images
 
@@ -142,7 +142,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 * *Agg* - Aggregative, does this project implements algorithms of decoding/encoding(no) or uses other projects(yes)
 * *B* - Buffer, does the module support buffer as input
 * *Str* - Stream, does the module support stream as input
-* *Sy* - Sync, does the module support synchronous reading
+* *S* - Sync, does the module support synchronous reading
 * *A* - Async, does the module support asynchronous reading
 * *H* - Head, does the module support reading metadata without pixels
 

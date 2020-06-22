@@ -20,7 +20,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     Str: +
-    Sy: '-'
+    S: '-'
     A: +
     H: +
   - 'N':
@@ -43,7 +43,7 @@ Modules to read images:
     Aggregative: 'yes'
     B: ' '
     S: ' '
-    Sync: ' '
+    Snc: ' '
     A: ' '
     H: ' '
   - 'N':
@@ -64,7 +64,7 @@ Modules to read images:
     Aggregative: 'yes'
     B: ' '
     S: ' '
-    Sync: ' '
+    Snc: ' '
     A: ' '
     H: ' '
   - 'N':
@@ -83,7 +83,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     S: +
-    Sync: +
+    Snc: +
     A: +
     H: '-'
   - 'N':
@@ -102,7 +102,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     S: '-'
-    Sync: +
+    Snc: +
     A: '-'
     H: '-'
   - 'N':
@@ -121,7 +121,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     S: '-'
-    Sync: '-'
+    Snc: '-'
     A: +
     H: '-'
   - 'N':
@@ -140,7 +140,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     S: '-'
-    Sync: +
+    Snc: +
     A: '-'
     H: '-'
   - 'N':
@@ -159,7 +159,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     S: '-'
-    Sync: +
+    Snc: +
     A: '-'
     H: +
   - 'N':
@@ -178,7 +178,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     S: '-'
-    Sync: '-'
+    Snc: '-'
     A: +
     H: +
   - 'N':
@@ -197,7 +197,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     S: '-'
-    Sync: +
+    Snc: +
     A: + (if reading from a file)
     H: '-'
   - 'N':
@@ -218,7 +218,7 @@ Modules to read images:
     Aggregative: 'no'
     B: ' '
     S: ' '
-    Sync: ' '
+    Snc: ' '
     A: ' '
     H: ' '
   - 'N':
@@ -238,7 +238,7 @@ Modules to read images:
     Aggregative: 'yes'
     B: ' '
     S: ' '
-    Sync: ' '
+    Snc: ' '
     A: ' '
     H: ' '
   - 'N':
@@ -257,6 +257,6 @@ Modules to read images:
     Aggregative: 'no'
     B: ' '
     S: ' '
-    Sync: ' '
+    Snc: ' '
     A: ' '
     H: ' '

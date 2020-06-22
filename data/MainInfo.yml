@@ -21,7 +21,7 @@
   - Agg: "Aggregative, does this project implements algorithms of decoding/encoding(no) or uses other projects(yes)"
   - B: Buffer, does the module support buffer as input 
   - Str: Stream, does the module support stream as input
-  - Sy: Sync, does the module support synchronous reading
+  - S: Sync, does the module support synchronous reading
   - A: Async, does the module support asynchronous reading
   - H: Head, does the module support reading metadata without pixels
 
