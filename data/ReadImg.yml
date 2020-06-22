@@ -20,7 +20,7 @@ Modules to read images:
     Aggregative: 'no'
     B: +
     Str: +
-    S: '-'
+    S: '-?'
     A: +
     H: +
   - 'N':
@@ -101,10 +101,10 @@ Modules to read images:
     Working: Working
     Aggregative: 'no'
     B: +
-    S: '-'
+    S: '-?'
     Str: +
-    A: '-'
-    H: '-'
+    A: '-?'
+    H: '-?'
   - 'N':
       name: png-js
       link: 'https://github.com/foliojs/png.js'
@@ -120,10 +120,10 @@ Modules to read images:
     Working: Working
     Aggregative: 'no'
     B: +
-    S: '-'
-    Str: '-'
+    S: '-?'
+    Str: '-?'
     A: +
-    H: '-'
+    H: '-?'
   - 'N':
       name: bmp-js
       link: 'https://github.com/shaozilee/bmp-js'
@@ -139,10 +139,10 @@ Modules to read images:
     Working: Working
     Aggregative: 'no'
     B: +
-    S: '-'
+    S: '-?'
     Str: +
-    A: '-'
-    H: '-'
+    A: '-?'
+    H: '-?'
   - 'N':
       name: utif
       link: 'https://github.com/photopea/UTIF.js'
@@ -158,9 +158,9 @@ Modules to read images:
     Working: Working
     Aggregative: 'no'
     B: +
-    S: '-'
+    S: '-?'
     Str: +
-    A: '-'
+    A: '-?'
     H: +
   - 'N':
       name: png.js
@@ -177,8 +177,8 @@ Modules to read images:
     Working: Working
     Aggregative: 'no'
     B: +
-    S: '-'
-    Str: '-'
+    S: '-?'
+    Str: '-?'
     A: +
     H: +
   - 'N':
@@ -196,10 +196,10 @@ Modules to read images:
     Working: Working
     Aggregative: 'no'
     B: +
-    S: '-'
+    S: '-?'
     Str: +
     A: + (if reading from a file)
-    H: '-'
+    H: '-?'
   - 'N':
       name: lwip
       link: 'https://github.com/EyalAr/lwip'
