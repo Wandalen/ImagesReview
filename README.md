@@ -7,18 +7,18 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** | **B** | **Str** | **S** | **A** | **H** |
 | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | C++ | - | + | 1454 | Working | no | + | + | - | + | + |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working | yes |   | undefined |   |   |   |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | TypeScript | + | + | 21 | Working | yes |   | undefined |   |   |   |
-| [**pngjs**](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 577 | Working | no | + | undefined | + | + | - |
-| [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working | no | + | undefined | - | - | - |
-| [**png-js**](https://github.com/foliojs/png.js) | png | open | yes | Pure | JavaScript | + | + | 75 | Working | no | + | undefined | - | + | - |
-| [**bmp-js**](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working | no | + | undefined | - | - | - |
-| [**utif**](https://github.com/photopea/UTIF.js) | gif | open | yes | Pure | JavaScript | + | + | 29 | Working | no | + | undefined | - | - | + |
-| [**png.js**](https://github.com/arian/pngjs) | png | open | yes | Pure | JavaScript | + | + | 11 | Working | no | + | undefined | - | + | + |
-| [**node-libpng**](https://github.com/Prior99/node-libpng) | png | open | Native binding | Pure | C++ | + | + | 2 | Working | no | + | undefined | - | + (if reading from a file) | - |
-| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken | no |   | undefined |   |   |   |
-| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | CoffeeScript | + | + | 5 | Broken | yes |   | undefined |   |   |   |
-| [**omggif**](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 63 | Broken | no |   | undefined |   |   |   |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working | yes |   |   |   |   |   |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | TypeScript | + | + | 21 | Working | yes |   |   |   |   |   |
+| [**pngjs**](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 577 | Working | no | + | + | + | + | - |
+| [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working | no | + | + | - | - | - |
+| [**png-js**](https://github.com/foliojs/png.js) | png | open | yes | Pure | JavaScript | + | + | 75 | Working | no | + | - | - | + | - |
+| [**bmp-js**](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working | no | + | + | - | - | - |
+| [**utif**](https://github.com/photopea/UTIF.js) | gif | open | yes | Pure | JavaScript | + | + | 29 | Working | no | + | + | - | - | + |
+| [**png.js**](https://github.com/arian/pngjs) | png | open | yes | Pure | JavaScript | + | + | 11 | Working | no | + | - | - | + | + |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | png | open | Native binding | Pure | C++ | + | + | 2 | Working | no | + | + | - | + (if reading from a file) | - |
+| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken | no |   |   |   |   |   |
+| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | CoffeeScript | + | + | 5 | Broken | yes |   |   |   |   |   |
+| [**omggif**](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 63 | Broken | no |   |   |   |   |   |
 
 ### Projects to write images
 
