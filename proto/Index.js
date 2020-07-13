@@ -1,7 +1,6 @@
 const _ = require( 'wTools' );
 require( 'wFiles' );
 const { readYML, abs } = require( './Utils' )
-// TO DO:
 
 const { 'Modules to read images' : rTable } = readYML( '../data/ReadImg.yml' );
 const { 'Modules to write images' : wTable } = readYML( '../data/WriteImg.yml' );
@@ -23,16 +22,11 @@ let header2 = ' process images of different formats.\n'
 
 let final = `${header1}${header2}\n${tableObjToMd( 'read', rTable )}\n${tableObjToMd( 'write', wTable )}
 ${tableObjToMd( 'convert', convTable )}\n${tableObjToMd( 'compress', compTable )}
-${tableObjToMd( 'process', processTableObj )}\n${ReadImgMethodsToMd( methods )}\n${readMd( `${__dirname}/../doc/RW.md` )}\n${overviewToMd( projDesc )}\n
+${tableObjToMd( 'process', processTableObj )}\n${ReadImgMethodsToMd( methods )}\n${readMd( `${__dirname}/../doc/RW.md` )}\n${readMd( `${__dirname}/../doc/Samples.md` )}\n${overviewToMd( projDesc )}\n
 ${colsDefsToMd( columnsDef )}\n${algoToMd( algo )}\n${resourcesToMd( resources )}`;
 
 // Writing to file
 writeMd( '../README.md', final );
-
-// CREATE README file from README.md
-// _.fileProvider.fileWrite( abs( '../README' ), _.fileProvider.fileRead( {
-//   filePath : abs( '../README.md' ),
-// } ) );
 
 function readMd( path )
 {

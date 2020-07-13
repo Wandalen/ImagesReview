@@ -100,7 +100,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**bmp-js**](https://github.com/shaozilee/bmp-js) | + | + | -? | -? | -? |
 | [**utif**](https://github.com/photopea/UTIF.js) | + | + | -? | -? | + |
 | [**png.js**](https://github.com/arian/pngjs) | + | -? | -? | + | + |
-| [**node-libpng**](https://github.com/Prior99/node-libpng) | + | -? | + | + (if reading from a file) | -? |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | + | - | + | + (if reading from a file) | -? |
 
 ### Format support comparison
 
@@ -119,6 +119,24 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**utif***](https://github.com/photopea/UTIF.js) | - | -  | - | [R](https://github.com/photopea/UTIF.js/blob/9f38fb543a2272d402cab552b42779783e2bef34/UTIF.js#L97) [W](https://github.com/photopea/UTIF.js/blob/9f38fb543a2272d402cab552b42779783e2bef34/UTIF.js#L42) | -  | - | - |
 | [**png.js**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
 | [**png-js***](https://github.com/foliojs/png.js) | - | [R](https://github.com/foliojs/png.js/blob/977b857a11676c1e720e79ed8d9178a005a9abd6/png.js#L251) | -  | - | - | - | - |
+
+### Modules usage as backend plugins
+
+| **Name** | **jpg** | **png** | **webp** | **tiff** | **gif** | **svg** | **bmp**|
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [**sharp**](https://github.com/lovell/sharp) | Rx Wx | Rx Wx | Rx Wx | Rx Wx | Rx | Rx | - |
+| [**Jimp**](https://github.com/oliver-moran/jimp) | - | - | - | - | - | - | - |
+| [**lwip**](https://github.com/EyalAr/lwip) | Rx Wx | Rx Wx | - | - | Rx Wx | - | - | 
+| [**image-js**](https://github.com/image-js/image-js) | - | - | - | - | - | - | - | 
+| [**caman**](https://github.com/meltingice/CamanJS/) | - | - | - | - | - | - | - | 
+| [**jpeg-js***](https://github.com/eugeneware/jpeg-js) | Rx Wx | - | - | - | - | - | - | 
+| [**pngjs***](https://github.com/lukeapage/pngjs) | - | Rx Wx | - | - | - | - | - | 
+| [**node-libpng***](https://github.com/Prior99/node-libpng) | - | Rx Wx | - | - | - | - | - | 
+| [**bmp-js***](https://github.com/shaozilee/bmp-js) | - | - | - | - | - | - | Rx Wx | 
+| [**omggif***](https://github.com/deanm/omggif) | - | - | - | - | Rx Wx | - | - | 
+| [**utif***](https://github.com/photopea/UTIF.js) | - | - | - | Rx Wx | - | - | - | 
+| [**png.js**](https://github.com/arian/pngjs) | - | Rx Wx | - | - | - | - | - | 
+| [**png-js***](https://github.com/foliojs/png.js) | - | R+ Wx | - | - | - | - | - | 
 
 ### Projects description
 
