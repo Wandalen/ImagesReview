@@ -89,7 +89,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**gm**](https://github.com/aheckmann/gm) | closed | yes | CUI adapter | C | - | + | 1124 | Working |
 | [**caman**](https://github.com/meltingice/CamanJS/) | open | yes | Pure | CoffeeScript | + | + | 5 | Broken |
 
-### Readers' methods comparison
+### Readers' features
 
 | **Name** | **Buffer** | **Stream** | **Sync** | **Async** | **Head** |
 | --- | --- | --- | --- | --- | --- |
