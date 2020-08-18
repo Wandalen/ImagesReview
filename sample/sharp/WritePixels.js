@@ -1,3 +1,5 @@
+const _ = require( 'wTools' );
+require( 'wFiles' );
 const sharp = require( 'sharp' );
 
 let buf = Buffer.from( {
@@ -31,4 +33,5 @@ let buf = Buffer.from( {
 } )
 
 sharp( buf )
-.toFile( `${__dirname}/../../data/images/WrittenPixelsSharp.png` )
+.toFile( `${__dirname}/../../data/image/WrittenPixelsSharp.png` )
+console.log( _.fileProvider.statRead( `${__dirname}/../../data/image/WrittenPixelsSharp.png` ).size );

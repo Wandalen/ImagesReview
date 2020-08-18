@@ -4,23 +4,29 @@
   images of different formats.
 
 "Columns' definitions":
-  - Name: "Name of the module"
+  - Name: "Name of the project"
   - R: "Reading formats"
   - W: "Writing formats"
-  - Code: "Is the module's source code open or closed"
+  - Code: "Is the project's source code open or closed"
   - Modular: "Is it modular (extendable entity) or integrated GUI (enclosed system provided as is)"
   - Interface: 
       - Pure - Written completely in JavaScript
       - Native Binding -  wrapper library that bridges two programming languages. It provides glue code specifically made to allow JavaScript to use a foreign code written in C, C++, etc.
       - CUI adapter - wrapper library that transformes JS instructions into shell commands of another library or framework (typically written in a lower level code)
-  - Language: "Programming language in which module is written"
-  - B.s: "Does the module support the browser"
-  - N.s: "Does the module support Node.js"
-  - Deps: "The amount of dependents of this module"
-  - Working: "Does this module works out of the box(Working) or require additional settings(Broken)"
+  - Language: "Programming language in which project is written"
+  - B.s: "Does the project support the browser"
+  - N.s: "Does the project support Node.js"
+  - Deps: "The amount of dependents of this project"
+  - Working: "Does this project works out of the box(Working) or require additional settings(Broken)"
+  - Agg: "Aggregative, does this project implements algorithms of decoding/encoding(no) or uses other projects(yes)"
+  - B: Buffer, does the module support buffer as input 
+  - Str: Stream, does the module support stream as input
+  - S: Sync, does the module support synchronous reading
+  - A: Async, does the module support asynchronous reading
+  - H: Head, does the module support reading metadata without pixels
 
 "Sorting Algorithm (descending order significance)": 
   - Sort by Working (Working > Broken)
   - Sort by Code (Open > Closed)
-  - Sort by the amount of Read or Write formats (For the tables "Modules to read images" or "Modules to write images" respectively) or by the sum of reading and writing formats (For the tables "Modules to convert images" and "Modules to compress images") or by the sum of B.s and N.S (For the table "Modules to process images")
+  - Sort by the amount of Read or Write formats (For the tables "Project to read images" or "Project to write images" respectively) or by the sum of reading and writing formats (For the tables "Projects to convert images" and "Projects to compress images") or by the sum of B.s and N.S (For the table "Projects to process images")
   - Sort by the amount of dependents

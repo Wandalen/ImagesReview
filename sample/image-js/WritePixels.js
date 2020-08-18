@@ -1,3 +1,5 @@
+const _ = require( 'wTools' );
+require( 'wFiles' );
 const { Image } = require( 'image-js' );
 
 let buf = Buffer.from( {
@@ -11,4 +13,5 @@ let buf = Buffer.from( {
 } );
 
 let image = new Image( 2, 2, buf );
-image.save( `${__dirname}/../../data/images/WrittenPixelsImage-js.png` );
+image.save( `${__dirname}/../../data/image/WrittenPixelsImage-js.png` );
+console.log( _.fileProvider.statRead( `${__dirname}/../../data/image/WrittenPixelsImage-js.png` ).size );

@@ -2,42 +2,40 @@
 
 Curated overview of awesome Javascript projects to read / write / convert / compress / process images of different formats.
 
-### Modules to read images
+### Projects to read images
 
-| **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
-| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | C++ | - | + | 1454 | Working |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | TypeScript | + | + | 21 | Working |
-| [**pngjs***](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 577 | Working |
-| [**jpeg-js***](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working |
-| [**png-js***](https://github.com/foliojs/png.js) | png | open | yes | Pure | JavaScript | + | + | 75 | Working |
-| [**omggif***](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 63 | Working |
-| [**bmp-js***](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working |
-| [**utif***](https://github.com/photopea/UTIF.js) | gif | open | yes | Pure | JavaScript | + | + | 29 | Working |
-| [**png.js***](https://github.com/arian/pngjs) | png | open | yes | Pure | JavaScript | + | + | 11 | Working |
-| [**node-libpng***](https://github.com/Prior99/node-libpng) | png | open | Native binding | Pure | C++ | + | + | 2 | Working |
-| [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1124 | Working |
-| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
-| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | CoffeeScript | + | + | 5 | Broken |
+| **Name** | **Read** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** |
+| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff, gif, svg | open | yes | Native binding | C++ | - | + | 1454 | Working | no |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working | yes |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png, tiff | open | yes | Pure | TypeScript | + | + | 21 | Working | yes |
+| [**pngjs**](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 577 | Working | no |
+| [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working | no |
+| [**png-js**](https://github.com/foliojs/png.js) | png | open | yes | Pure | JavaScript | + | + | 75 | Working | no |
+| [**bmp-js**](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working | no |
+| [**utif**](https://github.com/photopea/UTIF.js) | gif | open | yes | Pure | JavaScript | + | + | 29 | Working | no |
+| [**png.js**](https://github.com/arian/pngjs) | png | open | yes | Pure | JavaScript | + | + | 11 | Working | no |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | png | open | Native binding | Pure | C++ | + | + | 2 | Working | no |
+| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken | no |
+| [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | open | yes | Pure | CoffeeScript | + | + | 5 | Broken | yes |
+| [**omggif**](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 63 | Broken | no |
 
-### Modules to write images
+### Projects to write images
 
-| **Name** | **Write** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
-| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
-| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working |
-| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | C++ | - | + | 1454 | Working |
-| [**image-js**](https://github.com/image-js/image-js) | jpg, png | open | yes | Pure | TypeScript | + | + | 21 | Working |
-| [**pngjs***](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 577 | Working |
-| [**jpeg-js***](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working |
-| [**omggif***](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 63 | Working |
-| [**bmp-js***](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working |
-| [**node-libpng***](https://github.com/Prior99/node-libpng) | png | open | yes | Native binding | C++ | + | + | 2 | Working |
-| [**libjpeg***](https://github.com/pkrumins/node-jpeg) | png | open | yes | Native binding | C++ | + | + | 0 | Working |
-| [**gm**](https://github.com/aheckmann/gm) | jpg, png, gif, pdf, webp | closed | yes | CUI adapter | C | - | + | 1124 | Working |
-| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
+| **Name** | **Write** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** | **Agg** |
+| --- | --- | --- | --- | --- | --- | -- | --- | --- | --- | --- |
+| [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) | jpg, png, gif, tiff, bmp | open | yes | Pure | JavaScript | + | + | 1098 | Working | yes |
+| [**sharp**](https://github.com/lovell/sharp) | jpg, png, webp, tiff | open | yes | Native binding | C++ | - | + | 1454 | Working | no |
+| [**image-js**](https://github.com/image-js/image-js) | jpg, png | open | yes | Pure | TypeScript | + | + | 21 | Working | yes |
+| [**pngjs**](https://github.com/lukeapage/pngjs) | png | open | yes | Pure | JavaScript | + | + | 577 | Working | no |
+| [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | jpg | open | yes | Pure | JavaScript | + | + | 170 | Working | no |
+| [**omggif**](https://github.com/deanm/omggif) | gif | open | yes | Pure | JavaScript | + | + | 63 | Working | no |
+| [**bmp-js**](https://github.com/shaozilee/bmp-js) | bmp | open | yes | Pure | JavaScript | + | + | 39 | Working | no |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | png | open | yes | Native binding | C++ | + | + | 2 | Working | no |
+| [**libjpeg**](https://github.com/pkrumins/node-jpeg) | png | open | yes | Native binding | C++ | + | + | 0 | Working | no |
+| [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken | no |
 
-### Modules to convert images
+### Projects to convert images
 
 | **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
@@ -50,7 +48,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
 | [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | - | open | yes | Pure | CoffeeScript | + | + | 5 | Broken |
 
-### Modules to compress images
+### Projects to compress images
 
 | **Name** | **R** | **W** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps** | **Working** |
 | --- | --- | --- | --- | --- | --- | --- | -- | --- | --- | --- |
@@ -64,7 +62,7 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**lwip**](https://github.com/EyalAr/lwip) | jpg, png, gif | jpg, png, gif | open | yes | Native binding | C | - | + | 79 | Broken |
 | [**caman**](https://github.com/meltingice/CamanJS/) | jpg, png | - | open | yes | Pure | CoffeeScript | + | + | 5 | Broken |
 
-### Modules to process images
+### Projects to process images
 
 | **Name** | **Code** | **Modular** | **Interface** | **Language** | **B.s** | **N.s** | **Deps**| **Working** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -91,6 +89,19 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**gm**](https://github.com/aheckmann/gm) | closed | yes | CUI adapter | C | - | + | 1124 | Working |
 | [**caman**](https://github.com/meltingice/CamanJS/) | open | yes | Pure | CoffeeScript | + | + | 5 | Broken |
 
+### Readers' features
+
+| **Name** | **Buffer** | **Stream** | **Sync** | **Async** | **Head** |
+| --- | --- | --- | --- | --- | --- |
+| [**sharp**](https://github.com/lovell/sharp) | + | + | -? | + | + |
+| [**pngjs**](https://github.com/lukeapage/pngjs) | + | + | + | + | - |
+| [**jpeg-js**](https://github.com/eugeneware/jpeg-js) | + | + | -? | -? | -? |
+| [**png-js**](https://github.com/foliojs/png.js) | + | -? | -? | + | -? |
+| [**bmp-js**](https://github.com/shaozilee/bmp-js) | + | + | -? | -? | -? |
+| [**utif**](https://github.com/photopea/UTIF.js) | + | + | -? | -? | + |
+| [**png.js**](https://github.com/arian/pngjs) | + | -? | -? | + | + |
+| [**node-libpng**](https://github.com/Prior99/node-libpng) | + | - | + | + (if reading from a file) | -? |
+
 ### Format support comparison
 
 | **Name** | **jpg** | **png** | **webp** | **tiff** | **gif** | **svg** | **bmp**|
@@ -108,29 +119,68 @@ Curated overview of awesome Javascript projects to read / write / convert / comp
 | [**utif***](https://github.com/photopea/UTIF.js) | - | -  | - | [R](https://github.com/photopea/UTIF.js/blob/9f38fb543a2272d402cab552b42779783e2bef34/UTIF.js#L97) [W](https://github.com/photopea/UTIF.js/blob/9f38fb543a2272d402cab552b42779783e2bef34/UTIF.js#L42) | -  | - | - |
 | [**png.js**](https://github.com/arian/pngjs) | - | [R](https://github.com/arian/pngjs/blob/c1a2f5852686a22229f5f3154f974011162b5263/PNGReader.js#L43)  | -  | - | - | - | - |
 | [**png-js***](https://github.com/foliojs/png.js) | - | [R](https://github.com/foliojs/png.js/blob/977b857a11676c1e720e79ed8d9178a005a9abd6/png.js#L251) | -  | - | - | - | - |
-| [**gm**](https://github.com/aheckmann/gm) | R W  | R W  | R W  | - | R W | - | - |
+
+### Modules usage as backend plugins
+
+| **Name** | **jpg** | **png** | **webp** | **tiff** | **gif** | **svg** | **bmp**|
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [**sharp**](https://github.com/lovell/sharp) | x x | x x | x x | x x | x | x | - |
+| [**Jimp**](https://github.com/oliver-moran/jimp) | - | - | - | - | - | - | - |
+| [**lwip**](https://github.com/EyalAr/lwip) | - - | - - | - | - | - - | - | - | 
+| [**image-js**](https://github.com/image-js/image-js) | - | - | - | - | - | - | - | 
+| [**caman**](https://github.com/meltingice/CamanJS/) | - | - | - | - | - | - | - | 
+| [**jpeg-js***](https://github.com/eugeneware/jpeg-js) | x x | - | - | - | - | - | - | 
+| [**pngjs***](https://github.com/lukeapage/pngjs) | - | + x | - | - | - | - | - | 
+| [**node-libpng***](https://github.com/Prior99/node-libpng) | - | x x | - | - | - | - | - | 
+| [**bmp-js***](https://github.com/shaozilee/bmp-js) | - | - | - | - | - | - | x x | 
+| [**omggif***](https://github.com/deanm/omggif) | - | - | - | - | x x | - | - | 
+| [**utif***](https://github.com/photopea/UTIF.js) | - | - | - | x x | - | - | - | 
+| [**png.js**](https://github.com/arian/pngjs) | - | x x | - | - | - | - | - | 
+| [**png-js***](https://github.com/foliojs/png.js) | - | x x | - | - | - | - | - | 
+
+### Projects description
+
+* [**sharp**](https://github.com/lovell/sharp) - High performance Node.js image processing, module to read, write, convert, compress, resize JPEG, PNG, WebP and TIFF images. Uses the libvips library.
+* [**jimp**](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) - An image processing library for Node written entirely in JavaScript, with zero native dependencies.
+* [**image-js**](https://github.com/image-js/image-js) - Image processing and manipulation library that allows to manipulate easily images directly in the browser or in node.
+* [**pngjs**](https://github.com/lukeapage/pngjs) - Simple PNG encoder/decoder for Node.js with no dependencies.
+* [**jpeg-js**](https://github.com/eugeneware/jpeg-js) - A pure javascript JPEG encoder and decoder for node.js
+* [**png-js**](https://github.com/foliojs/png.js) - A (animated) PNG decoder in JavaScript for the HTML5 canvas element and Node.js
+* [**omggif**](https://github.com/deanm/omggif) - JavaScript implementation of a GIF 89a encoder and decoder
+* [**bmp-js**](https://github.com/shaozilee/bmp-js) - A pure javascript BMP encoder and decoder for node.js
+* [**utif**](https://github.com/photopea/UTIF.js) - A small, fast and advanced TIFF / EXIF (+ DNG, CR2, NEF and other TIFF-ish files) decoder and encoder.
+* [**png.js**](https://github.com/arian/pngjs) - PNG.js is a PNG decoder fully written in JavaScript. It works in Node.js as well as in (modern) browsers.
+* [**node-libpng**](https://github.com/Prior99/node-libpng) - Unofficial bindings for node to libpng.
+* [**lwip**](https://github.com/EyalAr/lwip) - Light weight image processor for NodeJS with no external runtime dependencies.
+* [**caman**](https://github.com/meltingice/CamanJS/) - Manipulating images using the HTML5 canvas and Javascript.
 
 
 **Columns' definitions**
-* *Name* - Name of the module
+* *Name* - Name of the project
 * *R* - Reading formats
 * *W* - Writing formats
-* *Code* - Is the module's source code open or closed
+* *Code* - Is the project's source code open or closed
 * *Modular* - Is it modular (extendable entity) or integrated GUI (enclosed system provided as is)
 * *Interface*:
 	* Pure - Written completely in JavaScript
 	* Native Binding -  wrapper library that bridges two programming languages. It provides glue code specifically made to allow JavaScript to use a foreign code written in C, C++, etc.
 	* CUI adapter - wrapper library that transformes JS instructions into shell commands of another library or framework (typically written in a lower level code)
-* *Language* - Programming language in which module is written
-* *B.s* - Does the module support the browser
-* *N.s* - Does the module support Node.js
-* *Deps* - The amount of dependents of this module
-* *Working* - Does this module works out of the box(Working) or require additional settings(Broken)
+* *Language* - Programming language in which project is written
+* *B.s* - Does the project support the browser
+* *N.s* - Does the project support Node.js
+* *Deps* - The amount of dependents of this project
+* *Working* - Does this project works out of the box(Working) or require additional settings(Broken)
+* *Agg* - Aggregative, does this project implements algorithms of decoding/encoding(no) or uses other projects(yes)
+* *B* - Buffer, does the module support buffer as input
+* *Str* - Stream, does the module support stream as input
+* *S* - Sync, does the module support synchronous reading
+* *A* - Async, does the module support asynchronous reading
+* *H* - Head, does the module support reading metadata without pixels
 
 **Sorting Algorithm** (descending order of significance)
 1. Sort by Working (Working > Broken)
 2. Sort by Code (Open > Closed)
-3. Sort by the amount of Read or Write formats (For the tables "Modules to read images" or "Modules to write images" respectively) or by the sum of reading and writing formats (For the tables "Modules to convert images" and "Modules to compress images") or by the sum of B.s and N.S (For the table "Modules to process images")
+3. Sort by the amount of Read or Write formats (For the tables "Project to read images" or "Project to write images" respectively) or by the sum of reading and writing formats (For the tables "Projects to convert images" and "Projects to compress images") or by the sum of B.s and N.S (For the table "Projects to process images")
 4. Sort by the amount of dependents
 
 ### Resources:

@@ -1,6 +1,6 @@
 const sharp = require( 'sharp' );
 
-sharp( `${__dirname}/../../data/images/Image.gif` ).raw()
+sharp( `${__dirname}/../../data/image/Image.gif` ).raw()
 .toBuffer( { resolveWithObject : true } )
 .then( ( { data } ) => console.log( 'rgb( ' + data.toJSON().data.slice( 0, 3 ) + ' )' ) );
 // log: rgb( 255,0,0 )
